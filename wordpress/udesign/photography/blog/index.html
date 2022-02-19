@@ -1,0 +1,976 @@
+
+<!DOCTYPE html>
+	<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+		
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<link rel="pingback" href="https://d-themes.com/wordpress/udesign/photography/xmlrpc.php" />
+
+		<link rel="shortcut icon" href="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/favicon.png" type="image/x-icon" />
+		
+		<title>Blog &#8211; U-Photography</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="U-Photography &raquo; Feed" href="https://d-themes.com/wordpress/udesign/photography/feed/" />
+<link rel="alternate" type="application/rss+xml" title="U-Photography &raquo; Comments Feed" href="https://d-themes.com/wordpress/udesign/photography/comments/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-includes/css/dist/block-library/style.css?ver=5.8.3' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+#start-resizable-editor-section {
+  display: none;
+}
+
+.wp-block-audio figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-audio figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-code {
+  font-family: Menlo, Consolas, monaco, monospace;
+  color: #1e1e1e;
+  padding: 0.8em 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.wp-block-embed figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-embed figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.blocks-gallery-caption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .blocks-gallery-caption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-image figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-image figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-pullquote {
+  border-top: 4px solid currentColor;
+  border-bottom: 4px solid currentColor;
+  margin-bottom: 1.75em;
+  color: currentColor;
+}
+.wp-block-pullquote cite,
+.wp-block-pullquote footer, .wp-block-pullquote__citation {
+  color: currentColor;
+  text-transform: uppercase;
+  font-size: 0.8125em;
+  font-style: normal;
+}
+
+.wp-block-quote {
+  border-left: 0.25em solid currentColor;
+  margin: 0 0 1.75em 0;
+  padding-left: 1em;
+}
+.wp-block-quote cite,
+.wp-block-quote footer {
+  color: currentColor;
+  font-size: 0.8125em;
+  position: relative;
+  font-style: normal;
+}
+.wp-block-quote.has-text-align-right {
+  border-left: none;
+  border-right: 0.25em solid currentColor;
+  padding-left: 0;
+  padding-right: 1em;
+}
+.wp-block-quote.has-text-align-center {
+  border: none;
+  padding-left: 0;
+}
+.wp-block-quote.is-style-large, .wp-block-quote.is-large {
+  border: none;
+}
+
+.wp-block-search .wp-block-search__label {
+  font-weight: bold;
+}
+
+.wp-block-group.has-background {
+  padding: 1.25em 2.375em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.wp-block-separator {
+  border: none;
+  border-bottom: 2px solid currentColor;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.4;
+}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+  width: 100px;
+}
+.wp-block-separator.has-background:not(.is-style-dots) {
+  border-bottom: none;
+  height: 1px;
+}
+.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+  height: 2px;
+}
+
+.wp-block-table thead {
+  border-bottom: 3px solid;
+}
+.wp-block-table tfoot {
+  border-top: 3px solid;
+}
+.wp-block-table td,
+.wp-block-table th {
+  padding: 0.5em;
+  border: 1px solid;
+  word-break: normal;
+}
+.wp-block-table figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-table figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-video figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-video figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-template-part.has-background {
+  padding: 1.25em 2.375em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#end-resizable-editor-section {
+  display: none;
+}
+</style>
+<link rel='stylesheet' id='alpha-gdpr-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/u-design-core/framework/addons/gdpr/gdpr.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-core-framework-style-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/u-design-core/assets/css/framework.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='fontawesome-free-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/vendor/fontawesome-free/css/all.min.css?ver=5.14.0' media='all' />
+<link rel='stylesheet' id='alpha-icons-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/vendor/alpha-icons/css/icons.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='theme-icons-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/vendor/udesign-icons/css/icons.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='animate-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/vendor/animate/animate.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/vendor/jquery.magnific-popup/magnific-popup.min.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.css?ver=5.12.0' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/elementor/css/custom-frontend.css?ver=1641575545' media='all' />
+<link rel='stylesheet' id='elementor-post-3-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/elementor/css/post-3.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-theme-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/css/theme.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-dynamic-vars-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/udesign_styles/dynamic_css_vars.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-theme-blog-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/css/pages/blog.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C500%2C600%2C700%7CHandlee&#038;ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-single-portfolio-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/u-design-core/inc/cpt/post_types/portfolio/assets/single-portfolio.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-portfolio-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/u-design-core/inc/cpt/post_types/portfolio/assets/portfolio.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-member-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/u-design-core/inc/cpt/post_types/member/assets/member.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-elementor-style-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/u-design-core/framework/plugins/elementor/assets/elementor.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-elementor-extend-style-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/u-design-core/inc/plugins/elementor/assets/elementor-extend.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='elementor-post-11-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/elementor/css/post-11.css?ver=5.8.3' media='all' />
+<style id='elementor-post-11-inline-css'>
+.custom-header{position:absolute;left:0;right:0;top:0;z-index:11}.header.custom-header .sticky-content.fix-top.fixed{background-color:#191919;border:none;box-shadow:0 0 10px 1px rgba(0,0,0,.3)}@media (max-width:767px){.cs-search span{display:none}}
+</style>
+<link rel='stylesheet' id='elementor-post-319-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/elementor/css/post-319.css?ver=5.8.3' media='all' />
+<style id='elementor-post-319-inline-css'>
+.custom-footer .address{margin-bottom:2.4rem}.instagram .image-gallery figure:before{border-radius:0}
+</style>
+<link rel='stylesheet' id='elementor-post-515-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/elementor/css/post-515.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-style-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/style.css?ver=4.0.0' media='all' />
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-includes/js/jquery/jquery.js?ver=3.6.0' id='jquery-core-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-includes/js/jquery/jquery-migrate.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.5.11' async id='tp-tools-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.5.11' async id='revmin-js'></script>
+<link rel="https://api.w.org/" href="https://d-themes.com/wordpress/udesign/photography/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://d-themes.com/wordpress/udesign/photography/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://d-themes.com/wordpress/udesign/photography/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.3" />
+		<meta name="application-name" content="UDesign - MULTI-PURPOSE PREMIUM WordPress THEME">
+		<meta name="author" content="Andon">
+		<meta name="description" content="A slick, powerful and clean theme UDesign provides an intuitive set of options to help you setup your WordPress site quickly and effectively. Flexibility is key and it has been optimized for SEO and speed. It is also responsive & mobile ready should you choose that option. The UDesign theme features include: unlimited colors, widgetized home page, over 600 fonts to choose from, WooCommerce Integration, it is also translation and multilingual ready, step by step documentation, exclusive UDesign support forum and a helpful community. Always up-to-date security and many new features are constantly added as the theme evolves.">
+		<meta name="generator" content="Powered by Slider Revolution 6.5.11 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<script type="text/javascript">function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {				 
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;	
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;	
+				try {								
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);		
+					if(e.layout==="fullscreen" || e.l==="fullscreen") 						
+						newh = Math.max(e.mh,window.RSIH);					
+					else{					
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];					
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,						
+							sl;					
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;					
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];									
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}															
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);					
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";					
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}					   
+			//});
+		  };</script>
+<style id="kirki-inline-styles"></style>	</head>
+	<body class="blog wp-custom-logo wp-embed-responsive alpha-archive-post-layout alpha-rounded-skin elementor-default elementor-kit-3 udesign-demo">
+		
+		
+		
+		<div class="page-wrapper">
+
+			<header class="header custom-header header-11" id="header"><div class="alpha-block elementor elementor-11" data-block-id="11">		<div data-elementor-type="wp-post" data-elementor-id="11" class="elementor elementor-11" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" sticky-content fix-top elementor-section elementor-top-section elementor-element elementor-element-5606437 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5606437" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a8b9dd4 " data-id="a8b9dd4" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-90a49a2 elementor-widget elementor-widget-udesign_header_site_logo" data-id="90a49a2" data-element_type="widget" data-widget_type="udesign_header_site_logo.default">
+				<div class="elementor-widget-container">
+			
+<a href="https://d-themes.com/wordpress/udesign/photography/" class="logo" title="U-Photography - UDesign WordPress Demo Site">
+	<img width="136" height="25" src="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/Logo136x25.png" class="site-logo skip-data-lazy attachment-full size-full" alt="U-Photography" /></a>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-fb8a472 elementor-hidden-desktop ml-auto ml-sm-0 order-sm-first mr-sm-4 mr-md-0 elementor-widget elementor-widget-udesign_header_mmenu_toggle" data-id="fb8a472" data-element_type="widget" data-widget_type="udesign_header_mmenu_toggle.default">
+				<div class="elementor-widget-container">
+			<a href="#" class="mobile-menu-toggle d-lg-none" aria-label="Mobile Menu"><i class="  a-icon-hamburger"></i></a>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-4b02f20 ml-auto mr-auto elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-udesign_widget_menu" data-id="4b02f20" data-element_type="widget" data-widget_type="udesign_widget_menu.default">
+				<div class="elementor-widget-container">
+			<nav class=" main-menu"><ul id="menu-main-menu" class="menu  horizontal-menu"><li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-19" ><a href="https://d-themes.com/wordpress/udesign/photography/"><span>Home</span></a></li>
+<li id="menu-item-1337" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1337" ><a href="https://d-themes.com/wordpress/udesign/photography/portfolio/"><span>Portfolio</span></a>
+<ul class="megamenu mp-left" style="width: 467px;">
+	<li id="menu-item-1050" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1050" ><a href="#" class="nolink menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1052"><span>Portfolio Layouts</span></a>
+		<ul>
+			<li id="menu-item-1053" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1053" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/grid-2-columns/"><span>Grid 2 Columns</span></a></li>
+			<li id="menu-item-1054" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1054" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/grid-3-columns/"><span>Grid 3 Columns</span></a></li>
+			<li id="menu-item-1055" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1055" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/grid-4-columns/"><span>Grid 4 Columns</span></a></li>
+			<li id="menu-item-1056" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1056" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/grid-6-columns/"><span>Grid 6 Columns</span></a></li>
+			<li id="menu-item-1057" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1057" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/masonry-2-columns/"><span>Masonry 2 Columns</span></a></li>
+			<li id="menu-item-1058" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1058" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/masonry-3-columns/"><span>Masonry 3 Columns</span></a></li>
+			<li id="menu-item-1059" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1059" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/masonry-4-columns/"><span>Masonry 4 Columns</span></a></li>
+			<li id="menu-item-1060" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1060" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/masonry-6-columns/"><span>Masonry 6 Columns</span></a></li>
+
+		</ul>
+</li>
+	<li id="menu-item-1051" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1051" ><a href="#" class="nolink menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1061"><span>Single Portfolio</span></a>
+		<ul>
+			<li id="menu-item-1062" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1062" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/quisque-a-lectus/"><span>Default</span></a></li>
+			<li id="menu-item-1063" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1063" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/quisque-volutpat-mattiseros/"><span>Full Width</span></a></li>
+			<li id="menu-item-1064" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1064" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/fusce-lacinia-arcu-etnulla/"><span>Sticky Content</span></a></li>
+			<li id="menu-item-1065" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1065" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/aliquam-tincidunt-mauris-eurisus/"><span>Slider</span></a></li>
+			<li id="menu-item-1066" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1066" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/utaliquam-sollicitudin-leo/"><span>Gallery</span></a></li>
+			<li id="menu-item-1067" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1067" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/cras-ornare-tristique-elit/"><span>Full Width Video</span></a></li>
+			<li id="menu-item-1068" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1068" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/donec-quis-dui-at-dolor/"><span>With Left Sidebar</span></a></li>
+			<li id="menu-item-1069" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1069" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/vivamus-vestibulum-ntulla/"><span>With Right Sidebar</span></a></li>
+
+		</ul>
+</li>
+
+</ul>
+</li>
+<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21" ><a href="https://d-themes.com/wordpress/udesign/photography/about-us/"><span>About Us</span></a></li>
+<li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24" ><a href="https://d-themes.com/wordpress/udesign/photography/pricing/"><span>Pricing</span></a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-9 current_page_item current_page_parent menu-item-has-children menu-item-20" ><a href="https://d-themes.com/wordpress/udesign/photography/blog/"><span>Blog</span></a>
+<ul>
+	<li id="menu-item-995" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-995" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/classic/"><span>Classic</span></a></li>
+	<li id="menu-item-996" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-996" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/grid/"><span>Grid</span></a></li>
+	<li id="menu-item-997" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-997" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/masonry/"><span>Masonry</span></a></li>
+	<li id="menu-item-998" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-998" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/timeline/"><span>Timeline</span></a></li>
+	<li id="menu-item-999" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-999" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/08/18/nullam-mattis-mi-at-metus-egestas/"><span>Single Post</span></a>
+	<ul>
+		<li id="menu-item-1000" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1000" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/09/25/nam-nec-telodio-tinci-dunt-auctor/" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1000"><span>Full Width</span></a></li>
+		<li id="menu-item-1001" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1001" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/08/31/aliquam-tincidunt-mauris/" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1001"><span>Left Sidebar</span></a></li>
+		<li id="menu-item-1002" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1002" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/08/18/nullam-mattis-mi-at-metus-egestas/" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1002"><span>Right Sidebar</span></a></li>
+
+	</ul>
+</li>
+
+</ul>
+</li>
+<li id="menu-item-1283" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1283" ><a href="https://d-themes.com/wordpress/udesign/elements/"><span>Elements</span></a></li>
+</ul></nav>		</div>
+				</div>
+				<div class="elementor-element elementor-element-4bcec11 cs-search elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-udesign_widget_search" data-id="4bcec11" data-element_type="widget" data-widget_type="udesign_widget_search.default">
+				<div class="elementor-widget-container">
+			
+	<div class="search-wrapper  hs-toggle hs-dropdown hs-right light-style">
+							<a href="#" class="search-toggle" aria-label="Search">
+			<i class="a-icon-search"></i>
+									<span>Search</span>
+					</a>
+		
+							<form action="https://d-themes.com/wordpress/udesign/photography/" method="get" class="input-wrapper">
+			<input type="hidden" name="post_type" value=""/>
+
+			<input type="search" aria-label="Search" class="form-control" name="s" placeholder="Search in..." required="" autocomplete="off">
+
+									<div class="live-search-list"></div>
+			
+			<button class="btn btn-search" aria-label="Search Button" type="submit">
+				<i class="a-icon-search"></i>
+			</button>
+
+					
+		</form>
+						</div>
+
+							</div>
+				</div>
+				<div class="elementor-element elementor-element-792990f ml-auto ml-lg-0 d-none-sm-max elementor-widget elementor-widget-udesign_widget_button" data-id="792990f" data-element_type="widget" data-widget_type="udesign_widget_button.default">
+				<div class="elementor-widget-container">
+			<a class="btn btn-outline btn-md btn-rounded btn-primary" href="https://d-themes.com/wordpress/udesign/photography/contact-us/" ><span >Contact Us</span></a>		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div></header><div class="alpha-block elementor elementor-515" data-block-id="515">		<div data-elementor-type="wp-post" data-elementor-id="515" class="elementor elementor-515" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" elementor-section elementor-top-section elementor-element elementor-element-550bcd2 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-lazy="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/bg-3.jpg" data-id="550bcd2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0c302f3 elementor-invisible " data-id="0c302f3" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
+			
+			<div data-lazy="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/bg-3.jpg" style="background: #f4f4f4;" class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7d89ad4 elementor-invisible elementor-widget elementor-widget-heading" data-id="7d89ad4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUpShorter&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Blog</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-907fe59 elementor-invisible elementor-widget elementor-widget-udesign_widget_breadcrumb" data-id="907fe59" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUpShorter&quot;}" data-widget_type="udesign_widget_breadcrumb.default">
+				<div class="elementor-widget-container">
+			<ul class="breadcrumb"><li><a href="https://d-themes.com/wordpress/udesign/photography">Home</a></li><li class="delimiter">/</li><li>Blog</li></ul><script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Home","@id":"https:\/\/d-themes.com\/wordpress\/udesign\/photography"}},{"@type":"ListItem","position":2,"item":{"name":"Blog","@id":"https:\/\/d-themes.com\/wordpress\/udesign\/photography\/blog\/"}}]}</script>		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div>
+			
+			<main id="main" class="main">
+	<div class="page-content">
+		<div class="container"><div class="main-content-wrap row gutter-lg">
+<aside class="sidebar sidebar-fixed sidebar-side right-sidebar" id="blog-sidebar">
+
+	<div class="sidebar-overlay"></div>
+	<a class="sidebar-close" href="#"><i class="close-icon"></i></a>
+
+	
+		<a href="#" class="sidebar-toggle"><i class="fas fa-chevron-left"></i></a>
+		<div class="sidebar-content">
+			
+			<div class="sticky-sidebar">
+				<nav id="block-11" class="widget widget_block">
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<h2>Search Posts</h2>
+
+
+<form role="search" method="get" action="https://d-themes.com/wordpress/udesign/photography/" class="wp-block-search__button-inside wp-block-search__icon-button wp-block-search"><label for="wp-block-search__input-1" class="wp-block-search__label screen-reader-text">Search</label><div class="wp-block-search__inside-wrapper"><input type="search" id="wp-block-search__input-1" class="wp-block-search__input" name="s" value="" placeholder="Search your keyword..."  required /><button type="submit" class="wp-block-search__button has-icon"><svg id="search-icon" class="search-icon" viewBox="0 0 24 24" width="24" height="24">
+			        <path d="M13.5 6C10.5 6 8 8.5 8 11.5c0 1.1.3 2.1.9 3l-3.4 3 1 1.1 3.4-2.9c1 .9 2.2 1.4 3.6 1.4 3 0 5.5-2.5 5.5-5.5C19 8.5 16.5 6 13.5 6zm0 9.5c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"></path>
+			    </svg></button></div></form></div></div>
+</nav><nav id="block-7" class="widget widget_block">
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<h2>About Us</h2>
+
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisc glelit, sed do eiusmod tempor incididunt. ut labo et dolore magna aliqua.</p>
+</div></div>
+</nav><nav id="block-8" class="widget widget_block">
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<h2>Blog Categories</h2>
+
+
+<ul class="wp-block-categories-list wp-block-categories">	<li class="cat-item cat-item-14"><a href="https://d-themes.com/wordpress/udesign/photography/category/accessories/">Accessories</a> (3)
+</li>
+	<li class="cat-item cat-item-3"><a href="https://d-themes.com/wordpress/udesign/photography/category/fashion/">Fashion</a> (3)
+</li>
+	<li class="cat-item cat-item-5"><a href="https://d-themes.com/wordpress/udesign/photography/category/planting/">Planting</a> (3)
+</li>
+</ul></div></div>
+</nav><nav id="posts-widget-2" class="widget widget-posts"><h3 class="widget-title"><span class="wt-area">Recent Posts</span></h3><div><div><div class="slider-wrapper post-sidebar-widget posts  row cols-lg-1" data-slider-options="{&quot;spaceBetween&quot;:30,&quot;navigation&quot;:true,&quot;slidesPerView&quot;:1,&quot;breakpoints&quot;:{&quot;992&quot;:{&quot;slidesPerView&quot;:1},&quot;768&quot;:{&quot;slidesPerView&quot;:1},&quot;576&quot;:{&quot;slidesPerView&quot;:1},&quot;0&quot;:{&quot;slidesPerView&quot;:1,&quot;spaceBetween&quot;:20},&quot;480&quot;:{&quot;slidesPerView&quot;:1,&quot;spaceBetween&quot;:30}},&quot;statusClass&quot;:&quot;slider-nav-top slider-dots-default&quot;}" data-load="{&quot;props&quot;:&quot;&quot;,&quot;args&quot;:{&quot;cpt&quot;:&quot;post&quot;,&quot;blog&quot;:false},&quot;max&quot;:3}" data-post-type="widget"><div class="post-col">
+<div class="post-wrap " data-post-image="thumbnail">
+		<article class="post-268 post type-post status-publish format-standard has-post-thumbnail hentry category-fashion tag-fashion post  post-widget">
+					<figure class="post-media">
+				<a href="https://d-themes.com/wordpress/udesign/photography/2021/10/20/i-am-surprised-at-the-drawing-of-uphoto-studio/">
+					<img style="padding-top : 100%;" width="150" height="150" src="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/blog-34-150x150.jpg" class="d-lazyload attachment-thumbnail size-thumbnail wp-post-image" alt="Post Image" />				</a>
+			</figure>
+			<div class="post-details">
+	<a class="post-date" href="https://d-themes.com/wordpress/udesign/photography/2021/10/20/">
+	20 October 2021</a>
+<h3 class="post-title">
+	<a href="https://d-themes.com/wordpress/udesign/photography/2021/10/20/i-am-surprised-at-the-drawing-of-uphoto-studio/">
+		I&#8217;m surprised at the drawing of UPhoto Studio	</a>
+</h3>
+<span class="post-author">
+	by <a href="https://d-themes.com/wordpress/udesign/photography/author/udesignadmin/" title="Posts by John Doe" rel="author">John Doe</a></span>
+</div>
+	</article>
+	</div>
+
+
+<div class="post-wrap " data-post-image="thumbnail">
+		<article class="post-273 post type-post status-publish format-standard has-post-thumbnail hentry category-planting tag-planting post  post-widget">
+					<figure class="post-media">
+				<a href="https://d-themes.com/wordpress/udesign/photography/2021/10/20/i-have-never-seen-like-uphoto-studio-until-now/">
+					<img style="padding-top : 100%;" width="150" height="150" src="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/blog-35-150x150.jpg" class="d-lazyload attachment-thumbnail size-thumbnail wp-post-image" alt="Post Image" />				</a>
+			</figure>
+			<div class="post-details">
+	<a class="post-date" href="https://d-themes.com/wordpress/udesign/photography/2021/10/20/">
+	20 October 2021</a>
+<h3 class="post-title">
+	<a href="https://d-themes.com/wordpress/udesign/photography/2021/10/20/i-have-never-seen-like-uphoto-studio-until-now/">
+		I have never seen like UPhoto Studio until now	</a>
+</h3>
+<span class="post-author">
+	by <a href="https://d-themes.com/wordpress/udesign/photography/author/udesignadmin/" title="Posts by John Doe" rel="author">John Doe</a></span>
+</div>
+	</article>
+	</div>
+
+
+<div class="post-wrap " data-post-image="thumbnail">
+		<article class="post-275 post type-post status-publish format-standard has-post-thumbnail hentry category-fashion tag-fashion post  post-widget">
+					<figure class="post-media">
+				<a href="https://d-themes.com/wordpress/udesign/photography/2021/10/20/to-the-last-i-find-my-true-feature-by-uphoto/">
+					<img style="padding-top : 100%;" width="150" height="150" src="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/blog-36-150x150.jpg" class="d-lazyload attachment-thumbnail size-thumbnail wp-post-image" alt="Post Image" />				</a>
+			</figure>
+			<div class="post-details">
+	<a class="post-date" href="https://d-themes.com/wordpress/udesign/photography/2021/10/20/">
+	20 October 2021</a>
+<h3 class="post-title">
+	<a href="https://d-themes.com/wordpress/udesign/photography/2021/10/20/to-the-last-i-find-my-true-feature-by-uphoto/">
+		To the last I find my true feature by UPhoto	</a>
+</h3>
+<span class="post-author">
+	by <a href="https://d-themes.com/wordpress/udesign/photography/author/udesignadmin/" title="Posts by John Doe" rel="author">John Doe</a></span>
+</div>
+	</article>
+	</div>
+
+</div><div class="post-col">
+<div class="post-wrap " data-post-image="thumbnail">
+		<article class="post-1088 post type-post status-publish format-standard has-post-thumbnail hentry category-planting tag-planting post  post-widget">
+					<figure class="post-media">
+				<a href="https://d-themes.com/wordpress/udesign/photography/2021/11/16/fusce-lacinia-arcuet-nulla/">
+					<img style="padding-top : 100%;" width="150" height="150" src="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/11/blog-17-150x150.jpg" class="d-lazyload attachment-thumbnail size-thumbnail wp-post-image" alt="Post Image" />				</a>
+			</figure>
+			<div class="post-details">
+	<a class="post-date" href="https://d-themes.com/wordpress/udesign/photography/2021/11/16/">
+	16 November 2021</a>
+<h3 class="post-title">
+	<a href="https://d-themes.com/wordpress/udesign/photography/2021/11/16/fusce-lacinia-arcuet-nulla/">
+		Fusce lacinia arcuet nulla	</a>
+</h3>
+<span class="post-author">
+	by <a href="https://d-themes.com/wordpress/udesign/photography/author/udesignadmin/" title="Posts by John Doe" rel="author">John Doe</a></span>
+</div>
+	</article>
+	</div>
+
+
+<div class="post-wrap " data-post-image="thumbnail">
+		<article class="post-1091 post type-post status-publish format-standard has-post-thumbnail hentry category-planting tag-planting post  post-widget">
+					<figure class="post-media">
+				<a href="https://d-themes.com/wordpress/udesign/photography/2021/11/16/cras-ornare-tristique-elit/">
+					<img style="padding-top : 100%;" width="150" height="150" src="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/11/blog-16-150x150.jpg" class="d-lazyload attachment-thumbnail size-thumbnail wp-post-image" alt="Portfolio Image" />				</a>
+			</figure>
+			<div class="post-details">
+	<a class="post-date" href="https://d-themes.com/wordpress/udesign/photography/2021/11/16/">
+	16 November 2021</a>
+<h3 class="post-title">
+	<a href="https://d-themes.com/wordpress/udesign/photography/2021/11/16/cras-ornare-tristique-elit/">
+		Cras ornare tristique elit	</a>
+</h3>
+<span class="post-author">
+	by <a href="https://d-themes.com/wordpress/udesign/photography/author/udesignadmin/" title="Posts by John Doe" rel="author">John Doe</a></span>
+</div>
+	</article>
+	</div>
+
+
+<div class="post-wrap " data-post-image="thumbnail">
+		<article class="post-1094 post type-post status-publish format-standard has-post-thumbnail hentry category-fashion tag-fashion post  post-widget">
+					<figure class="post-media">
+				<a href="https://d-themes.com/wordpress/udesign/photography/2021/11/16/lorem-ipusom-ut-aliquam-massa-auctor/">
+					<img style="padding-top : 100%;" width="150" height="150" src="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/11/blog-14-150x150.jpg" class="d-lazyload attachment-thumbnail size-thumbnail wp-post-image" alt="Post Image" />				</a>
+			</figure>
+			<div class="post-details">
+	<a class="post-date" href="https://d-themes.com/wordpress/udesign/photography/2021/11/16/">
+	16 November 2021</a>
+<h3 class="post-title">
+	<a href="https://d-themes.com/wordpress/udesign/photography/2021/11/16/lorem-ipusom-ut-aliquam-massa-auctor/">
+		Lorem Ipusom ut aliquam massa auctor	</a>
+</h3>
+<span class="post-author">
+	by <a href="https://d-themes.com/wordpress/udesign/photography/author/udesignadmin/" title="Posts by John Doe" rel="author">John Doe</a></span>
+</div>
+	</article>
+	</div>
+
+</div></div></div></div></nav><nav id="block-9" class="widget widget_block">
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<h2>Recent Comments</h2>
+
+
+<ol class="wp-block-latest-comments"><li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><a class="wp-block-latest-comments__comment-author" href="https://d-themes.com/wordpress/udesign">John Doe</a> on <a class="wp-block-latest-comments__comment-link" href="https://d-themes.com/wordpress/udesign/photography/2021/10/20/i-am-surprised-at-the-drawing-of-uphoto-studio/#comment-4">I&#8217;m surprised at the drawing of UPhoto Studio</a></footer></article></li><li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><a class="wp-block-latest-comments__comment-author" href="https://d-themes.com/wordpress/udesign">John Doe</a> on <a class="wp-block-latest-comments__comment-link" href="https://d-themes.com/wordpress/udesign/photography/2021/10/20/i-have-never-seen-like-uphoto-studio-until-now/#comment-3">I have never seen like UPhoto Studio until now</a></footer></article></li><li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><a class="wp-block-latest-comments__comment-author" href="https://d-themes.com/wordpress/udesign">John Doe</a> on <a class="wp-block-latest-comments__comment-link" href="https://d-themes.com/wordpress/udesign/photography/2021/10/20/to-the-last-i-find-my-true-feature-by-uphoto/#comment-2">To the last I find my true feature by UPhoto</a></footer></article></li></ol></div></div>
+</nav><nav id="block-10" class="widget widget_block">
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<h2>Tags</h2>
+
+
+<p class="wp-block-tag-cloud"><a href="https://d-themes.com/wordpress/udesign/photography/tag/accessories/" class="tag-cloud-link tag-link-15 tag-link-position-1" style="font-size: 8pt;" aria-label="Accessories (3 items)">Accessories</a>
+<a href="https://d-themes.com/wordpress/udesign/photography/tag/fashion/" class="tag-cloud-link tag-link-4 tag-link-position-2" style="font-size: 8pt;" aria-label="Fashion (3 items)">Fashion</a>
+<a href="https://d-themes.com/wordpress/udesign/photography/tag/planting/" class="tag-cloud-link tag-link-6 tag-link-position-3" style="font-size: 8pt;" aria-label="Planting (3 items)">Planting</a></p></div></div>
+</nav>			</div>
+
+			
+		</div>
+
+	</aside>
+<div class="main-content">	<div class="post-archive">
+		<div class="posts  row cols-lg-1 cols-md-1 cols-sm-1 cols-1" data-load="{&quot;props&quot;:&quot;&quot;,&quot;args&quot;:{&quot;cpt&quot;:&quot;post&quot;,&quot;blog&quot;:true},&quot;max&quot;:3}" data-post-type="intro">
+<div class="post-wrap " data-post-image="full">
+		<article class="post-1505 post type-post status-publish format-standard has-post-thumbnail hentry category-accessories tag-accessories post post-lg overlay-zoom  post-intro">
+					<figure class="post-media">
+				<a href="https://d-themes.com/wordpress/udesign/photography/2021/12/20/pulvinar-nunc-sapien-ornare/">
+					<img style="padding-top : 51.22%;" width="1230" height="630" src="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/12/blog-18.jpg" class="d-lazyload attachment-full size-full wp-post-image" alt="Post Image" srcset="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/12/blog-18.jpg 1230w, https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/12/blog-18-300x154.jpg 300w, https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/12/blog-18-1024x524.jpg 1024w, https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/12/blog-18-768x393.jpg 768w, https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/12/blog-18-150x77.jpg 150w"  data-sizes="(max-width: 1230px) 100vw, 1230px" />				</a>
+			</figure>
+				<div class="post-cats-date">
+		<a href="https://d-themes.com/wordpress/udesign/photography/2021/12/20/">20 December 2021</a> in <a href="https://d-themes.com/wordpress/udesign/photography/category/accessories/" rel="category tag">Accessories</a>	</div>
+	<div class="post-details">
+	<h3 class="post-title">
+	<a href="https://d-themes.com/wordpress/udesign/photography/2021/12/20/pulvinar-nunc-sapien-ornare/">
+		Pulvinar nunc sapien ornare	</a>
+</h3>
+<div class="post-meta"><span class="post-author"><a href="https://d-themes.com/wordpress/udesign/photography/author/udesignadmin/" title="Posts by John Doe" rel="author">John Doe</a></span>	<a href="#" class="vote-link like" data-count="0" data-id="1505"><span class="like-count">0</span> Like Post</a>
+	<a href="https://d-themes.com/wordpress/udesign/photography/2021/12/20/pulvinar-nunc-sapien-ornare/#respond" class="comments-link scroll-to local" ><mark>0</mark> Comment</a></div><div class="post-content">
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollici ...</p></div>
+<a href="https://d-themes.com/wordpress/udesign/photography/2021/12/20/pulvinar-nunc-sapien-ornare/" class="btn btn-dark btn-outline btn-md">Read More <i class="a-icon-long-arrow-right"></i></a></div>
+	</article>
+	</div>
+
+
+<div class="post-wrap " data-post-image="full">
+		<article class="post-1502 post type-post status-publish format-standard has-post-thumbnail hentry category-accessories tag-accessories post post-lg overlay-zoom  post-intro">
+					<figure class="post-media">
+				<a href="https://d-themes.com/wordpress/udesign/photography/2021/12/20/ante-et-vulputate-volutpat/">
+					<img style="padding-top : 51.22%;" width="1230" height="630" src="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/12/blog-3.jpg" class="d-lazyload attachment-full size-full wp-post-image" alt="Post Image" srcset="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/12/blog-3.jpg 1230w, https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/12/blog-3-300x154.jpg 300w, https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/12/blog-3-1024x524.jpg 1024w, https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/12/blog-3-768x393.jpg 768w, https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/12/blog-3-150x77.jpg 150w"  data-sizes="(max-width: 1230px) 100vw, 1230px" />				</a>
+			</figure>
+				<div class="post-cats-date">
+		<a href="https://d-themes.com/wordpress/udesign/photography/2021/12/20/">20 December 2021</a> in <a href="https://d-themes.com/wordpress/udesign/photography/category/accessories/" rel="category tag">Accessories</a>	</div>
+	<div class="post-details">
+	<h3 class="post-title">
+	<a href="https://d-themes.com/wordpress/udesign/photography/2021/12/20/ante-et-vulputate-volutpat/">
+		Ante et vulputate volutpat	</a>
+</h3>
+<div class="post-meta"><span class="post-author"><a href="https://d-themes.com/wordpress/udesign/photography/author/udesignadmin/" title="Posts by John Doe" rel="author">John Doe</a></span>	<a href="#" class="vote-link like" data-count="0" data-id="1502"><span class="like-count">0</span> Like Post</a>
+	<a href="https://d-themes.com/wordpress/udesign/photography/2021/12/20/ante-et-vulputate-volutpat/#respond" class="comments-link scroll-to local" ><mark>0</mark> Comment</a></div><div class="post-content">
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollici ...</p></div>
+<a href="https://d-themes.com/wordpress/udesign/photography/2021/12/20/ante-et-vulputate-volutpat/" class="btn btn-dark btn-outline btn-md">Read More <i class="a-icon-long-arrow-right"></i></a></div>
+	</article>
+	</div>
+
+
+<div class="post-wrap " data-post-image="full">
+		<article class="post-1499 post type-post status-publish format-standard has-post-thumbnail hentry category-accessories tag-accessories post post-lg overlay-zoom  post-intro">
+					<figure class="post-media">
+				<a href="https://d-themes.com/wordpress/udesign/photography/2021/12/20/eros-pede-semper-est/">
+					<img style="padding-top : 51.22%;" width="1230" height="630" src="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/12/blog-19.jpg" class="d-lazyload attachment-full size-full wp-post-image" alt="Post Image" srcset="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/12/blog-19.jpg 1230w, https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/12/blog-19-300x154.jpg 300w, https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/12/blog-19-1024x524.jpg 1024w, https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/12/blog-19-768x393.jpg 768w, https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/12/blog-19-150x77.jpg 150w"  data-sizes="(max-width: 1230px) 100vw, 1230px" />				</a>
+			</figure>
+				<div class="post-cats-date">
+		<a href="https://d-themes.com/wordpress/udesign/photography/2021/12/20/">20 December 2021</a> in <a href="https://d-themes.com/wordpress/udesign/photography/category/accessories/" rel="category tag">Accessories</a>	</div>
+	<div class="post-details">
+	<h3 class="post-title">
+	<a href="https://d-themes.com/wordpress/udesign/photography/2021/12/20/eros-pede-semper-est/">
+		Eros pede semper est	</a>
+</h3>
+<div class="post-meta"><span class="post-author"><a href="https://d-themes.com/wordpress/udesign/photography/author/udesignadmin/" title="Posts by John Doe" rel="author">John Doe</a></span>	<a href="#" class="vote-link like" data-count="0" data-id="1499"><span class="like-count">0</span> Like Post</a>
+	<a href="https://d-themes.com/wordpress/udesign/photography/2021/12/20/eros-pede-semper-est/#respond" class="comments-link scroll-to local" ><mark>0</mark> Comment</a></div><div class="post-content">
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollici ...</p></div>
+<a href="https://d-themes.com/wordpress/udesign/photography/2021/12/20/eros-pede-semper-est/" class="btn btn-dark btn-outline btn-md">Read More <i class="a-icon-long-arrow-right"></i></a></div>
+	</article>
+	</div>
+
+</div><div class="pagination pagination-load"><span class="prev page-numbers disabled"><i class="a-icon-long-arrow-left"></i> Prev</span><span aria-current="page" class="page-numbers current">1</span><a class="page-numbers" href="https://d-themes.com/wordpress/udesign/photography/blog/page/2/">2</a><a class="page-numbers" href="https://d-themes.com/wordpress/udesign/photography/blog/page/3/">3</a><a class="next page-numbers" href="https://d-themes.com/wordpress/udesign/photography/blog/page/2/">Next <i class="a-icon-long-arrow-right"></i></a></div>	</div>
+	</div></div></div>	</div>
+				</main>
+
+			
+							<footer class="footer custom-footer footer-319" id="footer">
+						<div class="alpha-block elementor elementor-319" data-block-id="319">		<div data-elementor-type="wp-post" data-elementor-id="319" class="elementor elementor-319" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" elementor-section elementor-top-section elementor-element elementor-element-fd20305 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fd20305" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-c27b994 mb-2 " data-id="c27b994" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-cae6c3e mb-5 elementor-widget elementor-widget-heading" data-id="cae6c3e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">About us</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-78d276e elementor-widget elementor-widget-heading" data-id="78d276e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin<br>
+Lorem quisbibendum auctor, nisi elit consequat ipsum,nec sagittis sem nibh id elit. Duis sed odio sit amet nibh.</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-87e1bc6 elementor-widget elementor-widget-udesign_widget_share" data-id="87e1bc6" data-element_type="widget" data-widget_type="udesign_widget_share.default">
+				<div class="elementor-widget-container">
+			
+<div class="social-icons">
+	<a href="#" class="social-icon stacked use-hover social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-icon stacked use-hover social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a><a href="#" class="social-icon stacked use-hover social-linkedin" target="_blank" title="linkedin" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></div>
+
+		</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-ed95362 pl-xl-5 mb-2 " data-id="ed95362" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-ed4c990 mb-5 elementor-widget elementor-widget-heading" data-id="ed4c990" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Find us here</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-12a3062 elementor-widget elementor-widget-text-editor" data-id="12a3062" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<div class="address">123 Street Name, City. First
+Avenue California</div>
+<label class="text-white">Tel:</label> <a href="tel:000123456789">+000 123-456-789</a>
+<br>
+<label class="text-white">Fax:</label> <a href="fax:000123456789">+000 123-456-789</a>						</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-4608f97 mb-2 " data-id="4608f97" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-596bbe1 mb-5 elementor-widget elementor-widget-heading" data-id="596bbe1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Pages</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3e6ebe4 flex-1 mr-4 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-udesign_widget_iconlist" data-id="3e6ebe4" data-element_type="widget" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items">
+			<li class="elementor-icon-list-item">
+			<a href="https://d-themes.com/wordpress/udesign/photography/about-us/">			<span class="elementor-icon-list-text">About Us</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Order History</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Returns</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Custom Serivce</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Terms</span>
+							</a>
+					</li>
+		</ul>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-38fb8cb elementor-widget__width-initial flex-1 elementor-widget-tablet__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-udesign_widget_iconlist" data-id="38fb8cb" data-element_type="widget" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items">
+			<li class="elementor-icon-list-item">
+			<a href="https://d-themes.com/wordpress/udesign/photography/blog/">			<span class="elementor-icon-list-text">Blog</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Services</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Events</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Videos</span>
+							</a>
+					</li>
+		</ul>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-cab8e79 mb-2 " data-id="cab8e79" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a487eaa mb-5 elementor-widget elementor-widget-heading" data-id="a487eaa" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Instagram</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-f48da93 instagram elementor-widget elementor-widget-udesign_widget_imagegallery" data-id="f48da93" data-element_type="widget" data-widget_type="udesign_widget_imagegallery.default">
+				<div class="elementor-widget-container">
+			
+<ul class="image-gallery  row cols-lg-3 cols-md-3 cols-sm-3 cols-2  gutter-md">
+	<li class="">		<figure class="grid-item image-wrap">
+			<img style="padding-top : 100%;" width="222" height="222" src="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/instagram-1.jpg" class="d-lazyload attachment-medium size-medium" alt="Instagram Image" srcset="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/instagram-1.jpg 222w, https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/instagram-1-150x150.jpg 150w"  data-sizes="(max-width: 222px) 100vw, 222px" />		</figure>
+		</li><li class="">		<figure class="grid-item image-wrap">
+			<img style="padding-top : 100%;" width="222" height="222" src="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/instagram-2.jpg" class="d-lazyload attachment-medium size-medium" alt="Instagram Image" srcset="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/instagram-2.jpg 222w, https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/instagram-2-150x150.jpg 150w"  data-sizes="(max-width: 222px) 100vw, 222px" />		</figure>
+		</li><li class="">		<figure class="grid-item image-wrap">
+			<img style="padding-top : 100%;" width="222" height="222" src="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/instagram-3.jpg" class="d-lazyload attachment-medium size-medium" alt="Instagram Image" srcset="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/instagram-3.jpg 222w, https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/instagram-3-150x150.jpg 150w"  data-sizes="(max-width: 222px) 100vw, 222px" />		</figure>
+		</li><li class="">		<figure class="grid-item image-wrap">
+			<img style="padding-top : 100%;" width="222" height="222" src="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/instagram-4.jpg" class="d-lazyload attachment-medium size-medium" alt="Instagram Image" srcset="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/instagram-4.jpg 222w, https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/instagram-4-150x150.jpg 150w"  data-sizes="(max-width: 222px) 100vw, 222px" />		</figure>
+		</li><li class="">		<figure class="grid-item image-wrap">
+			<img style="padding-top : 100%;" width="222" height="222" src="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/instagram-5.jpg" class="d-lazyload attachment-medium size-medium" alt="Instagram Image" srcset="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/instagram-5.jpg 222w, https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/instagram-5-150x150.jpg 150w"  data-sizes="(max-width: 222px) 100vw, 222px" />		</figure>
+		</li><li class="">		<figure class="grid-item image-wrap">
+			<img style="padding-top : 100%;" width="222" height="222" src="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/instagram-6.jpg" class="d-lazyload attachment-medium size-medium" alt="Instagram Image" srcset="https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/instagram-6.jpg 222w, https://d-themes.com/wordpress/udesign/photography/wp-content/uploads/sites/12/2021/10/instagram-6-150x150.jpg 150w"  data-sizes="(max-width: 222px) 100vw, 222px" />		</figure>
+		</li></ul>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class=" elementor-section elementor-top-section elementor-element elementor-element-68aac48 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="68aac48" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1726414 " data-id="1726414" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-d069955 flex-1 elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-shortcode" data-id="d069955" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode"><p class="mb-0 text-center copyright">UDesign Wordpress 
+© 2022. All Rights Reserved</p></div>
+				</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div>					</footer>
+					
+		</div>
+
+					<div class="cookies-popup">
+				<div class="cookies-popup-inner d-flex align-items-center">
+					<div class="cookies-info">
+						By browsing this website, you agree to our <a href="https://d-themes.com/wordpress/udesign/photography/privacy-policy/">privacy policy</a>.					</div>
+					<a href="#" rel="nofollow noopener" class="btn btn-sm accept-cookie-btn">I Agree</a>
+					<a href="#" class="btn close-cookie-btn decline-cookie-btn btn-close" aria-label="Close Cookie Consent"><i class="a-icon-times-solid"></i></a>
+				</div>
+			</div>
+			
+					<a id="scroll-top" class="scroll-top" href="#top" title="Top" role="button">
+				<i class="a-icon-long-arrow-up"></i>
+				<svg  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					viewBox="0 0 70 70" enable-background="new 0 0 70 70" xml:space="preserve">
+					<circle id="progress-indicator" fill="transparent" stroke="#000000" stroke-miterlimit="10" cx="35" cy="35" r="34"/>
+				</svg>
+			</a>
+		
+					<div class="mobile-menu-wrapper">
+				<div class="mobile-menu-overlay"></div>
+				<div class="mobile-menu-container" style="height: 100vh;">
+					<!-- Need to ajax load mobile menus -->
+				</div>
+				<a class="mobile-menu-close" href="#"><i class="close-icon"></i></a>
+			</div>
+		
+		
+		
+		<script type="text/javascript">
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = false;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+		<link rel='stylesheet' id='font-awesome-5-all-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.css?ver=3.4.0' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.css?ver=3.4.0' media='all' />
+<link rel='stylesheet' id='e-animations-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.4.0' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=5.8.3' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.5.11' media='all' />
+<style id='rs-plugin-settings-inline-css'>
+#rs-demo-id {}
+</style>
+<script async="async" src='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/u-design-core/framework/addons/live-search/jquery.autocomplete.min.js?ver=5.8.3' id='jquery-autocomplete-js'></script>
+<script id='alpha-framework-js-extra'>
+var alpha_vars = {"theme":"udesign","framework_icon_prefix":"a","alpha_gap":"15px","home_url":"https:\/\/d-themes.com\/wordpress\/udesign\/photography\/","ajax_url":"https:\/\/d-themes.com\/wordpress\/udesign\/photography\/wp-admin\/admin-ajax.php","nonce":"31d2430d17","lazyload":"1","container":"1290","assets_url":"https:\/\/d-themes.com\/wordpress\/udesign\/photography\/wp-content\/themes\/u-design\/assets","texts":{"loading":"Loading...","loadmore_error":"Loading failed","popup_error":"The content could not be loaded.","ribbon":"Ribbon"},"resource_async_js":"1","resource_split_tasks":"1","resource_after_load":"1","alpha_cache_key":"alpha_cache_8899a1f4a78808e0636f530ecaa8a8d1","lazyload_menu":"","countdown":{"labels":["Years","Months","Weeks","Days","Hours","Minutes","Seconds"],"labels_short":["Years","Months","Weeks","Days","Hrs","Mins","Secs"],"label1":["Year","Month","Week","Day","Hour","Minute","Second"],"label1_short":["Year","Month","Week","Day","Hour","Min","Sec"]},"placeholder_img":"https:\/\/d-themes.com\/wordpress\/udesign\/photography\/wp-content\/themes\/u-design\/assets\/images\/placeholders\/post-placeholder.jpg","placeholder_alt":"UDesign Placeholder","placeholder_width":"730","placeholder_height":"570","search_result":"There are no results.","cookie_version":"1"};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/framework/assets/js/framework.js?ver=4.0.0' id='alpha-framework-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/framework/assets/js/framework-async.js?ver=4.0.0' id='alpha-framework-async-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/js/theme.js?ver=4.0.0' id='alpha-theme-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/u-design-core/framework/addons/gdpr/gdpr.js?ver=4.0.0' id='alpha-gdpr-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/u-design-core/inc/cpt/post_types/member/assets/member.js?ver=4.0.0' id='alpha-member-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/assets/vendor/jquery.magnific-popup/jquery.magnific-popup.js?ver=1.1.0' id='jquery-magnific-popup-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-includes/js/wp-embed.js?ver=5.8.3' id='wp-embed-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/u-design-core/framework/addons/lazyload-images/lazyload.js?ver=5.8.3' id='lazyload-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-content/themes/u-design/framework/assets/js/sticky.js?ver=4.0.0' id='alpha-sticky-lib-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/elementor/assets/lib/swiper/swiper.js?ver=5.3.6' id='swiper-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/u-design-core/inc/addons/post-like/post-like.js?ver=4.0.0' id='alpha-post-like-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.js?ver=3.4.0' id='font-awesome-4-shim-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/elementor/assets/js/webpack.runtime.js?ver=3.4.0' id='elementor-webpack-runtime-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/elementor/assets/js/frontend-modules.js?ver=3.4.0' id='elementor-frontend-modules-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-includes/js/jquery/ui/core.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/elementor/assets/lib/share-link/share-link.js?ver=3.4.0' id='share-link-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/elementor/assets/lib/dialog/dialog.js?ver=4.8.1' id='elementor-dialog-js'></script>
+<script id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":true},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":992,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":991,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.4.0","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"landing-pages":true,"elements-color-picker":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/d-themes.com\/wordpress\/udesign\/photography\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"editorPreferences":[]},"kit":{"viewport_tablet":991,"active_breakpoints":["viewport_mobile","viewport_tablet"],"lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":0,"title":"Blog &#8211; U-Photography","excerpt":""}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":true},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":992,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":991,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.4.0","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"landing-pages":true,"elements-color-picker":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/d-themes.com\/wordpress\/udesign\/photography\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"editorPreferences":[]},"kit":{"viewport_tablet":991,"active_breakpoints":["viewport_mobile","viewport_tablet"],"lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":0,"title":"Blog &#8211; U-Photography","excerpt":""}};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/elementor/assets/js/frontend.js?ver=3.4.0' id='elementor-frontend-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/elementor/assets/js/preloaded-modules.js?ver=3.4.0' id='preloaded-modules-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-includes/js/underscore.min.js?ver=1.13.1' id='underscore-js'></script>
+<script id='wp-util-js-extra'>
+var _wpUtilSettings = {"ajax":{"url":"\/wordpress\/udesign\/photography\/wp-admin\/admin-ajax.php"}};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-includes/js/wp-util.js?ver=5.8.3' id='wp-util-js'></script>
+<script id='wpforms-elementor-js-extra'>
+var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/photography/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.6.9' id='wpforms-elementor-js'></script>
+	</body>
+</html>

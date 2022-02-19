@@ -1,0 +1,986 @@
+
+<!DOCTYPE html>
+	<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+		
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<link rel="pingback" href="https://d-themes.com/wordpress/udesign/clean-home/xmlrpc.php" />
+
+		<link rel="shortcut icon" href="https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/assets/images/favicon.png" type="image/x-icon" />
+		
+		<title>Product Cleaning &#8211; U-Clean Home</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="U-Clean Home &raquo; Feed" href="https://d-themes.com/wordpress/udesign/clean-home/feed/" />
+<link rel="alternate" type="application/rss+xml" title="U-Clean Home &raquo; Comments Feed" href="https://d-themes.com/wordpress/udesign/clean-home/comments/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-includes/css/dist/block-library/style.css?ver=5.8.3' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+#start-resizable-editor-section {
+  display: none;
+}
+
+.wp-block-audio figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-audio figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-code {
+  font-family: Menlo, Consolas, monaco, monospace;
+  color: #1e1e1e;
+  padding: 0.8em 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.wp-block-embed figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-embed figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.blocks-gallery-caption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .blocks-gallery-caption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-image figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-image figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-pullquote {
+  border-top: 4px solid currentColor;
+  border-bottom: 4px solid currentColor;
+  margin-bottom: 1.75em;
+  color: currentColor;
+}
+.wp-block-pullquote cite,
+.wp-block-pullquote footer, .wp-block-pullquote__citation {
+  color: currentColor;
+  text-transform: uppercase;
+  font-size: 0.8125em;
+  font-style: normal;
+}
+
+.wp-block-quote {
+  border-left: 0.25em solid currentColor;
+  margin: 0 0 1.75em 0;
+  padding-left: 1em;
+}
+.wp-block-quote cite,
+.wp-block-quote footer {
+  color: currentColor;
+  font-size: 0.8125em;
+  position: relative;
+  font-style: normal;
+}
+.wp-block-quote.has-text-align-right {
+  border-left: none;
+  border-right: 0.25em solid currentColor;
+  padding-left: 0;
+  padding-right: 1em;
+}
+.wp-block-quote.has-text-align-center {
+  border: none;
+  padding-left: 0;
+}
+.wp-block-quote.is-style-large, .wp-block-quote.is-large {
+  border: none;
+}
+
+.wp-block-search .wp-block-search__label {
+  font-weight: bold;
+}
+
+.wp-block-group.has-background {
+  padding: 1.25em 2.375em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.wp-block-separator {
+  border: none;
+  border-bottom: 2px solid currentColor;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.4;
+}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+  width: 100px;
+}
+.wp-block-separator.has-background:not(.is-style-dots) {
+  border-bottom: none;
+  height: 1px;
+}
+.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+  height: 2px;
+}
+
+.wp-block-table thead {
+  border-bottom: 3px solid;
+}
+.wp-block-table tfoot {
+  border-top: 3px solid;
+}
+.wp-block-table td,
+.wp-block-table th {
+  padding: 0.5em;
+  border: 1px solid;
+  word-break: normal;
+}
+.wp-block-table figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-table figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-video figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-video figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-template-part.has-background {
+  padding: 1.25em 2.375em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#end-resizable-editor-section {
+  display: none;
+}
+</style>
+<link rel='stylesheet' id='alpha-gdpr-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/u-design-core/framework/addons/gdpr/gdpr.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.css?ver=5.12.0' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/elementor/css/custom-frontend.css?ver=1641542714' media='all' />
+<style id='elementor-frontend-inline-css'>
+@font-face{font-family:eicons;src:url(https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0);src:url(https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0#iefix) format("embedded-opentype"),url(https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0) format("woff2"),url(https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.10.0) format("woff"),url(https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.10.0) format("truetype"),url(https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.10.0#eicon) format("svg");font-weight:400;font-style:normal}
+</style>
+<link rel='stylesheet' id='alpha-core-framework-style-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/u-design-core/assets/css/framework.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='fontawesome-free-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/assets/vendor/fontawesome-free/css/all.min.css?ver=5.14.0' media='all' />
+<link rel='stylesheet' id='alpha-icons-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/assets/vendor/alpha-icons/css/icons.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='theme-icons-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/assets/vendor/udesign-icons/css/icons.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='animate-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/assets/vendor/animate/animate.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/assets/vendor/jquery.magnific-popup/magnific-popup.min.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='elementor-post-3-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/elementor/css/post-3.css?ver=1641542703' media='all' />
+<link rel='stylesheet' id='alpha-theme-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/assets/css/theme.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-dynamic-vars-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/udesign_styles/dynamic_css_vars.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C500%2C600%2C700&#038;ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-single-portfolio-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/u-design-core/inc/cpt/post_types/portfolio/assets/single-portfolio.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-portfolio-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/u-design-core/inc/cpt/post_types/portfolio/assets/portfolio.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-member-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/u-design-core/inc/cpt/post_types/member/assets/member.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-elementor-style-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/u-design-core/framework/plugins/elementor/assets/elementor.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-elementor-extend-style-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/u-design-core/inc/plugins/elementor/assets/elementor-extend.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='elementor-post-18-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/elementor/css/post-18.css?ver=5.8.3' media='all' />
+<style id='elementor-post-18-inline-css'>
+@media (max-width:991px){.custom-header-contact .contact-content{display:none}}@media (max-width:767px){.custom-top-list .elementor-icon-list-item .elementor-icon-list-text,.custom-account span{display:none}.custom-top-list.elementor-element .elementor-icon-list-items li.elementor-icon-list-item:not(:last-child):after{content:none}}
+</style>
+<link rel='stylesheet' id='elementor-post-747-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/elementor/css/post-747.css?ver=5.8.3' media='all' />
+<style id='elementor-post-747-inline-css'>
+.footer-newsletter input.wpcf7-form-control{background:#2c2c2c;border-color:#2c2c2c;font-size:1.2rem;color:#999}.footer-newsletter button.wpcf7-form-control{font-size:1.3rem;padding:0 2.5rem}.footer-newsletter button:after{font-family:'eicons';content:'\e8c0';font-size:1.5rem;font-weight:400;margin-left:1rem;vertical-align:-2px}.elementor-clearfix a{color:#fff}@media (max-width:991px){.custom-footer-top .elementor-column:first-child{order:-2}.custom-footer-top .elementor-column:last-child{order:-1}}
+</style>
+<link rel='stylesheet' id='elementor-post-1214-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/elementor/css/post-1214.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='elementor-post-1112-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/elementor/css/post-1112.css?ver=1643011554' media='all' />
+<link rel='stylesheet' id='alpha-style-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/style.css?ver=4.0.0' media='all' />
+<style id='alpha-style-inline-css'>
+/* Page CSS */
+main {
+    padding-top: 3rem;
+    padding-bottom: 0;
+}
+
+.custom-list .elementor-icon-list-item {
+    align-items: flex-start;
+}
+
+.custom-list .elementor-icon-list-icon {
+    margin-top: .7rem;
+}
+
+.bottom-block {
+    padding-top: 10.5rem;
+}
+</style>
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=5.8.3' media='all' />
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-includes/js/jquery/jquery.js?ver=3.6.0' id='jquery-core-js'></script>
+<link rel="https://api.w.org/" href="https://d-themes.com/wordpress/udesign/clean-home/wp-json/" /><link rel="alternate" type="application/json" href="https://d-themes.com/wordpress/udesign/clean-home/wp-json/wp/v2/pages/1112" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://d-themes.com/wordpress/udesign/clean-home/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://d-themes.com/wordpress/udesign/clean-home/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.3" />
+<link rel="canonical" href="https://d-themes.com/wordpress/udesign/clean-home/services/product-cleaning/" />
+<link rel='shortlink' href='https://d-themes.com/wordpress/udesign/clean-home/?p=1112' />
+<link rel="alternate" type="application/json+oembed" href="https://d-themes.com/wordpress/udesign/clean-home/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fd-themes.com%2Fwordpress%2Fudesign%2Fclean-home%2Fservices%2Fproduct-cleaning%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://d-themes.com/wordpress/udesign/clean-home/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fd-themes.com%2Fwordpress%2Fudesign%2Fclean-home%2Fservices%2Fproduct-cleaning%2F&#038;format=xml" />
+		<meta name="application-name" content="UDesign - MULTI-PURPOSE PREMIUM WordPress THEME">
+		<meta name="author" content="Andon">
+		<meta name="description" content="A slick, powerful and clean theme UDesign provides an intuitive set of options to help you setup your WordPress site quickly and effectively. Flexibility is key and it has been optimized for SEO and speed. It is also responsive & mobile ready should you choose that option. The UDesign theme features include: unlimited colors, widgetized home page, over 600 fonts to choose from, WooCommerce Integration, it is also translation and multilingual ready, step by step documentation, exclusive UDesign support forum and a helpful community. Always up-to-date security and many new features are constantly added as the theme evolves.">
+		<style id="kirki-inline-styles"></style>	</head>
+	<body class="page-template-default page page-id-1112 page-child parent-pageid-14 wp-custom-logo wp-embed-responsive alpha-single-page-layout alpha-rounded-skin elementor-default elementor-kit-3 elementor-page elementor-page-1112 udesign-demo">
+		
+		
+		
+		<div class="page-wrapper">
+
+			<header class="header custom-header header-18" id="header"><div class="alpha-block elementor elementor-18" data-block-id="18">		<div data-elementor-type="wp-post" data-elementor-id="18" class="elementor elementor-18" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" elementor-section elementor-top-section elementor-element elementor-element-6c69b32 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6c69b32" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-no" >
+										
+		<div class=" elementor-column elementor-col-flex-1 elementor-top-column elementor-element elementor-element-94f8532 overflow-hidden " data-id="94f8532" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-704a551 elementor-icon-list--layout-inline custom-top-list elementor-hidden-mobile elementor-list-item-link-full_width elementor-widget elementor-widget-udesign_widget_iconlist" data-id="704a551" data-element_type="widget" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items elementor-inline-items">
+			<li class="elementor-icon-list-item elementor-inline-item">
+			<a href="mailto:#" aria-label="Need Help">				<span class="elementor-icon-list-icon">
+				<i aria-hidden="true" class="  u-icon-envelop"></i>				</span>
+						<span class="elementor-icon-list-text">to@example.com</span>
+							</a>
+					</li>
+		</ul>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-8274bac elementor-hidden-mobile elementor-widget elementor-widget-udesign_header_v_divider" data-id="8274bac" data-element_type="widget" data-widget_type="udesign_header_v_divider.default">
+				<div class="elementor-widget-container">
+			<span class="divider"></span>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-b0ca7e8 welcome-msg elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-udesign_widget_iconlist" data-id="b0ca7e8" data-element_type="widget" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items">
+			<li class="elementor-icon-list-item">
+							<span class="elementor-icon-list-icon">
+				<i aria-hidden="true" class="  u-icon-clock"></i>				</span>
+						<span class="elementor-icon-list-text">Mon – Sat 8:00 – 18:00, Sunday-CLOSED</span>
+					</li>
+		</ul>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-flex-auto elementor-top-column elementor-element elementor-element-4959faf pl--lg-1 " data-id="4959faf" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5a58b07 elementor-icon-list--layout-inline custom-top-list mr-4 elementor-hidden-desktop elementor-hidden-tablet elementor-list-item-link-full_width elementor-widget elementor-widget-udesign_widget_iconlist" data-id="5a58b07" data-element_type="widget" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items elementor-inline-items">
+			<li class="elementor-icon-list-item elementor-inline-item">
+			<a href="mailto:#" aria-label="Need Help">				<span class="elementor-icon-list-icon">
+				<i aria-hidden="true" class="  u-icon-envelop"></i>				</span>
+						<span class="elementor-icon-list-text"></span>
+							</a>
+					</li>
+		</ul>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-554cedf elementor-icon-list--layout-inline custom-top-list elementor-list-item-link-full_width elementor-widget elementor-widget-udesign_widget_iconlist" data-id="554cedf" data-element_type="widget" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items elementor-inline-items">
+			<li class="elementor-icon-list-item elementor-inline-item">
+			<a href="https://d-themes.com/wordpress/udesign/clean-home/contact-us/" aria-label="Need Help">				<span class="elementor-icon-list-icon">
+				<i aria-hidden="true" class="  u-icon-exclamation"></i>				</span>
+						<span class="elementor-icon-list-text">Need Help</span>
+							</a>
+					</li>
+		</ul>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-253a312 elementor-hidden-mobile elementor-widget elementor-widget-udesign_header_v_divider" data-id="253a312" data-element_type="widget" data-widget_type="udesign_header_v_divider.default">
+				<div class="elementor-widget-container">
+			<span class="divider"></span>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-b6f31d8 custom-account elementor-widget elementor-widget-udesign_header_account" data-id="b6f31d8" data-element_type="widget" data-widget_type="udesign_header_account.default">
+				<div class="elementor-widget-container">
+			<div class="account  inline-type "><a class="login inline-type " href="https://d-themes.com/wordpress/udesign/clean-home/wp-login.php?redirect_to=https%3A%2F%2Fd-themes.com%2Fwordpress%2Fudesign%2Fclean-home" aria-label="Login"><i class="a-icon-account"></i><span>Sign In</span></a><span class="delimiter">/</span><a class="register inline-type " href="#" aria-label="Register"><span>Register</span></a></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-fbf002d elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-udesign_header_v_divider" data-id="fbf002d" data-element_type="widget" data-widget_type="udesign_header_v_divider.default">
+				<div class="elementor-widget-container">
+			<span class="divider"></span>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-bd629fe elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-udesign_widget_share" data-id="bd629fe" data-element_type="widget" data-widget_type="udesign_widget_share.default">
+				<div class="elementor-widget-container">
+			
+<div class="social-icons social-icons-separated">
+	<a href="#" class="social-icon  use-hover social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-icon  use-hover social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a><a href="#" class="social-icon  use-hover social-linkedin" target="_blank" title="linkedin" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></div>
+
+		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class=" sticky-content fix-top elementor-section elementor-top-section elementor-element elementor-element-81ab592 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="81ab592" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-no" >
+										
+		<div class=" elementor-column elementor-col-flex-1 elementor-top-column elementor-element elementor-element-ab95c87 " data-id="ab95c87" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5912d1c elementor-widget elementor-widget-udesign_header_mmenu_toggle" data-id="5912d1c" data-element_type="widget" data-widget_type="udesign_header_mmenu_toggle.default">
+				<div class="elementor-widget-container">
+			<a href="#" class="mobile-menu-toggle d-lg-none" aria-label="Mobile Menu"><i class="a-icon-hamburger"></i></a>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-49afdad mr-xl-4 mr-2 elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-udesign_header_site_logo" data-id="49afdad" data-element_type="widget" data-widget_type="udesign_header_site_logo.default">
+				<div class="elementor-widget-container">
+			
+<a href="https://d-themes.com/wordpress/udesign/clean-home/" class="logo" title="U-Clean Home - UDesign WordPress Demo Site">
+	<img width="250" height="96" src="https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/2021/09/Header_logo250x96.png" class="site-logo skip-data-lazy attachment-full size-full" alt="U-Clean Home" srcset="https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/2021/09/Header_logo250x96.png 250w, https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/2021/09/Header_logo250x96-150x58.png 150w" sizes="(max-width: 250px) 100vw, 250px" /></a>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-062373f ml-auto mr-auto elementor-hidden-desktop elementor-widget elementor-widget-udesign_header_site_logo" data-id="062373f" data-element_type="widget" data-widget_type="udesign_header_site_logo.default">
+				<div class="elementor-widget-container">
+			
+<a href="https://d-themes.com/wordpress/udesign/clean-home/" class="logo" title="U-Clean Home - UDesign WordPress Demo Site">
+	<img width="250" height="96" src="https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/2021/09/Header_logo250x96.png" class="site-logo skip-data-lazy attachment-full size-full" alt="U-Clean Home" srcset="https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/2021/09/Header_logo250x96.png 250w, https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/2021/09/Header_logo250x96-150x58.png 150w" sizes="(max-width: 250px) 100vw, 250px" /></a>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-9e068b1 elementor-hidden-tablet elementor-hidden-phone ml-auto mr-auto custom-main-menu elementor-widget elementor-widget-udesign_widget_menu" data-id="9e068b1" data-element_type="widget" data-widget_type="udesign_widget_menu.default">
+				<div class="elementor-widget-container">
+			<nav class=" main-menu"><ul id="menu-main-menu" class="menu  horizontal-menu"><li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-42" ><a href="https://d-themes.com/wordpress/udesign/clean-home/"><span>Home</span></a></li>
+<li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44" ><a href="https://d-themes.com/wordpress/udesign/clean-home/about-us/"><span>About Us</span></a></li>
+<li id="menu-item-2263" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2263" ><a href="https://d-themes.com/wordpress/udesign/clean-home/portfolio/"><span>Portfolio</span></a>
+<ul class="megamenu mp-left" style="width: 467px;">
+	<li id="menu-item-2049" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2049" ><a href="#" class="nolink menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2051"><span>Portfolio Layouts</span></a>
+		<ul>
+			<li id="menu-item-2052" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2052" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/grid-2-columns/"><span>Grid 2 Columns</span></a></li>
+			<li id="menu-item-2053" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2053" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/grid-3-columns/"><span>Grid 3 Columns</span></a></li>
+			<li id="menu-item-2054" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2054" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/grid-4-columns/"><span>Grid 4 Columns</span></a></li>
+			<li id="menu-item-2055" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2055" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/grid-6-columns/"><span>Grid 6 Columns</span></a></li>
+			<li id="menu-item-2056" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2056" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/masonry-2-columns/"><span>Masonry 2 Columns</span></a></li>
+			<li id="menu-item-2057" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2057" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/masonry-3-columns/"><span>Masonry 3 Columns</span></a></li>
+			<li id="menu-item-2058" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2058" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/masonry-4-columns/"><span>Masonry 4 Columns</span></a></li>
+			<li id="menu-item-2059" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2059" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/masonry-6-columns/"><span>Masonry 6 Columns</span></a></li>
+
+		</ul>
+</li>
+	<li id="menu-item-2050" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2050" ><a href="#" class="nolink menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2060"><span>Single Portfolio</span></a>
+		<ul>
+			<li id="menu-item-2061" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2061" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/quisque-a-lectus/"><span>Default</span></a></li>
+			<li id="menu-item-2062" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2062" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/quisque-volutpat-mattiseros/"><span>Full Width</span></a></li>
+			<li id="menu-item-2063" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2063" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/fusce-lacinia-arcu-etnulla/"><span>Sticky Content</span></a></li>
+			<li id="menu-item-2064" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2064" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/aliquam-tincidunt-mauris-eurisus/"><span>Slider</span></a></li>
+			<li id="menu-item-2065" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2065" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/utaliquam-sollicitudin-leo/"><span>Gallery</span></a></li>
+			<li id="menu-item-2066" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2066" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/cras-ornare-tristique-elit/"><span>Full Width Video</span></a></li>
+			<li id="menu-item-2067" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2067" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/donec-quis-dui-at-dolor/"><span>With Left Sidebar</span></a></li>
+			<li id="menu-item-2068" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2068" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/vivamus-vestibulum-ntulla/"><span>With Right Sidebar</span></a></li>
+
+		</ul>
+</li>
+
+</ul>
+</li>
+<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-43" ><a href="https://d-themes.com/wordpress/udesign/clean-home/news/"><span>News</span></a>
+<ul>
+	<li id="menu-item-2041" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2041" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/classic/"><span>Classic</span></a></li>
+	<li id="menu-item-2042" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2042" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/grid/"><span>Grid</span></a></li>
+	<li id="menu-item-2043" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2043" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/masonry/"><span>Masonry</span></a></li>
+	<li id="menu-item-2044" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2044" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/timeline/"><span>Timeline</span></a></li>
+	<li id="menu-item-2045" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2045" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/08/18/nullam-mattis-mi-at-metus-egestas/"><span>Single Post</span></a>
+	<ul>
+		<li id="menu-item-2046" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2046" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/09/25/nam-nec-telodio-tinci-dunt-auctor/" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-2046"><span>Full Width</span></a></li>
+		<li id="menu-item-2047" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2047" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/08/31/aliquam-tincidunt-mauris/" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-2047"><span>Left Sidebar</span></a></li>
+		<li id="menu-item-2048" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2048" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/08/18/nullam-mattis-mi-at-metus-egestas/" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-2048"><span>Right Sidebar</span></a></li>
+
+	</ul>
+</li>
+
+</ul>
+</li>
+<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-47" ><a href="https://d-themes.com/wordpress/udesign/clean-home/services/"><span>Services</span></a></li>
+</ul></nav>		</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-flex-auto elementor-top-column elementor-element elementor-element-db5d35e " data-id="db5d35e" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-37190bc custom-header-contact mr-xl-6 mr-lg-4 elementor-widget elementor-widget-udesign_widget_contact" data-id="37190bc" data-element_type="widget" data-widget_type="udesign_widget_contact.default">
+				<div class="elementor-widget-container">
+			<div class="contact">
+	<a class="d-flex" href="tel:#" aria-label="Contact">
+	<i class="mb-0 a-icon-call"></i>	</a>
+	<div class="contact-content">
+		<a href="tel:#" class="live-chat">Call us now</a> <span class="contact-delimiter"></span> <a href="tel:#" class="telephone">+(123) 456 7890</a>	</div>
+</div>
+
+
+
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-76a7096 elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-udesign_widget_button" data-id="76a7096" data-element_type="widget" data-widget_type="udesign_widget_button.default">
+				<div class="elementor-widget-container">
+			<a class="btn btn-outline btn-md btn-rounded btn-secondary ls-normal" href="https://d-themes.com/wordpress/udesign/clean-home/contact-us/" ><span >Appointment</span></a>		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div></header><div class="page-header page-header-animate">					<div class="page-title-bar">
+						<div class="page-title-wrap">
+												<h2 class="page-title">Product Cleaning</h2>
+																				</div>
+							<div class="breadcrumb-container container"><ul class="breadcrumb"><li><a href="https://d-themes.com/wordpress/udesign/clean-home">Home</a></li><li class="delimiter"><i class="a-icon-angle-right"></i></li><li><a href="https://d-themes.com/wordpress/udesign/clean-home/services/">Services</a></li><li class="delimiter"><i class="a-icon-angle-right"></i></li><li>Product Cleaning</li></ul><script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Home","@id":"https:\/\/d-themes.com\/wordpress\/udesign\/clean-home"}},{"@type":"ListItem","position":2,"item":{"name":"ancestors","@id":{"Services":"https:\/\/d-themes.com\/wordpress\/udesign\/clean-home\/services\/"}}},{"@type":"ListItem","position":3,"item":{"name":"Product Cleaning","@id":"https:\/\/d-themes.com\/wordpress\/udesign\/clean-home\/services\/product-cleaning\/"}}]}</script></div>					</div>
+											</div>
+							
+			
+			<main id="main" class="main">
+
+<div class="page-content">
+
+	<div class="container"><div class="main-content-wrap row gutter-lg">
+<aside class="sidebar sidebar-fixed sidebar-side left-sidebar" id="service-sidebar">
+
+	<div class="sidebar-overlay"></div>
+	<a class="sidebar-close" href="#"><i class="close-icon"></i></a>
+
+	
+		<a href="#" class="sidebar-toggle"><i class="fas fa-chevron-right"></i></a>
+		<div class="sidebar-content">
+			
+			<div class="sticky-sidebar">
+				<nav id="block-widget-2" class="widget widget-block"><style>.elementor-1144 .elementor-element.elementor-element-9d9b40b{margin-top:2.1rem;margin-bottom:4rem;}.elementor-element-200b1c5 .menu, .elementor-element-200b1c5 .toggle-menu{width:300px;}.elementor-element-200b1c5 .menu > li > a{font-weight:600;letter-spacing:0px;border-width:0px 0px 1px 0px;border-style:solid;color:#666666;border-color:#EBEBEB;padding:1.5rem 0rem 1.5rem 0rem;}.elementor-element-200b1c5 .menu > li:hover > a{color:#1188DD;}.elementor-element-200b1c5 .menu > .current-menu-item > a{color:#1188DD;}.elementor-element-200b1c5 .menu > li.current-menu-ancestor > a{color:#1188DD;}.elementor-1144 .elementor-element.elementor-element-200b1c5 > .elementor-widget-container{padding:1.8rem 3.1rem 1.7rem 3.1rem;border-radius:10px 10px 10px 10px;box-shadow:5px 5px 30px 0px rgba(0, 0, 0, 0.07);}.elementor-1144 .elementor-element.elementor-element-d0ea1f2:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, .elementor-1144 .elementor-element.elementor-element-d0ea1f2 > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#FFFFFF;}.elementor-1144 .elementor-element.elementor-element-d0ea1f2 > .elementor-element-populated, .elementor-1144 .elementor-element.elementor-element-d0ea1f2 > .elementor-element-populated > .elementor-background-overlay, .elementor-1144 .elementor-element.elementor-element-d0ea1f2 > .elementor-background-slideshow{border-radius:10px 10px 10px 10px;}.elementor-1144 .elementor-element.elementor-element-d0ea1f2 > .elementor-element-populated{box-shadow:5px 5px 50px 0px rgba(0, 0, 0, 0.1);transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:4rem 4rem 4rem 4rem;}.elementor-1144 .elementor-element.elementor-element-d0ea1f2 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-1144 .elementor-element.elementor-element-8285890{text-align:center;}.elementor-1144 .elementor-element.elementor-element-8285890 .elementor-heading-title{color:#777777;font-size:16px;font-weight:400;letter-spacing:0px;}.elementor-1144 .elementor-element.elementor-element-8285890 > .elementor-widget-container{margin:15px 0px 3px 0px;}.elementor-1144 .elementor-element.elementor-element-5ed6261{text-align:center;}.elementor-1144 .elementor-element.elementor-element-5ed6261 .elementor-heading-title{font-size:32px;font-weight:400;}.elementor-1144 .elementor-element.elementor-element-5ed6261 > .elementor-widget-container{margin:0rem 0rem 2.2rem 0rem;}.elementor-1144 .elementor-element.elementor-element-796b3d4 form.wpforms-form .wpforms-field input, .elementor-1144 .elementor-element.elementor-element-796b3d4 form.wpforms-form .wpforms-field select, .elementor-1144 .elementor-element.elementor-element-796b3d4 form.wpforms-form .wpforms-field textarea{color:#888888;}.elementor-element-796b3d4 .wpforms-container form.wpforms-form .wpforms-submit-container button.wpforms-submit{border-width:0px 0px 0px 0px;border-style:solid;}.elementor-element-796b3d4 .wpforms-container form.wpforms-form button.wpforms-submit{background-color:#323334;}.elementor-element-796b3d4 .wpforms-container form.wpforms-form button.wpforms-submit:hover{background-color:#434445;}@media(max-width:991px){.elementor-1144 .elementor-element.elementor-element-5ed6261 .elementor-heading-title{font-size:28px;}}</style><style id="block_1144_css">#service-sidebar .widget-block{padding:0}.child-page-menu .menu>li:last-child>a{border:none}.custom-wpforms .wpforms-container{margin-bottom:1rem}.custom-wpforms .wpforms-container .wpforms-form .wpforms-field input,.custom-wpforms .wpforms-container .wpforms-form .wpforms-field select{padding:1.5rem 1.9rem;border-color:#e1e1e1}.custom-wpforms .wpforms-container .wpforms-form .wpforms-submit-container{padding-top:1rem}.custom-wpforms .wpforms-submit-icon:after{font-size:2.1rem;vertical-align:-4px}#service-sidebar.sidebar.sidebar-side .sidebar-content .elementor{margin-bottom:1rem}</style><div class="alpha-block elementor elementor-1144" data-block-id="1144">		<div data-elementor-type="wp-post" data-elementor-id="1144" class="elementor elementor-1144" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" elementor-section elementor-top-section elementor-element elementor-element-9d9b40b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9d9b40b" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-no" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9accb5d " data-id="9accb5d" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-200b1c5 elementor-widget elementor-widget-udesign_widget_menu" data-id="200b1c5" data-element_type="widget" data-widget_type="udesign_widget_menu.default">
+				<div class="elementor-widget-container">
+			<nav class=" child-page-menu"><ul id="menu-child-page-menu" class="menu  vertical-menu"><li id="menu-item-1486" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1486" ><a href="https://d-themes.com/wordpress/udesign/clean-home/services/windows-cleaning/"><span>Windows Cleaning</span></a></li>
+<li id="menu-item-1485" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1112 current_page_item menu-item-1485" ><a href="https://d-themes.com/wordpress/udesign/clean-home/services/product-cleaning/"><span>Product Cleaning</span></a></li>
+<li id="menu-item-1484" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1484" ><a href="https://d-themes.com/wordpress/udesign/clean-home/services/laundry-services/"><span>Laundry Services</span></a></li>
+<li id="menu-item-1483" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1483" ><a href="https://d-themes.com/wordpress/udesign/clean-home/services/office-cleaning/"><span>Office Cleaning</span></a></li>
+<li id="menu-item-1482" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1482" ><a href="https://d-themes.com/wordpress/udesign/clean-home/services/outdoor-cleaning/"><span>Outdoor Cleaning</span></a></li>
+<li id="menu-item-1481" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1481" ><a href="https://d-themes.com/wordpress/udesign/clean-home/services/kitchen-cleaning/"><span>Kitchen Cleaning</span></a></li>
+</ul></nav>		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class=" elementor-section elementor-top-section elementor-element elementor-element-9550cde elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9550cde" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-no" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d0ea1f2 " data-id="d0ea1f2" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-8285890 elementor-widget elementor-widget-heading" data-id="8285890" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Get started</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5ed6261 elementor-widget elementor-widget-heading" data-id="5ed6261" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Free Estimate</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-796b3d4 custom-wpforms elementor-widget elementor-widget-wpforms" data-id="796b3d4" data-element_type="widget" data-widget_type="wpforms.default">
+				<div class="elementor-widget-container">
+			<div class="wpforms-container wpforms-container-full" id="wpforms-132"><form id="wpforms-form-132" class="wpforms-validate wpforms-form" data-formid="132" method="post" enctype="multipart/form-data" action="/wordpress/udesign/clean-home/services/product-cleaning/" data-token="082fcad89f92e72b8bf374864a67d178"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-132-field_3-container" class="wpforms-field wpforms-field-name" data-field-id="3"><input type="text" id="wpforms-132-field_3" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][3]" placeholder="Your Name" required></div><div id="wpforms-132-field_4-container" class="wpforms-field wpforms-field-email" data-field-id="4"><input type="email" id="wpforms-132-field_4" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][4]" placeholder="Your Email Address" required></div><div id="wpforms-132-field_6-container" class="wpforms-field wpforms-field-select wpforms-field-select-style-classic" data-field-id="6"><select id="wpforms-132-field_6" class="wpforms-field-large" name="wpforms[fields][6]"><option value="" class="placeholder" disabled  selected='selected'>Select Service</option><option value="Window Cleaning" >Window Cleaning</option><option value="Product Cleaning" >Product Cleaning</option><option value="Laundry Services" >Laundry Services</option><option value="Office Cleaning" >Office Cleaning</option><option value="Outdoor Cleaning" >Outdoor Cleaning</option><option value="Kitchen Cleaning" >Kitchen Cleaning</option></select></div></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="132"><input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]" value="1112"><button type="submit" name="wpforms[submit]" class="wpforms-submit wpforms-submit-icon w-100" id="wpforms-submit-132" value="wpforms-submit" aria-live="assertive" data-alt-text="Sending..." data-submit-text="Book Now">Book Now</button></div></form></div>  <!-- .wpforms-container -->		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div></nav>			</div>
+
+			
+		</div>
+
+	</aside>
+<div class="main-content">		<div data-elementor-type="wp-page" data-elementor-id="1112" class="elementor elementor-1112" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" elementor-section elementor-top-section elementor-element elementor-element-fcacec7 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="fcacec7" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d375106 " data-id="d375106" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6391369 elementor-widget elementor-widget-heading" data-id="6391369" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis tellus in metus vulputate eu.</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-193de35 elementor-widget elementor-widget-heading" data-id="193de35" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Ultrices eros in cursus turpis massa tincidunt. Ante in nibh mauris cursus mattis. Cras ornare arcu dui vivamus arcu felis bibendum ut tristique. Ac tincidunt vitae semper quis lectus.<br>
+Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Sed velit dignissim sodales ut eu sem integer. Pulvinar elementum integer enim neque volutpat. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices.</p>		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class=" elementor-section elementor-top-section elementor-element elementor-element-5c87acd elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5c87acd" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-701fd00 " data-id="701fd00" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-ef0ce18 elementor-invisible elementor-widget elementor-widget-image" data-id="ef0ce18" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img style="padding-top : 92.31%;" width="390" height="360" src="https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/2021/09/service-2.jpg" class="d-lazyload attachment-full size-full" alt="Service Image" />															</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-86b0d23 " data-id="86b0d23" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-13c9a8f elementor-invisible elementor-widget elementor-widget-heading" data-id="13c9a8f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInRightShorter&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Service Overview</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-04be992 custom-list elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-invisible elementor-widget elementor-widget-udesign_widget_iconlist" data-id="04be992" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInRightShorter&quot;}" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items">
+			<li class="elementor-icon-list-item">
+							<span class="elementor-icon-list-icon">
+				<i aria-hidden="true" class="fas fa-check"></i>				</span>
+						<span class="elementor-icon-list-text">Ultrices eros in cursus turpis massa tincidunt.  Ante in nibh mauris cursus mattis. Cras ornare arcu dui vivamus arcu felis bibendum.</span>
+					</li>
+				<li class="elementor-icon-list-item">
+							<span class="elementor-icon-list-icon">
+				<i aria-hidden="true" class="fas fa-check"></i>				</span>
+						<span class="elementor-icon-list-text">Ultrices eros in cursus turpis massa tincidunt.  Ante in nibh mauris cursus mattis. Cras ornare arcu dui vivamus arcu felis bibendum.</span>
+					</li>
+				<li class="elementor-icon-list-item">
+							<span class="elementor-icon-list-icon">
+				<i aria-hidden="true" class="fas fa-check"></i>				</span>
+						<span class="elementor-icon-list-text">Ultrices eros in cursus turpis massa tincidunt.  Ante in nibh mauris cursus mattis. Cras ornare arcu dui vivamus arcu felis bibendum.</span>
+					</li>
+		</ul>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class=" elementor-section elementor-top-section elementor-element elementor-element-c9d6bfc elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="c9d6bfc" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-72f7590 " data-id="72f7590" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-ced06ce elementor-widget elementor-widget-heading" data-id="ced06ce" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Service Quality</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2010053 elementor-widget elementor-widget-heading" data-id="2010053" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Fringilla urna porttitor rhoncus dolor purus. Luctus venenatis lectus magna fringilla. Diam maecenas ultricies mi eget mauris. Nibh tellus molestie nunc non blandit massa.</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3c5789a elementor-widget elementor-widget-heading" data-id="3c5789a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Ultrices eros in cursus turpis massa tincidunt. Ante in nibh mauris cursus mattis. Cras ornare arcu dui vivamus arcu felis bibendum ut tristique. Ac tincidunt vitae semper quis lectus.<br> 
+Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Sed velit dignissim sodales ut eu sem integer. Pulvinar elementum integer enim neque volutpat. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices.</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1e24e60 elementor-widget elementor-widget-udesign_widget_imagegallery" data-id="1e24e60" data-element_type="widget" data-widget_type="udesign_widget_imagegallery.default">
+				<div class="elementor-widget-container">
+			
+<ul class="image-gallery  row cols-lg-2 cols-md-2 cols-sm-2 cols-1 gutter-lg">
+	<li class="">		<figure class="grid-item image-wrap">
+			<img style="padding-top : 74.87%;" width="390" height="292" src="https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/2021/09/banner-3.jpg" class="d-lazyload attachment-full size-full" alt="Banner" srcset="https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/2021/09/banner-3.jpg 390w, https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/2021/09/banner-3-300x225.jpg 300w, https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/2021/09/banner-3-150x112.jpg 150w"  data-sizes="(max-width: 390px) 100vw, 390px" />		</figure>
+		</li><li class="">		<figure class="grid-item image-wrap">
+			<img style="padding-top : 74.87%;" width="390" height="292" src="https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/2021/09/banner-4.jpg" class="d-lazyload attachment-full size-full" alt="Banner" srcset="https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/2021/09/banner-4.jpg 390w, https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/2021/09/banner-4-300x225.jpg 300w, https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/2021/09/banner-4-150x112.jpg 150w"  data-sizes="(max-width: 390px) 100vw, 390px" />		</figure>
+		</li></ul>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div></div></div>
+</div>
+
+<div class="bottom-block"><div class="alpha-block elementor elementor-1214" data-block-id="1214">		<div data-elementor-type="wp-post" data-elementor-id="1214" class="elementor elementor-1214" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" elementor-section elementor-top-section elementor-element elementor-element-1b02557 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1b02557" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_top&quot;:&quot;alpha-shape2&quot;,&quot;shape_divider_top_negative&quot;:&quot;yes&quot;}">
+					<div class="elementor-shape elementor-shape-top" data-negative="true">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 192" preserveAspectRatio="none">
+<path d="M0,137.2C269.6,170.4,601.4,190,960,190c358.7,0,690.3-19.6,960-52.8c0-21.4,0,76.2,0,54.8c-640,0-1280,0-1920,0V137.2z"/>
+</svg>
+		</div>
+									<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6353643 " data-id="6353643" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-800c1bf elementor-invisible elementor-widget elementor-widget-udesign_widget_counters" data-id="800c1bf" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="udesign_widget_counters.default">
+				<div class="elementor-widget-container">
+			<div class="counters  gutter-lg  row cols-lg-4 cols-md-2 cols-sm-2 cols-1" ><div class="grid-col"><div class="counter"><div class="counter-number"><i class=""></i><span class="count-to" data-speed="3000" data-to="206">0</span><span class="counter-number-suffix">+</span></div><div class="counter-content"><h3 class="count-title">Project Complete</h3></div></div></div><div class="grid-col"><div class="counter"><div class="counter-number"><i class=""></i><span class="count-to" data-speed="3000" data-to="3800">0</span><span class="counter-number-suffix">+</span></div><div class="counter-content"><h3 class="count-title">Satisfied Clients</h3></div></div></div><div class="grid-col"><div class="counter"><div class="counter-number"><i class=""></i><span class="count-to" data-speed="3000" data-to="50">0</span><span class="counter-number-suffix">+</span></div><div class="counter-content"><h3 class="count-title">Acticate Project</h3></div></div></div><div class="grid-col"><div class="counter"><div class="counter-number"><i class=""></i><span class="count-to" data-speed="3000" data-to="20">0</span><span class="counter-number-suffix">+</span></div><div class="counter-content"><h3 class="count-title">Awards Winning</h3></div></div></div></div>		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class=" elementor-section elementor-top-section elementor-element elementor-element-320b82f pb-10 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="320b82f" data-element_type="section" data-settings="{&quot;shape_divider_bottom&quot;:&quot;alpha-shape2&quot;,&quot;shape_divider_bottom_negative&quot;:&quot;yes&quot;}">
+					<div class="elementor-shape elementor-shape-bottom" data-negative="true">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 192" preserveAspectRatio="none">
+<path d="M0,137.2C269.6,170.4,601.4,190,960,190c358.7,0,690.3-19.6,960-52.8c0-21.4,0,76.2,0,54.8c-640,0-1280,0-1920,0V137.2z"/>
+</svg>
+		</div>
+									<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-afc048a " data-id="afc048a" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5f4f638 ml-auto mr-auto mt-10 pt-10 elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-udesign_widget_heading" data-id="5f4f638" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUpShorter&quot;}" data-widget_type="udesign_widget_heading.default">
+				<div class="elementor-widget-container">
+			<div class="title-wrapper  title-cross title-center"><h6 class="title elementor-heading-title">Pricing</h6></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-a149fea elementor-invisible elementor-widget elementor-widget-heading" data-id="a149fea" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUpShorter&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Best Pricing Plan</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c473d47 ml-auto mr-auto elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-heading" data-id="c473d47" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUpShorter&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Authoritatively create performance based web services for exceptional products. Dynamically disseminate customized.</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-a5a4278 mb-10 pb-1 elementor-invisible elementor-widget elementor-widget-udesign_widget_price_tables" data-id="a5a4278" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUpShorter&quot;,&quot;_animation_delay&quot;:800}" data-widget_type="udesign_widget_price_tables.default">
+				<div class="elementor-widget-container">
+			<div class="price-tables  gutter-lg row cols-lg-3 cols-md-2 cols-sm-1 cols-1" ><div class="grid-col"><div class="price-table simple-type elementor-repeater-item-cdc4af7 standard"><div class="plan-header"><h3 class="plan-name">Starter Design</h3><p class="plan-desc">Basic Plan</p></div><div class="plan-price"><span class="currency">$</span>29.99<p class="price-suffix">monthly</p></div><ul class="plan-features"><li class="plan-feature">Basic Product</li><li class="plan-feature">25 Product Downloads</li><li class="plan-feature">Free Support</li><li class="plan-feature">Basic Customization</li><li class="plan-feature">Free Updates</li></ul><div class="plan-footer"><a class="btn btn-md btn-rounded btn-dark" href="#" ><span >Choose Plan</span></a></div></div></div><div class="grid-col"><div class="price-table simple-type elementor-repeater-item-48bc428 featured"><div class="plan-header"><h3 class="plan-name">Medium Design</h3><p class="plan-desc">Standard Plan</p></div><div class="plan-price"><span class="currency">$</span>49.99<p class="price-suffix">monthly</p></div><ul class="plan-features"><li class="plan-feature">Basic Product</li><li class="plan-feature">25 Product Downloads</li><li class="plan-feature">Free Support</li><li class="plan-feature">Basic Customization</li><li class="plan-feature">Free Updates</li></ul><div class="plan-footer"><a class="btn btn-md btn-rounded btn-secondary" href="#" ><span >Choose Plan</span></a></div></div></div><div class="grid-col"><div class="price-table simple-type elementor-repeater-item-5b198fb standard"><div class="plan-header"><h3 class="plan-name">Premium Design</h3><p class="plan-desc">Professional Plan</p></div><div class="plan-price"><span class="currency">$</span>89.99<p class="price-suffix">monthly</p></div><ul class="plan-features"><li class="plan-feature">Basic Product</li><li class="plan-feature">25 Product Downloads</li><li class="plan-feature">Free Support</li><li class="plan-feature">Basic Customization</li><li class="plan-feature">Free Updates</li></ul><div class="plan-footer"><a class="btn btn-md btn-rounded btn-dark" href="#" ><span >Choose Plan</span></a></div></div></div></div>		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div></div>			</main>
+
+			
+							<footer class="footer custom-footer footer-747" id="footer">
+						<div class="alpha-block elementor elementor-747" data-block-id="747">		<div data-elementor-type="wp-post" data-elementor-id="747" class="elementor elementor-747" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" elementor-section elementor-top-section elementor-element elementor-element-cd6f15a custom-footer-top elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cd6f15a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-5802c7f mb-md-6 " data-id="5802c7f" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5321b3e bg-transparent elementor-widget elementor-widget-image" data-id="5321b3e" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://d-themes.com/wordpress/udesign/clean-home/">
+							<img style="padding-top : 43.09%;" width="246" height="106" src="https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/clean-home/wp-content/uploads/sites/10/2021/09/Footer-logo246x106.png" class="d-lazyload attachment-full size-full" alt="Footer Logo" />								</a>
+															</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-3ebe7e4 mb-6 " data-id="3ebe7e4" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a6ef27b elementor-widget elementor-widget-heading" data-id="a6ef27b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Get In Touch</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-010c1d3 elementor-widget elementor-widget-text-editor" data-id="010c1d3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<label class="text-uppercase">Address</label><span class="text-white d-block mb-2">123 Street Name, City, USA</span>
+
+<label class="text-uppercase">Phone</label><a class="d-block mb-2" href="tel:000123456789">Tell Free (123) 456-7890</a>
+
+<label class="text-uppercase">Email</label><a class="d-block mb-2" href="mailto:mail@udesign.com">mail@udesign.com</a>
+
+<label class="text-uppercase">Working Days/Hours</label><span class="text-white d-block">Mon &#8211; Sun / 9:00AM &#8211; 8:00PM</span>						</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-543c01e mb-6 " data-id="543c01e" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4ddc403 elementor-widget elementor-widget-heading" data-id="4ddc403" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">My Account</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5dded68 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-udesign_widget_iconlist" data-id="5dded68" data-element_type="widget" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items">
+			<li class="elementor-icon-list-item">
+			<a href="https://d-themes.com/wordpress/udesign/clean-home/contact-us/">			<span class="elementor-icon-list-text">Contact Us</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="https://d-themes.com/wordpress/udesign/clean-home/services/">			<span class="elementor-icon-list-text">Our Services</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Payment Methods</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Services Guide</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">FAQs</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Service Support</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="https://d-themes.com/wordpress/udesign/clean-home/privacy-policy/">			<span class="elementor-icon-list-text">Privacy</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="https://d-themes.com/wordpress/udesign/clean-home/about-us/">			<span class="elementor-icon-list-text">About Us</span>
+							</a>
+					</li>
+		</ul>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-36ad824 mb-6 " data-id="36ad824" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7fe4ca2 elementor-widget elementor-widget-heading" data-id="7fe4ca2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Subscribe Newsletter</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-bee8b5e elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="bee8b5e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Lorem Ipsum. Proin gravida nibh vel velitauc cil torliquet enean. Solli citudin lorem biben elif dumau ctor.</p>		</div>
+				</div>
+				<div class="controls-rounded controls-sm elementor-element elementor-element-18e3013 elementor-widget elementor-widget-wpforms" data-id="18e3013" data-element_type="widget" data-widget_type="wpforms.default">
+				<div class="elementor-widget-container">
+			<div class="wpforms-container wpforms-container-full wpforms-row" id="wpforms-1565"><form id="wpforms-form-1565" class="wpforms-validate wpforms-form" data-formid="1565" method="post" enctype="multipart/form-data" action="/wordpress/udesign/clean-home/services/product-cleaning/" data-token="082fcad89f92e72b8bf374864a67d178"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-1565-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><input type="email" id="wpforms-1565-field_1" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][1]" placeholder="Email address here..." required></div></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="1565"><input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]" value="1112"><button type="submit" name="wpforms[submit]" class="wpforms-submit wpforms-submit-icon ml-2" id="wpforms-submit-1565" value="wpforms-submit" aria-live="assertive" data-alt-text="Sending..." data-submit-text="Subscribe">Subscribe</button></div></form></div>  <!-- .wpforms-container -->		</div>
+				</div>
+				<div class="elementor-element elementor-element-df06890 elementor-widget elementor-widget-udesign_widget_share" data-id="df06890" data-element_type="widget" data-widget_type="udesign_widget_share.default">
+				<div class="elementor-widget-container">
+			
+<div class="social-icons">
+	<a href="#" class="social-icon framed use-hover social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-icon framed use-hover social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a><a href="#" class="social-icon framed use-hover social-instagram" target="_blank" title="instagram" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a><a href="#" class="social-icon framed use-hover social-youtube" target="_blank" title="youtube" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a><a href="#" class="social-icon framed use-hover social-pinterest" target="_blank" title="pinterest" rel="noopener noreferrer"><i class="fab fa-pinterest"></i></a></div>
+
+		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class=" elementor-section elementor-top-section elementor-element elementor-element-228dc20 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="228dc20" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-no" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4551433 " data-id="4551433" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a54b608 elementor-widget elementor-widget-shortcode" data-id="a54b608" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode"><p class="mb-0 text-center copyright">UDesign Wordpress 
+© 2022. All Rights Reserved</p></div>
+				</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div>					</footer>
+					
+		</div>
+
+					<div class="cookies-popup">
+				<div class="cookies-popup-inner d-flex align-items-center">
+					<div class="cookies-info">
+						By browsing this website, you agree to our <a href="https://d-themes.com/wordpress/udesign/clean-home/privacy-policy/">privacy policy</a>.					</div>
+					<a href="#" rel="nofollow noopener" class="btn btn-sm accept-cookie-btn">I Agree</a>
+					<a href="#" class="btn close-cookie-btn decline-cookie-btn btn-close" aria-label="Close Cookie Consent"><i class="a-icon-times-solid"></i></a>
+				</div>
+			</div>
+			
+					<a id="scroll-top" class="scroll-top" href="#top" title="Top" role="button">
+				<i class="a-icon-long-arrow-up"></i>
+				<svg  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					viewBox="0 0 70 70" enable-background="new 0 0 70 70" xml:space="preserve">
+					<circle id="progress-indicator" fill="transparent" stroke="#000000" stroke-miterlimit="10" cx="35" cy="35" r="34"/>
+				</svg>
+			</a>
+		
+					<div class="mobile-menu-wrapper">
+				<div class="mobile-menu-overlay"></div>
+				<div class="mobile-menu-container" style="height: 100vh;">
+					<!-- Need to ajax load mobile menus -->
+				</div>
+				<a class="mobile-menu-close" href="#"><i class="close-icon"></i></a>
+			</div>
+		
+		
+		<link rel='stylesheet' id='wpforms-full-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/wpforms-lite/assets/css/wpforms-full.min.css?ver=1.6.9' media='all' />
+<link rel='stylesheet' id='alpha-wpforms-style-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/inc/plugins/wpforms/wpforms.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='e-animations-css'  href='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.4.0' media='all' />
+<script async="async" src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/u-design-core/framework/addons/live-search/jquery.autocomplete.min.js?ver=5.8.3' id='jquery-autocomplete-js'></script>
+<script id='alpha-framework-js-extra'>
+var alpha_vars = {"theme":"udesign","framework_icon_prefix":"a","alpha_gap":"15px","home_url":"https:\/\/d-themes.com\/wordpress\/udesign\/clean-home\/","ajax_url":"https:\/\/d-themes.com\/wordpress\/udesign\/clean-home\/wp-admin\/admin-ajax.php","nonce":"31d2430d17","lazyload":"1","container":"1290","assets_url":"https:\/\/d-themes.com\/wordpress\/udesign\/clean-home\/wp-content\/themes\/u-design\/assets","texts":{"loading":"Loading...","loadmore_error":"Loading failed","popup_error":"The content could not be loaded.","ribbon":"Ribbon"},"resource_async_js":"1","resource_split_tasks":"1","resource_after_load":"1","alpha_cache_key":"alpha_cache_5db8752e072b477649712b6530880c82","lazyload_menu":"","countdown":{"labels":["Years","Months","Weeks","Days","Hours","Minutes","Seconds"],"labels_short":["Years","Months","Weeks","Days","Hrs","Mins","Secs"],"label1":["Year","Month","Week","Day","Hour","Minute","Second"],"label1_short":["Year","Month","Week","Day","Hour","Min","Sec"]},"placeholder_img":"https:\/\/d-themes.com\/wordpress\/udesign\/clean-home\/wp-content\/themes\/u-design\/assets\/images\/placeholders\/post-placeholder.jpg","placeholder_alt":"UDesign Placeholder","placeholder_width":"730","placeholder_height":"570","search_result":"There are no results.","cookie_version":"1"};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/framework/assets/js/framework.js?ver=4.0.0' id='alpha-framework-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/framework/assets/js/framework-async.js?ver=4.0.0' id='alpha-framework-async-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/assets/js/theme.js?ver=4.0.0' id='alpha-theme-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/u-design-core/framework/addons/gdpr/gdpr.js?ver=4.0.0' id='alpha-gdpr-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/u-design-core/inc/cpt/post_types/member/assets/member.js?ver=4.0.0' id='alpha-member-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/assets/vendor/jquery.magnific-popup/jquery.magnific-popup.js?ver=1.1.0' id='jquery-magnific-popup-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-includes/js/wp-embed.js?ver=5.8.3' id='wp-embed-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/u-design-core/framework/addons/lazyload-images/lazyload.js?ver=5.8.3' id='lazyload-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/framework/assets/js/sticky.js?ver=4.0.0' id='alpha-sticky-lib-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/elementor/assets/lib/swiper/swiper.js?ver=5.3.6' id='swiper-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/themes/u-design/assets/vendor/jquery.count-to/jquery.count-to.js?ver=5.8.3' id='jquery-count-to-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/u-design-core/inc/addons/post-like/post-like.js?ver=4.0.0' id='alpha-post-like-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/elementor/assets/js/webpack.runtime.js?ver=3.4.0' id='elementor-webpack-runtime-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-includes/js/jquery/jquery-migrate.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/elementor/assets/js/frontend-modules.js?ver=3.4.0' id='elementor-frontend-modules-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-includes/js/jquery/ui/core.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/elementor/assets/lib/share-link/share-link.js?ver=3.4.0' id='share-link-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/elementor/assets/lib/dialog/dialog.js?ver=4.8.1' id='elementor-dialog-js'></script>
+<script id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":true},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":992,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":991,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.4.0","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"landing-pages":true,"elements-color-picker":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/d-themes.com\/wordpress\/udesign\/clean-home\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"viewport_tablet":991,"active_breakpoints":["viewport_mobile","viewport_tablet"],"lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":1112,"title":"Product%20Cleaning%20%E2%80%93%20U-Clean%20Home","excerpt":"","featuredImage":false}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":true},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":992,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":991,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.4.0","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"landing-pages":true,"elements-color-picker":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/d-themes.com\/wordpress\/udesign\/clean-home\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"viewport_tablet":991,"active_breakpoints":["viewport_mobile","viewport_tablet"],"lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":1112,"title":"Product%20Cleaning%20%E2%80%93%20U-Clean%20Home","excerpt":"","featuredImage":false}};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/elementor/assets/js/frontend.js?ver=3.4.0' id='elementor-frontend-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/elementor/assets/js/preloaded-modules.js?ver=3.4.0' id='preloaded-modules-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-includes/js/underscore.min.js?ver=1.13.1' id='underscore-js'></script>
+<script id='wp-util-js-extra'>
+var _wpUtilSettings = {"ajax":{"url":"\/wordpress\/udesign\/clean-home\/wp-admin\/admin-ajax.php"}};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-includes/js/wp-util.js?ver=5.8.3' id='wp-util-js'></script>
+<script id='wpforms-elementor-js-extra'>
+var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.6.9' id='wpforms-elementor-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/wpforms-lite/assets/js/jquery.validate.min.js?ver=1.19.0' id='wpforms-validation-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/wpforms-lite/assets/js/mailcheck.min.js?ver=1.1.2' id='wpforms-mailcheck-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/wpforms-lite/assets/js/punycode.min.js?ver=1.0.0' id='wpforms-punycode-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/clean-home/wp-content/plugins/wpforms-lite/assets/js/wpforms.js?ver=1.6.9' id='wpforms-js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpforms_settings = {"val_required":"This field is required.","val_email":"Please enter a valid email address.","val_email_suggestion":"Did you mean {suggestion}?","val_email_suggestion_title":"Click to accept this suggestion.","val_email_restricted":"This email address is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number.","val_confirm":"Field values do not match.","val_checklimit":"You have exceeded the number of allowed selections: {#}.","val_limit_characters":"{count} of {limit} max characters.","val_limit_words":"{count} of {limit} max words.","val_recaptcha_fail_msg":"Google reCAPTCHA verification failed, please try again later.","val_empty_blanks":"Please fill out all blanks.","uuid_cookie":"","locale":"en","wpforms_plugin_url":"https:\/\/d-themes.com\/wordpress\/udesign\/clean-home\/wp-content\/plugins\/wpforms-lite\/","gdpr":"","ajaxurl":"https:\/\/d-themes.com\/wordpress\/udesign\/clean-home\/wp-admin\/admin-ajax.php","mailcheck_enabled":"1","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"],"is_ssl":"1"}
+/* ]]> */
+</script>
+	</body>
+</html>

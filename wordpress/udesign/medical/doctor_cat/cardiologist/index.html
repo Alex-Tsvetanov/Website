@@ -1,0 +1,761 @@
+
+<!DOCTYPE html>
+	<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+		
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<link rel="pingback" href="https://d-themes.com/wordpress/udesign/medical/xmlrpc.php" />
+
+		<link rel="shortcut icon" href="https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/images/favicon.png" type="image/x-icon" />
+		
+		<title>Cardiologist &#8211; U-Medical</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="U-Medical &raquo; Feed" href="https://d-themes.com/wordpress/udesign/medical/feed/" />
+<link rel="alternate" type="application/rss+xml" title="U-Medical &raquo; Comments Feed" href="https://d-themes.com/wordpress/udesign/medical/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="U-Medical &raquo; Cardiologist doctor category Feed" href="https://d-themes.com/wordpress/udesign/medical/doctor_cat/cardiologist/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-includes/css/dist/block-library/style.css?ver=5.8.3' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+#start-resizable-editor-section {
+  display: none;
+}
+
+.wp-block-audio figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-audio figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-code {
+  font-family: Menlo, Consolas, monaco, monospace;
+  color: #1e1e1e;
+  padding: 0.8em 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.wp-block-embed figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-embed figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.blocks-gallery-caption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .blocks-gallery-caption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-image figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-image figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-pullquote {
+  border-top: 4px solid currentColor;
+  border-bottom: 4px solid currentColor;
+  margin-bottom: 1.75em;
+  color: currentColor;
+}
+.wp-block-pullquote cite,
+.wp-block-pullquote footer, .wp-block-pullquote__citation {
+  color: currentColor;
+  text-transform: uppercase;
+  font-size: 0.8125em;
+  font-style: normal;
+}
+
+.wp-block-quote {
+  border-left: 0.25em solid currentColor;
+  margin: 0 0 1.75em 0;
+  padding-left: 1em;
+}
+.wp-block-quote cite,
+.wp-block-quote footer {
+  color: currentColor;
+  font-size: 0.8125em;
+  position: relative;
+  font-style: normal;
+}
+.wp-block-quote.has-text-align-right {
+  border-left: none;
+  border-right: 0.25em solid currentColor;
+  padding-left: 0;
+  padding-right: 1em;
+}
+.wp-block-quote.has-text-align-center {
+  border: none;
+  padding-left: 0;
+}
+.wp-block-quote.is-style-large, .wp-block-quote.is-large {
+  border: none;
+}
+
+.wp-block-search .wp-block-search__label {
+  font-weight: bold;
+}
+
+.wp-block-group.has-background {
+  padding: 1.25em 2.375em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.wp-block-separator {
+  border: none;
+  border-bottom: 2px solid currentColor;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.4;
+}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+  width: 100px;
+}
+.wp-block-separator.has-background:not(.is-style-dots) {
+  border-bottom: none;
+  height: 1px;
+}
+.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+  height: 2px;
+}
+
+.wp-block-table thead {
+  border-bottom: 3px solid;
+}
+.wp-block-table tfoot {
+  border-top: 3px solid;
+}
+.wp-block-table td,
+.wp-block-table th {
+  padding: 0.5em;
+  border: 1px solid;
+  word-break: normal;
+}
+.wp-block-table figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-table figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-video figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-video figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-template-part.has-background {
+  padding: 1.25em 2.375em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#end-resizable-editor-section {
+  display: none;
+}
+</style>
+<link rel='stylesheet' id='alpha-gdpr-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/u-design-core/framework/addons/gdpr/gdpr.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-core-framework-style-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/u-design-core/assets/css/framework.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='fontawesome-free-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/vendor/fontawesome-free/css/all.min.css?ver=5.14.0' media='all' />
+<link rel='stylesheet' id='alpha-icons-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/vendor/alpha-icons/css/icons.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='theme-icons-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/vendor/udesign-icons/css/icons.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='animate-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/vendor/animate/animate.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/vendor/jquery.magnific-popup/magnific-popup.min.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.css?ver=5.12.0' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/elementor/css/custom-frontend.css?ver=1641542713' media='all' />
+<link rel='stylesheet' id='elementor-post-3-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/elementor/css/post-3.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-theme-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/css/theme.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-dynamic-vars-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/udesign_styles/dynamic_css_vars.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-theme-blog-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/css/pages/blog.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C500%2C600%2C700&#038;ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-single-portfolio-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/u-design-core/inc/cpt/post_types/portfolio/assets/single-portfolio.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-portfolio-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/u-design-core/inc/cpt/post_types/portfolio/assets/portfolio.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-member-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/u-design-core/inc/cpt/post_types/member/assets/member.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-elementor-style-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/u-design-core/framework/plugins/elementor/assets/elementor.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-elementor-extend-style-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/u-design-core/inc/plugins/elementor/assets/elementor-extend.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='elementor-post-6-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/elementor/css/post-6.css?ver=5.8.3' media='all' />
+<style id='elementor-post-6-inline-css'>
+.nowrap-col .elementor-widget-wrap{flex-wrap:nowrap}.custom-header{position:absolute;top:0;left:0;right:0;background:transparent;z-index:9}@media (max-width:1099px){.cs-menu .menu>li{margin-right:13px}}@media (max-width:1199px){.custom-header .btn{padding:1.4rem 3rem}}
+</style>
+<link rel='stylesheet' id='elementor-post-849-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/elementor/css/post-849.css?ver=5.8.3' media='all' />
+<style id='elementor-post-849-inline-css'>
+.custom-info a{color:#fff}@media (min-width:768px) and (max-width:991px){.custom-footer-top .elementor-column:first-child{order:-2}.custom-footer-top .elementor-column:last-child{order:-1}}
+</style>
+<link rel='stylesheet' id='elementor-post-1170-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/elementor/css/post-1170.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='elementor-post-1746-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/elementor/css/post-1746.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-style-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/style.css?ver=4.0.0' media='all' />
+<style id='alpha-style-inline-css'>
+/* Global CSS */
+.post-boxed.post {
+    padding-top: 2rem;
+}
+.post-boxed figure {
+    margin: 0 2rem;
+}
+.udesign_member .post-cats > a {
+		color: var(--alpha-primary-color);
+}
+</style>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-includes/js/jquery/jquery.js?ver=3.6.0' id='jquery-core-js'></script>
+<link rel="https://api.w.org/" href="https://d-themes.com/wordpress/udesign/medical/wp-json/" /><link rel="alternate" type="application/json" href="https://d-themes.com/wordpress/udesign/medical/wp-json/wp/v2/udesign_member_category/3" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://d-themes.com/wordpress/udesign/medical/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://d-themes.com/wordpress/udesign/medical/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.3" />
+		<meta name="application-name" content="UDesign - MULTI-PURPOSE PREMIUM WordPress THEME">
+		<meta name="author" content="Andon">
+		<meta name="description" content="A slick, powerful and clean theme UDesign provides an intuitive set of options to help you setup your WordPress site quickly and effectively. Flexibility is key and it has been optimized for SEO and speed. It is also responsive & mobile ready should you choose that option. The UDesign theme features include: unlimited colors, widgetized home page, over 600 fonts to choose from, WooCommerce Integration, it is also translation and multilingual ready, step by step documentation, exclusive UDesign support forum and a helpful community. Always up-to-date security and many new features are constantly added as the theme evolves.">
+		<style id="kirki-inline-styles"></style>	</head>
+	<body class="archive tax-udesign_member_category term-cardiologist term-3 wp-custom-logo wp-embed-responsive alpha-archive-udesign-member-layout alpha-rounded-skin elementor-default elementor-kit-3 udesign-demo">
+		
+		
+		
+		<div class="page-wrapper">
+
+			<header class="header custom-header header-6" id="header"><div class="alpha-block elementor elementor-6" data-block-id="6">		<div data-elementor-type="wp-post" data-elementor-id="6" class="elementor elementor-6" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" sticky-content fix-top elementor-section elementor-top-section elementor-element elementor-element-919b373 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="919b373" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-no" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ec2d5a2 " data-id="ec2d5a2" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1f2484c mr-auto elementor-widget elementor-widget-udesign_header_site_logo" data-id="1f2484c" data-element_type="widget" data-widget_type="udesign_header_site_logo.default">
+				<div class="elementor-widget-container">
+			
+<a href="https://d-themes.com/wordpress/udesign/medical/" class="logo" title="U-Medical - UDesign WordPress Demo Site">
+	<img width="248" height="62" src="https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/08/logo.png" class="site-logo skip-data-lazy attachment-full size-full" alt="U-Medical" srcset="https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/08/logo.png 248w, https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/08/logo-150x38.png 150w" sizes="(max-width: 248px) 100vw, 248px" /></a>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-14a600d order-sm-first mr-0 mr-sm-4 elementor-widget elementor-widget-udesign_header_mmenu_toggle" data-id="14a600d" data-element_type="widget" data-widget_type="udesign_header_mmenu_toggle.default">
+				<div class="elementor-widget-container">
+			<a href="#" class="mobile-menu-toggle d-lg-none" aria-label="Mobile Menu"><i class="a-icon-hamburger"></i></a>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-b106484 cs-menu d-none d-lg-block elementor-widget elementor-widget-udesign_widget_menu" data-id="b106484" data-element_type="widget" data-widget_type="udesign_widget_menu.default">
+				<div class="elementor-widget-container">
+			<nav class=" main-menu"><ul id="menu-main-menu" class="menu  horizontal-menu"><li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-33" ><a href="https://d-themes.com/wordpress/udesign/medical/"><span>Home</span></a></li>
+<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34" ><a href="https://d-themes.com/wordpress/udesign/medical/about-us/"><span>About Us</span></a></li>
+<li id="menu-item-1943" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1943" ><a href="https://d-themes.com/wordpress/udesign/medical/doctor/"><span>Our Doctors</span></a></li>
+<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-37" ><a href="https://d-themes.com/wordpress/udesign/medical/departments/"><span>Departments</span></a>
+<ul>
+	<li id="menu-item-1886" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1886" ><a href="https://d-themes.com/wordpress/udesign/medical/departments/pulmonary/"><span>Pulmonary</span></a></li>
+	<li id="menu-item-1887" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1887" ><a href="https://d-themes.com/wordpress/udesign/medical/departments/ophthalmology/"><span>Ophthalmology</span></a></li>
+	<li id="menu-item-1888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1888" ><a href="https://d-themes.com/wordpress/udesign/medical/departments/neurology/"><span>Neurology</span></a></li>
+	<li id="menu-item-1889" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1889" ><a href="https://d-themes.com/wordpress/udesign/medical/departments/radiology/"><span>Radiology</span></a></li>
+	<li id="menu-item-1890" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1890" ><a href="https://d-themes.com/wordpress/udesign/medical/departments/stomatology/"><span>Stomatology</span></a></li>
+	<li id="menu-item-1891" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1891" ><a href="https://d-themes.com/wordpress/udesign/medical/departments/cardiology/"><span>Cardiology</span></a></li>
+
+</ul>
+</li>
+<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-has-children menu-item-38" ><a href="https://d-themes.com/wordpress/udesign/medical/blog/"><span>News</span></a>
+<ul>
+	<li id="menu-item-1994" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1994" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/classic/"><span>Classic</span></a></li>
+	<li id="menu-item-1995" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1995" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/grid/"><span>Grid</span></a></li>
+	<li id="menu-item-1996" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1996" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/masonry/"><span>Masonry</span></a></li>
+	<li id="menu-item-1997" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1997" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/timeline/"><span>Timeline</span></a></li>
+	<li id="menu-item-1998" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1998" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/08/18/nullam-mattis-mi-at-metus-egestas/"><span>Single Post</span></a>
+	<ul>
+		<li id="menu-item-1999" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1999" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/09/25/nam-nec-telodio-tinci-dunt-auctor/" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1999"><span>Full Width</span></a></li>
+		<li id="menu-item-2000" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2000" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/08/31/aliquam-tincidunt-mauris/" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-2000"><span>Left Sidebar</span></a></li>
+		<li id="menu-item-2001" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2001" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/08/18/nullam-mattis-mi-at-metus-egestas/" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-2001"><span>Right Sidebar</span></a></li>
+
+	</ul>
+</li>
+
+</ul>
+</li>
+<li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39" ><a href="https://d-themes.com/wordpress/udesign/medical/contact-us/"><span>Contact Us</span></a></li>
+</ul></nav>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2699128 ml-3 mr-lg-auto elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-udesign_widget_search" data-id="2699128" data-element_type="widget" data-widget_type="udesign_widget_search.default">
+				<div class="elementor-widget-container">
+			
+	<div class="search-wrapper  hs-toggle hs-dropdown hs-right light-style">
+							<a href="#" class="search-toggle" aria-label="Search">
+			<i class="a-icon-search"></i>
+								</a>
+		
+							<form action="https://d-themes.com/wordpress/udesign/medical/" method="get" class="input-wrapper">
+			<input type="hidden" name="post_type" value=""/>
+
+			<input type="search" aria-label="Search" class="form-control" name="s" placeholder="Search..." required="" autocomplete="off">
+
+									<div class="live-search-list"></div>
+			
+			<button class="btn btn-search" aria-label="Search Button" type="submit">
+				<i class="a-icon-search"></i>
+			</button>
+
+					
+		</form>
+						</div>
+
+							</div>
+				</div>
+				<div class="elementor-element elementor-element-5c0f1b5 d-none d-sm-block elementor-widget elementor-widget-udesign_widget_button" data-id="5c0f1b5" data-element_type="widget" data-widget_type="udesign_widget_button.default">
+				<div class="elementor-widget-container">
+			<a class="btn btn-ellipse btn-white" href="https://d-themes.com/wordpress/udesign/medical/contact-us/" ><span >Appointment</span></a>		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div></header><div class="alpha-block elementor elementor-1170" data-block-id="1170">		<div data-elementor-type="wp-post" data-elementor-id="1170" class="elementor elementor-1170" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" background-trans elementor-section elementor-top-section elementor-element elementor-element-0a6478b elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="0a6478b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-no banner banner-fixed" >
+													<figure class="banner-img"
+													style="background-color:#2470AA"
+						>
+						<img width="1903" height="419" src="https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/10/page-header.jpg" class="d-lazyload attachment-full size-full" alt="Page header" style="padding-top : 22.02%;background-color:#2470AA" srcset="https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/10/page-header.jpg 1903w, https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/10/page-header-300x66.jpg 300w, https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/10/page-header-1024x225.jpg 1024w, https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/10/page-header-768x169.jpg 768w, https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/10/page-header-1536x338.jpg 1536w, https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/10/page-header-150x33.jpg 150w"  data-sizes="(max-width: 1903px) 100vw, 1903px" />					</figure>
+								
+		<div class=" banner-content elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bf90239 " data-id="bf90239" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3653190 animated-fast elementor-invisible elementor-widget elementor-widget-heading" data-id="3653190" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDownShorter&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Our Doctors</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-0bb4cb0 animated-fast elementor-invisible elementor-widget elementor-widget-udesign_widget_breadcrumb" data-id="0bb4cb0" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDownShorter&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="udesign_widget_breadcrumb.default">
+				<div class="elementor-widget-container">
+			<ul class="breadcrumb"><li><a href="https://d-themes.com/wordpress/udesign/medical">Home</a></li><li class="delimiter">/</li><li><a href="https://d-themes.com/wordpress/udesign/medical/doctor/">Doctors</a></li><li class="delimiter">/</li><li>Cardiologist</li></ul><script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Home","@id":"https:\/\/d-themes.com\/wordpress\/udesign\/medical"}},{"@type":"ListItem","position":2,"item":{"name":"Doctors","@id":"https:\/\/d-themes.com\/wordpress\/udesign\/medical\/doctor\/"}},{"@type":"ListItem","position":3,"item":{"name":"Cardiologist","@id":"https:\/\/d-themes.com\/wordpress\/udesign\/medical\/doctor_cat\/cardiologist\/"}}]}</script>		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div>
+			
+			<main id="main" class="main">
+	<div class="page-content">
+		<div class="container"><div class="main-content-wrap"><div class="main-content"><div class="alpha-block elementor elementor-1746" data-block-id="1746">		<div data-elementor-type="wp-post" data-elementor-id="1746" class="elementor elementor-1746" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<section class=" elementor-section elementor-top-section elementor-element elementor-element-5cc9fc9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5cc9fc9" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dad1c24 " data-id="dad1c24" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-73316c9 mt-10 pt-2 elementor-invisible elementor-widget elementor-widget-heading" data-id="73316c9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Professional Doctors</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-cae6ca0 ml-auto mr-auto mt-2 mb-8 elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-heading" data-id="cae6ca0" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Lorem Ipsum. Proin gravida nibh ibendum auctor, nisi elit consequat.em nibh id elit. Duis sed odio sit am bendum auctor, nisi elit cons</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-4443bf8 mb-10 pb-3 elementor-invisible elementor-widget elementor-widget-udesign_archive_posts" data-id="4443bf8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUpShorter&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="udesign_archive_posts.default">
+				<div class="elementor-widget-container">
+				<div class="post-archive">
+		<div class=" row cols-lg-4 cols-md-3 cols-sm-2 cols-1 posts members  row cols-lg-4 cols-md-3 cols-sm-2 cols-1" data-post-type="card">
+<div class="post-wrap " data-post-image="medium">
+		<article class="post-570 udesign_member type-udesign_member status-publish has-post-thumbnail hentry udesign_member_category-cardiologist udesign_member_category-radiologist post overlay-zoom overlay-dark  member-card">
+			<figure class="post-media">
+		<a href="https://d-themes.com/wordpress/udesign/medical/doctor/rick-edward/">
+			<img style="padding-top : 109.49%;" width="274" height="300" src="https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/10/doctor-1-274x300.jpg" class="d-lazyload attachment-medium size-medium wp-post-image" alt="doctor" srcset="https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/10/doctor-1-274x300.jpg 274w, https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/10/doctor-1-150x164.jpg 150w, https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/10/doctor-1.jpg 360w"  data-sizes="(max-width: 274px) 100vw, 274px" />		</a>
+		<div class="member-hidden-social"><div class="social-icons"><a href="#" class="social-icon framed use-hover fab fa-facebook-f social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"></a><a href="#" class="social-icon framed use-hover fab fa-twitter social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"></a><a href="#" class="social-icon framed use-hover fab fa-linkedin-in social-linkedin" target="_blank" title="linkedin" rel="noopener noreferrer"></a></div></div>	</figure>
+	<div class="post-details">
+	<h3 class="post-title">
+	<a href="https://d-themes.com/wordpress/udesign/medical/doctor/rick-edward/">
+		Rick Edward	</a>
+</h3>
+<div class="post-cats"><a href="https://d-themes.com/wordpress/udesign/medical/doctor_cat/cardiologist/" rel="tag">Cardiologist</a></div></div>
+	</article>
+	</div>
+
+
+<div class="post-wrap " data-post-image="medium">
+		<article class="post-2597 udesign_member type-udesign_member status-publish has-post-thumbnail hentry udesign_member_category-cardiologist udesign_member_category-ophthalmologist udesign_member_category-stomatologist post overlay-zoom overlay-dark  member-card">
+			<figure class="post-media">
+		<a href="https://d-themes.com/wordpress/udesign/medical/doctor/jessica-doe/">
+			<img style="padding-top : 109.49%;" width="274" height="300" src="https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/11/doctor-11-274x300.jpg" class="d-lazyload attachment-medium size-medium wp-post-image" alt="Member Image" srcset="https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/11/doctor-11-274x300.jpg 274w, https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/11/doctor-11-150x164.jpg 150w, https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/11/doctor-11.jpg 360w"  data-sizes="(max-width: 274px) 100vw, 274px" />		</a>
+		<div class="member-hidden-social"><div class="social-icons"><a href="#" class="social-icon framed use-hover fab fa-facebook-f social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"></a><a href="#" class="social-icon framed use-hover fab fa-twitter social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"></a><a href="#" class="social-icon framed use-hover fab fa-linkedin-in social-linkedin" target="_blank" title="linkedin" rel="noopener noreferrer"></a></div></div>	</figure>
+	<div class="post-details">
+	<h3 class="post-title">
+	<a href="https://d-themes.com/wordpress/udesign/medical/doctor/jessica-doe/">
+		Jessica Doe	</a>
+</h3>
+<div class="post-cats"><a href="https://d-themes.com/wordpress/udesign/medical/doctor_cat/cardiologist/" rel="tag">Cardiologist</a></div></div>
+	</article>
+	</div>
+
+
+<div class="post-wrap " data-post-image="medium">
+		<article class="post-2600 udesign_member type-udesign_member status-publish has-post-thumbnail hentry udesign_member_category-cardiologist udesign_member_category-neurologist post overlay-zoom overlay-dark  member-card">
+			<figure class="post-media">
+		<a href="https://d-themes.com/wordpress/udesign/medical/doctor/rose-doe/">
+			<img style="padding-top : 109.49%;" width="274" height="300" src="https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/11/doctor-13-274x300.jpg" class="d-lazyload attachment-medium size-medium wp-post-image" alt="Member Image" srcset="https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/11/doctor-13-274x300.jpg 274w, https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/11/doctor-13-150x164.jpg 150w, https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/11/doctor-13.jpg 360w"  data-sizes="(max-width: 274px) 100vw, 274px" />		</a>
+		<div class="member-hidden-social"><div class="social-icons"><a href="#" class="social-icon framed use-hover fab fa-facebook-f social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"></a><a href="#" class="social-icon framed use-hover fab fa-twitter social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"></a><a href="#" class="social-icon framed use-hover fab fa-linkedin-in social-linkedin" target="_blank" title="linkedin" rel="noopener noreferrer"></a></div></div>	</figure>
+	<div class="post-details">
+	<h3 class="post-title">
+	<a href="https://d-themes.com/wordpress/udesign/medical/doctor/rose-doe/">
+		Rose Doe	</a>
+</h3>
+<div class="post-cats"><a href="https://d-themes.com/wordpress/udesign/medical/doctor_cat/cardiologist/" rel="tag">Cardiologist</a></div></div>
+	</article>
+	</div>
+
+
+<div class="post-wrap " data-post-image="medium">
+		<article class="post-560 udesign_member type-udesign_member status-publish has-post-thumbnail hentry udesign_member_category-cardiologist udesign_member_category-ophthalmologist post overlay-zoom overlay-dark  member-card">
+			<figure class="post-media">
+		<a href="https://d-themes.com/wordpress/udesign/medical/doctor/robin-doe/">
+			<img style="padding-top : 109.49%;" width="274" height="300" src="https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/10/doctor-6-274x300.jpg" class="d-lazyload attachment-medium size-medium wp-post-image" alt="doctor" srcset="https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/10/doctor-6-274x300.jpg 274w, https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/10/doctor-6-150x164.jpg 150w, https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/10/doctor-6.jpg 360w"  data-sizes="(max-width: 274px) 100vw, 274px" />		</a>
+		<div class="member-hidden-social"><div class="social-icons"><a href="#" class="social-icon framed use-hover fab fa-facebook-f social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"></a><a href="#" class="social-icon framed use-hover fab fa-twitter social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"></a><a href="#" class="social-icon framed use-hover fab fa-linkedin-in social-linkedin" target="_blank" title="linkedin" rel="noopener noreferrer"></a></div></div>	</figure>
+	<div class="post-details">
+	<h3 class="post-title">
+	<a href="https://d-themes.com/wordpress/udesign/medical/doctor/robin-doe/">
+		Robin Doe	</a>
+</h3>
+<div class="post-cats"><a href="https://d-themes.com/wordpress/udesign/medical/doctor_cat/cardiologist/" rel="tag">Cardiologist</a></div></div>
+	</article>
+	</div>
+
+
+<div class="post-wrap " data-post-image="medium">
+		<article class="post-558 udesign_member type-udesign_member status-publish has-post-thumbnail hentry udesign_member_category-cardiologist udesign_member_category-radiologist post overlay-zoom overlay-dark  member-card">
+			<figure class="post-media">
+		<a href="https://d-themes.com/wordpress/udesign/medical/doctor/janice-doe/">
+			<img style="padding-top : 109.49%;" width="274" height="300" src="https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/10/doctor-7-274x300.jpg" class="d-lazyload attachment-medium size-medium wp-post-image" alt="doctor" srcset="https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/10/doctor-7-274x300.jpg 274w, https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/10/doctor-7-150x164.jpg 150w, https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/10/doctor-7.jpg 360w"  data-sizes="(max-width: 274px) 100vw, 274px" />		</a>
+		<div class="member-hidden-social"><div class="social-icons"><a href="#" class="social-icon framed use-hover fab fa-facebook-f social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"></a><a href="#" class="social-icon framed use-hover fab fa-twitter social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"></a><a href="#" class="social-icon framed use-hover fab fa-linkedin-in social-linkedin" target="_blank" title="linkedin" rel="noopener noreferrer"></a></div></div>	</figure>
+	<div class="post-details">
+	<h3 class="post-title">
+	<a href="https://d-themes.com/wordpress/udesign/medical/doctor/janice-doe/">
+		Janice Doe	</a>
+</h3>
+<div class="post-cats"><a href="https://d-themes.com/wordpress/udesign/medical/doctor_cat/cardiologist/" rel="tag">Cardiologist</a></div></div>
+	</article>
+	</div>
+
+</div>	</div>
+			</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</section>
+						</div>
+					</div>
+		</div></div></div></div>	</div>
+				</main>
+
+			
+							<footer class="footer custom-footer footer-849" id="footer">
+						<div class="alpha-block elementor elementor-849" data-block-id="849">		<div data-elementor-type="wp-post" data-elementor-id="849" class="elementor elementor-849" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" elementor-section elementor-top-section elementor-element elementor-element-a2047cb custom-footer-top elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a2047cb" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-4d003eb mb-md-6 " data-id="4d003eb" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6f42e30 elementor-widget elementor-widget-udesign_header_site_logo" data-id="6f42e30" data-element_type="widget" data-widget_type="udesign_header_site_logo.default">
+				<div class="elementor-widget-container">
+			
+<a href="https://d-themes.com/wordpress/udesign/medical/" class="logo" title="U-Medical - UDesign WordPress Demo Site">
+	<img width="248" height="62" src="https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/08/logo.png" class="site-logo skip-data-lazy attachment-full size-full" alt="U-Medical" srcset="https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/08/logo.png 248w, https://d-themes.com/wordpress/udesign/medical/wp-content/uploads/sites/7/2021/08/logo-150x38.png 150w" sizes="(max-width: 248px) 100vw, 248px" /></a>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-266cac0 mb-6 " data-id="266cac0" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-807b2d9 elementor-widget elementor-widget-heading" data-id="807b2d9" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Get In Touch</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-4669fdc custom-info elementor-widget elementor-widget-text-editor" data-id="4669fdc" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<label class="text-uppercase">Address</label>
+<p class="text-white mb-2">123 Street Name, City, USA</p>
+<label class="text-uppercase">Phone</label><a class="d-block mb-2" href="tel:000123456789">Tell Free (123) 456-7890</a>
+<label class="text-uppercase">Email</label><a class="d-block mb-2" href="mailto:mail@udesign.com">udesign@mail.com</a>
+
+<label class="text-uppercase">Working Days/Hours</label>
+<p class="text-white mb-0">Mon &#8211; Sun / 9:00AM &#8211; 8:00PM</p>						</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-5762b72 mb-6 " data-id="5762b72" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-9a6ba31 elementor-widget elementor-widget-heading" data-id="9a6ba31" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Useful Links</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-f141c67 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-udesign_widget_iconlist" data-id="f141c67" data-element_type="widget" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items">
+			<li class="elementor-icon-list-item">
+			<a href="https://d-themes.com/wordpress/udesign/medical/about-us/">			<span class="elementor-icon-list-text">About Us</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Our Mission</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Awards</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Experience</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Success Story</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Services Guide</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="https://d-themes.com/wordpress/udesign/medical/privacy-policy/">			<span class="elementor-icon-list-text">Privacy</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="https://d-themes.com/wordpress/udesign/medical/contact-us/">			<span class="elementor-icon-list-text">Contact Us</span>
+							</a>
+					</li>
+		</ul>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-4f3b8c4 mb-6 " data-id="4f3b8c4" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-0bd8cb6 elementor-widget elementor-widget-heading" data-id="0bd8cb6" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Subscribe Newsletter</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2309aac elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="2309aac" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Lorem Ipsum. Proin gravida nibh vel velitauc cil torliquet enean. Solli citudin lorem biben elif dumau ctor.</p>		</div>
+				</div>
+				<div class="controls-rounded controls-sm elementor-element elementor-element-ce982fc mb-2 elementor-widget elementor-widget-wpforms" data-id="ce982fc" data-element_type="widget" data-widget_type="wpforms.default">
+				<div class="elementor-widget-container">
+			<div class="wpforms-container wpforms-container-full wpforms-row" id="wpforms-855"><form id="wpforms-form-855" class="wpforms-validate wpforms-form" data-formid="855" method="post" enctype="multipart/form-data" action="/wordpress/udesign/medical/doctor_cat/cardiologist/" data-token="ec736db520d281de041b9ae478d41a99"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-855-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-855-field_1">Email <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-855-field_1" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][1]" placeholder="Email address here..." required></div></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="855"><input type="hidden" name="wpforms[author]" value="1"><button type="submit" name="wpforms[submit]" class="wpforms-submit wpforms-submit-icon ml-2" id="wpforms-submit-855" value="wpforms-submit" aria-live="assertive" data-alt-text="Sending..." data-submit-text="Subscribe">Subscribe</button></div></form></div>  <!-- .wpforms-container -->		</div>
+				</div>
+				<div class="elementor-element elementor-element-766026b elementor-widget elementor-widget-udesign_widget_share" data-id="766026b" data-element_type="widget" data-widget_type="udesign_widget_share.default">
+				<div class="elementor-widget-container">
+			
+<div class="social-icons">
+	<a href="#" class="social-icon framed use-hover social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-icon framed use-hover social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a><a href="#" class="social-icon framed use-hover social-instagram" target="_blank" title="instagram" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a><a href="#" class="social-icon framed use-hover social-youtube" target="_blank" title="youtube" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a><a href="#" class="social-icon framed use-hover social-pinterest" target="_blank" title="pinterest" rel="noopener noreferrer"><i class="fab fa-pinterest"></i></a></div>
+
+		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class=" elementor-section elementor-top-section elementor-element elementor-element-c1778ef elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c1778ef" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-no" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-16d7243 " data-id="16d7243" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-0af2b9b elementor-widget elementor-widget-shortcode" data-id="0af2b9b" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode"><p class="mb-0 text-center copyright">UDesign Wordpress 
+© 2022. All Rights Reserved</p></div>
+				</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div>					</footer>
+					
+		</div>
+
+					<div class="cookies-popup">
+				<div class="cookies-popup-inner d-flex align-items-center">
+					<div class="cookies-info">
+						By browsing this website, you agree to our <a href="#">privacy policy</a>.					</div>
+					<a href="#" rel="nofollow noopener" class="btn btn-sm accept-cookie-btn">I Agree</a>
+					<a href="#" class="btn close-cookie-btn decline-cookie-btn btn-close" aria-label="Close Cookie Consent"><i class="a-icon-times-solid"></i></a>
+				</div>
+			</div>
+			
+					<a id="scroll-top" class="scroll-top" href="#top" title="Top" role="button">
+				<i class="a-icon-long-arrow-up"></i>
+				<svg  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					viewBox="0 0 70 70" enable-background="new 0 0 70 70" xml:space="preserve">
+					<circle id="progress-indicator" fill="transparent" stroke="#000000" stroke-miterlimit="10" cx="35" cy="35" r="34"/>
+				</svg>
+			</a>
+		
+					<div class="mobile-menu-wrapper">
+				<div class="mobile-menu-overlay"></div>
+				<div class="mobile-menu-container" style="height: 100vh;">
+					<!-- Need to ajax load mobile menus -->
+				</div>
+				<a class="mobile-menu-close" href="#"><i class="close-icon"></i></a>
+			</div>
+		
+		
+		<link rel='stylesheet' id='wpforms-full-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/wpforms-lite/assets/css/wpforms-full.min.css?ver=1.6.9' media='all' />
+<link rel='stylesheet' id='alpha-wpforms-style-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/inc/plugins/wpforms/wpforms.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='font-awesome-5-all-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.css?ver=3.4.0' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.css?ver=3.4.0' media='all' />
+<link rel='stylesheet' id='e-animations-css'  href='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.4.0' media='all' />
+<script async="async" src='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/u-design-core/framework/addons/live-search/jquery.autocomplete.min.js?ver=5.8.3' id='jquery-autocomplete-js'></script>
+<script id='alpha-framework-js-extra'>
+var alpha_vars = {"theme":"udesign","framework_icon_prefix":"a","alpha_gap":"15px","home_url":"https:\/\/d-themes.com\/wordpress\/udesign\/medical\/","ajax_url":"https:\/\/d-themes.com\/wordpress\/udesign\/medical\/wp-admin\/admin-ajax.php","nonce":"31d2430d17","lazyload":"1","container":"1290","assets_url":"https:\/\/d-themes.com\/wordpress\/udesign\/medical\/wp-content\/themes\/u-design\/assets","texts":{"loading":"Loading...","loadmore_error":"Loading failed","popup_error":"The content could not be loaded.","ribbon":"Ribbon"},"resource_async_js":"1","resource_split_tasks":"1","resource_after_load":"1","alpha_cache_key":"alpha_cache_48dcae008c63bbe26129bb01b8325e8b","lazyload_menu":"","countdown":{"labels":["Years","Months","Weeks","Days","Hours","Minutes","Seconds"],"labels_short":["Years","Months","Weeks","Days","Hrs","Mins","Secs"],"label1":["Year","Month","Week","Day","Hour","Minute","Second"],"label1_short":["Year","Month","Week","Day","Hour","Min","Sec"]},"placeholder_img":"https:\/\/d-themes.com\/wordpress\/udesign\/medical\/wp-content\/themes\/u-design\/assets\/images\/placeholders\/post-placeholder.jpg","placeholder_alt":"UDesign Placeholder","placeholder_width":"730","placeholder_height":"570","search_result":"There are no results.","cookie_version":"1"};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/framework/assets/js/framework.js?ver=4.0.0' id='alpha-framework-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/framework/assets/js/framework-async.js?ver=4.0.0' id='alpha-framework-async-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/js/theme.js?ver=4.0.0' id='alpha-theme-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/u-design-core/framework/addons/gdpr/gdpr.js?ver=4.0.0' id='alpha-gdpr-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/u-design-core/inc/cpt/post_types/member/assets/member.js?ver=4.0.0' id='alpha-member-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/medical/wp-content/themes/u-design/assets/vendor/jquery.magnific-popup/jquery.magnific-popup.js?ver=1.1.0' id='jquery-magnific-popup-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-includes/js/wp-embed.js?ver=5.8.3' id='wp-embed-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/u-design-core/framework/addons/lazyload-images/lazyload.js?ver=5.8.3' id='lazyload-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/u-design-core/inc/addons/post-like/post-like.js?ver=4.0.0' id='alpha-post-like-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.js?ver=3.4.0' id='font-awesome-4-shim-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/elementor/assets/js/webpack.runtime.js?ver=3.4.0' id='elementor-webpack-runtime-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-includes/js/jquery/jquery-migrate.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/elementor/assets/js/frontend-modules.js?ver=3.4.0' id='elementor-frontend-modules-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-includes/js/jquery/ui/core.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/elementor/assets/lib/swiper/swiper.js?ver=5.3.6' id='swiper-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/elementor/assets/lib/share-link/share-link.js?ver=3.4.0' id='share-link-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/elementor/assets/lib/dialog/dialog.js?ver=4.8.1' id='elementor-dialog-js'></script>
+<script id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":true},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":992,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":991,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.4.0","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"landing-pages":true,"elements-color-picker":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/d-themes.com\/wordpress\/udesign\/medical\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"editorPreferences":[]},"kit":{"viewport_tablet":991,"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":0,"title":"Cardiologist &#8211; U-Medical","excerpt":""}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":true},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":992,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":991,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.4.0","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"landing-pages":true,"elements-color-picker":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/d-themes.com\/wordpress\/udesign\/medical\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"editorPreferences":[]},"kit":{"viewport_tablet":991,"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":0,"title":"Cardiologist &#8211; U-Medical","excerpt":""}};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/elementor/assets/js/frontend.js?ver=3.4.0' id='elementor-frontend-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/elementor/assets/js/preloaded-modules.js?ver=3.4.0' id='preloaded-modules-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-includes/js/underscore.min.js?ver=1.13.1' id='underscore-js'></script>
+<script id='wp-util-js-extra'>
+var _wpUtilSettings = {"ajax":{"url":"\/wordpress\/udesign\/medical\/wp-admin\/admin-ajax.php"}};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-includes/js/wp-util.js?ver=5.8.3' id='wp-util-js'></script>
+<script id='wpforms-elementor-js-extra'>
+var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.6.9' id='wpforms-elementor-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/wpforms-lite/assets/js/jquery.validate.min.js?ver=1.19.0' id='wpforms-validation-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/wpforms-lite/assets/js/mailcheck.min.js?ver=1.1.2' id='wpforms-mailcheck-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/wpforms-lite/assets/js/punycode.min.js?ver=1.0.0' id='wpforms-punycode-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/medical/wp-content/plugins/wpforms-lite/assets/js/wpforms.js?ver=1.6.9' id='wpforms-js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpforms_settings = {"val_required":"This field is required.","val_email":"Please enter a valid email address.","val_email_suggestion":"Did you mean {suggestion}?","val_email_suggestion_title":"Click to accept this suggestion.","val_email_restricted":"This email address is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number.","val_confirm":"Field values do not match.","val_checklimit":"You have exceeded the number of allowed selections: {#}.","val_limit_characters":"{count} of {limit} max characters.","val_limit_words":"{count} of {limit} max words.","val_recaptcha_fail_msg":"Google reCAPTCHA verification failed, please try again later.","val_empty_blanks":"Please fill out all blanks.","uuid_cookie":"","locale":"en","wpforms_plugin_url":"https:\/\/d-themes.com\/wordpress\/udesign\/medical\/wp-content\/plugins\/wpforms-lite\/","gdpr":"","ajaxurl":"https:\/\/d-themes.com\/wordpress\/udesign\/medical\/wp-admin\/admin-ajax.php","mailcheck_enabled":"1","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"],"is_ssl":"1"}
+/* ]]> */
+</script>
+	</body>
+</html>

@@ -1,0 +1,129 @@
+html {
+--alpha-container-width: 1290px;
+--alpha-container-fluid-width: 1920px;
+--alpha-site-bg-color: #fff;
+--alpha-site-width: false;
+--alpha-site-margin: 0;
+--alpha-site-gap: 0;
+--alpha-primary-color: #fcbd16;
+--alpha-secondary-color: #323334;
+--alpha-dark-color: #323334;
+--alpha-light-color: #ccc;
+--alpha-accent-color: #2265cd;
+--alpha-success-color: #9AB35D;
+--alpha-info-color: #62A8EA;
+--alpha-danger-color: #F96868;
+--alpha-primary-color-hover: #fdcc49;
+--alpha-secondary-color-hover: #4b4d4e;
+--alpha-dark-color-hover: #4b4d4e;
+--alpha-light-color-hover: #e6e6e6;
+--alpha-accent-color-hover: #4380e0;
+--alpha-success-color-hover: #b0c480;
+--alpha-info-color-hover: #8fc1f1;
+--alpha-danger-color-hover: #fb9a9a;
+--alpha-primary-color-light: #fff7e0;
+--alpha-secondary-color-light: #97999c;
+--alpha-dark-color-light: #97999c;
+--alpha-light-color-light: #ffffff;
+--alpha-accent-color-light: #c6d9f6;
+--alpha-success-color-light: #f1f5e8;
+--alpha-info-color-light: #ffffff;
+--alpha-danger-color-light: #ffffff;
+--alpha-primary-gradient-1: #fcbd13;
+--alpha-primary-gradient-2: #fdcc49;
+--alpha-body-font-family: 'Poppins';
+--alpha-body-font-weight: 400;
+--alpha-body-font-size: 14px;
+--alpha-body-line-height: 1.86;
+--alpha-body-letter-spacing: -.01em;
+--alpha-body-color: #888;
+--alpha-typo-ratio: 1;
+--alpha-heading-font-weight: 600;
+--alpha-heading-line-height: 1.2;
+--alpha-heading-letter-spacing: -0.025em;
+--alpha-heading-color: #323334;
+--alpha-header-border-color: ;
+--alpha-header-top-pd: 0px;--alpha-header-middle-pd: 0px;--alpha-header-bottom-pd: 0px;--alpha-ptb-search-width: 350px;
+--alpha-ptb-top-space: 46px;
+--alpha-ptb-bottom-space: 46px;
+
+}
+.page-header {
+--alpha-ptb-bg-color: #eee;
+
+}
+.page-header .page-title {
+--alpha-ptb-title-font-size: 28px;
+--alpha-ptb-title-text-transform: capitalize;
+--alpha-ptb-title-color: #323334;
+
+}
+.page-header .page-subtitle {
+--alpha-ptb-subtitle-font-size: 18px;
+
+}
+.breadcrumb {
+--alpha-ptb-breadcrumb-font-size: 12px;
+--alpha-ptb-breadcrumb-color: #323334;
+
+}
+.d-lazyload {
+--alpha-lazy-load-bg: #f4f4f4;
+
+}
+.elementor-section {
+--alpha-gap: 15px;
+
+}
+@media (max-width: 1289px) {
+    .container-fluid .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (max-width: 1289px) and (min-width: 480px) {
+.elementor-top-section.elementor-section-boxed > .elementor-column-gap-no,
+.elementor-section-full_width .elementor-section-boxed > .elementor-column-gap-no {
+width: calc(100% - var(--alpha-gap) * 4);
+}
+.elementor-top-section.elementor-section-boxed > .elementor-column-gap-default,
+.elementor-section-full_width .elementor-section-boxed > .elementor-column-gap-default {
+width: calc(100% - var(--alpha-gap) * 2);
+}
+.elementor-top-section.elementor-section-boxed > .elementor-column-gap-narrow,
+.elementor-section-full_width .elementor-section-boxed > .elementor-column-gap-narrow {
+width: calc(100% - var(--alpha-gap) * 4 + 10px);
+}
+.elementor-top-section.elementor-section-boxed > .elementor-column-gap-normal,
+.elementor-section-full_width .elementor-section-boxed > .elementor-column-gap-normal {
+width: calc(100% - var(--alpha-gap) * 4 + 20px);
+}
+.elementor-top-section.elementor-section-boxed > .elementor-column-gap-wide,
+.elementor-section-full_width .elementor-section-boxed > .elementor-column-gap-wide {
+width: calc( 100% - var(--alpha-gap) * 4 + 40px );
+}
+.elementor-top-section.elementor-section-boxed > .elementor-column-gap-wider,
+.elementor-section-full_width .elementor-section-boxed > .elementor-column-gap-wider {
+width: calc( 100% - var(--alpha-gap) * 4 + 50px );
+}
+}
+@media (max-width: 1919px) and (min-width: 480px) {
+.elementor-top-section.elementor-section-boxed > .elementor-column-gap-no.container-fluid {
+width: calc(100% - 40px);
+}
+.elementor-top-section.elementor-section-boxed > .elementor-column-gap-default.container-fluid {
+width: calc(100% + 2 * var(--alpha-gap) - 40px);
+}
+.elementor-top-section.elementor-section-boxed > .elementor-column-gap-narrow.container-fluid {
+width: calc(100% - 30px);
+}
+.elementor-top-section.elementor-section-boxed > .elementor-column-gap-extended.container-fluid {
+width: calc(100% - 10px);
+}
+.elementor-top-section.elementor-section-boxed > .elementor-column-gap-wide.container-fluid {
+width: 100%;
+}
+.elementor-top-section.elementor-section-boxed > .elementor-column-gap-wider.container-fluid {
+width: calc(100% + 10px);
+}
+}

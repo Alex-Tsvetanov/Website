@@ -1,0 +1,1272 @@
+
+<!DOCTYPE html>
+	<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+		
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<link rel="pingback" href="https://d-themes.com/wordpress/udesign/real-estate/xmlrpc.php" />
+
+		<link rel="shortcut icon" href="https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/images/favicon.png" type="image/x-icon" />
+		
+		<title>Mary Ann &#8211; U-Real Estate</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="U-Real Estate &raquo; Feed" href="https://d-themes.com/wordpress/udesign/real-estate/feed/" />
+<link rel="alternate" type="application/rss+xml" title="U-Real Estate &raquo; Comments Feed" href="https://d-themes.com/wordpress/udesign/real-estate/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="U-Real Estate &raquo; Mary Ann Comments Feed" href="https://d-themes.com/wordpress/udesign/real-estate/agents/mary-ann/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-includes/css/dist/block-library/style.css?ver=5.8.3' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+#start-resizable-editor-section {
+  display: none;
+}
+
+.wp-block-audio figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-audio figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-code {
+  font-family: Menlo, Consolas, monaco, monospace;
+  color: #1e1e1e;
+  padding: 0.8em 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.wp-block-embed figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-embed figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.blocks-gallery-caption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .blocks-gallery-caption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-image figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-image figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-pullquote {
+  border-top: 4px solid currentColor;
+  border-bottom: 4px solid currentColor;
+  margin-bottom: 1.75em;
+  color: currentColor;
+}
+.wp-block-pullquote cite,
+.wp-block-pullquote footer, .wp-block-pullquote__citation {
+  color: currentColor;
+  text-transform: uppercase;
+  font-size: 0.8125em;
+  font-style: normal;
+}
+
+.wp-block-quote {
+  border-left: 0.25em solid currentColor;
+  margin: 0 0 1.75em 0;
+  padding-left: 1em;
+}
+.wp-block-quote cite,
+.wp-block-quote footer {
+  color: currentColor;
+  font-size: 0.8125em;
+  position: relative;
+  font-style: normal;
+}
+.wp-block-quote.has-text-align-right {
+  border-left: none;
+  border-right: 0.25em solid currentColor;
+  padding-left: 0;
+  padding-right: 1em;
+}
+.wp-block-quote.has-text-align-center {
+  border: none;
+  padding-left: 0;
+}
+.wp-block-quote.is-style-large, .wp-block-quote.is-large {
+  border: none;
+}
+
+.wp-block-search .wp-block-search__label {
+  font-weight: bold;
+}
+
+.wp-block-group.has-background {
+  padding: 1.25em 2.375em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.wp-block-separator {
+  border: none;
+  border-bottom: 2px solid currentColor;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.4;
+}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+  width: 100px;
+}
+.wp-block-separator.has-background:not(.is-style-dots) {
+  border-bottom: none;
+  height: 1px;
+}
+.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+  height: 2px;
+}
+
+.wp-block-table thead {
+  border-bottom: 3px solid;
+}
+.wp-block-table tfoot {
+  border-top: 3px solid;
+}
+.wp-block-table td,
+.wp-block-table th {
+  padding: 0.5em;
+  border: 1px solid;
+  word-break: normal;
+}
+.wp-block-table figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-table figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-video figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-video figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-template-part.has-background {
+  padding: 1.25em 2.375em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#end-resizable-editor-section {
+  display: none;
+}
+</style>
+<link rel='stylesheet' id='essential-grid-plugin-settings-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=3.0.11' media='all' />
+<link rel='stylesheet' id='tp-fontello-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/essential-grid/public/assets/font/fontello/css/fontello.css?ver=3.0.11' media='all' />
+<link rel='stylesheet' id='alpha-gdpr-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/framework/addons/gdpr/gdpr.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.css?ver=5.12.0' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/elementor/css/custom-frontend.css?ver=1641541693' media='all' />
+<style id='elementor-frontend-inline-css'>
+@font-face{font-family:eicons;src:url(https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0);src:url(https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0#iefix) format("embedded-opentype"),url(https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0) format("woff2"),url(https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.10.0) format("woff"),url(https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.10.0) format("truetype"),url(https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.10.0#eicon) format("svg");font-weight:400;font-style:normal}
+</style>
+<link rel='stylesheet' id='font-awesome-5-all-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.css?ver=3.4.0' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.css?ver=3.4.0' media='all' />
+<link rel='stylesheet' id='alpha-core-framework-style-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/assets/css/framework.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='fontawesome-free-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/vendor/fontawesome-free/css/all.min.css?ver=5.14.0' media='all' />
+<link rel='stylesheet' id='alpha-icons-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/vendor/alpha-icons/css/icons.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='theme-icons-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/vendor/udesign-icons/css/icons.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='animate-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/vendor/animate/animate.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/vendor/jquery.magnific-popup/magnific-popup.min.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='elementor-post-3-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/elementor/css/post-3.css?ver=1641541687' media='all' />
+<link rel='stylesheet' id='alpha-theme-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/css/theme.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-dynamic-vars-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/udesign_styles/dynamic_css_vars.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-theme-single-post-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/css/pages/single-post.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-google-fonts-css'  href='https://fonts.googleapis.com/css?family=DM+Sans%3A300%2C400%2C500%2C600%2C700&#038;ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-member-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/inc/cpt/post_types/member/assets/member.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-single-member-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/inc/cpt/post_types/member/assets/single-member.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='bootstrap-datepicker-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='bootstrap-timepicker-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/assets/vendor/bootstrap-timepicker/css/bootstrap-timepicker.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-elementor-style-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/framework/plugins/elementor/assets/elementor.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-elementor-extend-style-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/inc/plugins/elementor/assets/elementor-extend.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='elementor-post-29-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/elementor/css/post-29.css?ver=5.8.3' media='all' />
+<style id='elementor-post-29-inline-css'>
+.menu>.menu-item:not(:last-child){border-right:1px solid #e1e1e1}.menu-active-underline>li>a:before{bottom:auto;top:0}.menu.menu-active-underline>li{padding-right:0}.menu.menu-active-underline>.menu-item-has-children>a{padding-right:4.2rem}.menu.menu-active-underline>li>a:after{right:2.7rem}.menu>.menu-item-has-children:hover>ul{left:0}
+</style>
+<link rel='stylesheet' id='elementor-post-782-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/elementor/css/post-782.css?ver=5.8.3' media='all' />
+<style id='elementor-post-782-inline-css'>
+.cs-text-editor .elementor-widget-container .address{color:#999;line-height:2.4}@media (max-width:575px){.cs-footer-top .elementor-container>.elementor-column{width:100%}}
+</style>
+<link rel='stylesheet' id='elementor-post-1066-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/elementor/css/post-1066.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='elementor-post-1441-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/elementor/css/post-1441.css?ver=5.8.3' media='all' />
+<style id='elementor-post-1441-inline-css'>
+.page-wrapper{background-color:#F8F8F8}.single main{padding-top:3.5rem}.cs-heading strong{margin-right:.7rem}.cs-chart-layout .elementor-column{padding:0 1.5rem}.cs-chart-layout.elementor-section.elementor-element .elementor-container{margin:0 -1.5rem;width:calc(100% + 3rem)}.cs-property-list .esg-grid .mainul li.eg-property-list-wrapper{background-color:#fff}.cs-property-list .esg-absolute i{vertical-align:middle}.cs-property-list .esg-overlay{margin-top:0!important}.cs-agents article{height:100%}.udesign_member.member-info{box-shadow:none}.eg-property-list-element-31{display:none!important}@media (min-width:992px){.cs-property-list .esg-media-cover-wrapper{display:flex;align-items:center}.cs-property-list .esg-entry-media-wrapper{flex:0 0 48.2%;max-width:48.2%;align-self:stretch}.cs-property-list .esg-entry-media{height:100%;padding-bottom:100%}.cs-property-list .esg-entry-cover{height:100%}}
+</style>
+<link rel='stylesheet' id='alpha-style-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/style.css?ver=4.0.0' media='all' />
+<style id='alpha-style-inline-css'>
+/* Global CSS */
+.single-property .page-wrapper {
+    background-color: #f8f8f8;
+}
+
+.single-property .post-cats-date,
+.single-property .post-title,
+.single-property .post-meta {
+    display: none;
+}
+
+.eg-property-default-element-5::after,
+.eg-property-default-element-7::after, 
+.eg-property-default-element-9::after {
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    line-height: 1;
+		color: #888;
+}
+
+.eg-property-default-element-5::after {
+    content: 'Bedrooms';
+}
+
+.eg-property-default-element-7::after {
+    content: 'Bathrooms';
+}
+
+.eg-property-default-element-9::after {
+    content: 'Sq Ft';
+}
+
+.esg-content i {
+    vertical-align: middle;
+}
+
+.esg-content i.u-icon-shower,
+.esg-content i.u-icon-square {
+		position: relative;
+		top: -.1em
+}
+
+.eg-property-default-element-1-a + .eg-property-default-element-13-a {
+    left: 102px;
+}
+
+.eg-property-list-element-15-a + .eg-property-list-element-25-a {
+    left: 109px;
+}
+
+.eg-property-default-element-13-a a:hover,
+.eg-property-default-element-13-a a:focus,
+.eg-property-list-element-25-a a:hover,
+.eg-property-list-element-25-a a:focus {
+    color: #fff;
+}
+
+.esg-filters.esg-singlefilters .esg-navigationbutton i {
+    transition: color .3s;
+}
+
+.esg-filters.esg-singlefilters .esg-navigationbutton.hovered  {
+    box-shadow: none;
+}
+
+@media (max-width: 479px) {
+    .eg-property-default-wrapper .esg-entry-content {
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+}
+</style>
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=5.8.3' media='all' />
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-includes/js/jquery/jquery.js?ver=3.6.0' id='jquery-core-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-includes/js/jquery/jquery-migrate.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.js?ver=3.4.0' id='font-awesome-4-shim-js'></script>
+<link rel="https://api.w.org/" href="https://d-themes.com/wordpress/udesign/real-estate/wp-json/" /><link rel="alternate" type="application/json" href="https://d-themes.com/wordpress/udesign/real-estate/wp-json/wp/v2/udesign_member/717" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://d-themes.com/wordpress/udesign/real-estate/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://d-themes.com/wordpress/udesign/real-estate/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.3" />
+<link rel="canonical" href="https://d-themes.com/wordpress/udesign/real-estate/agents/mary-ann/" />
+<link rel='shortlink' href='https://d-themes.com/wordpress/udesign/real-estate/?p=717' />
+<link rel="alternate" type="application/json+oembed" href="https://d-themes.com/wordpress/udesign/real-estate/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fd-themes.com%2Fwordpress%2Fudesign%2Freal-estate%2Fagents%2Fmary-ann%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://d-themes.com/wordpress/udesign/real-estate/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fd-themes.com%2Fwordpress%2Fudesign%2Freal-estate%2Fagents%2Fmary-ann%2F&#038;format=xml" />
+		<meta name="application-name" content="UDesign - MULTI-PURPOSE PREMIUM WordPress THEME">
+		<meta name="author" content="Andon">
+		<meta name="description" content="A slick, powerful and clean theme UDesign provides an intuitive set of options to help you setup your WordPress site quickly and effectively. Flexibility is key and it has been optimized for SEO and speed. It is also responsive & mobile ready should you choose that option. The UDesign theme features include: unlimited colors, widgetized home page, over 600 fonts to choose from, WooCommerce Integration, it is also translation and multilingual ready, step by step documentation, exclusive UDesign support forum and a helpful community. Always up-to-date security and many new features are constantly added as the theme evolves.">
+		<style id="kirki-inline-styles"></style>	</head>
+	<body class="udesign_member-template-default single single-udesign_member postid-717 wp-custom-logo wp-embed-responsive alpha-single-udesign-member-layout alpha-rounded-skin elementor-default elementor-kit-3 elementor-page elementor-page-717 udesign-demo">
+		
+		
+		
+		<div class="page-wrapper">
+
+			<header class="header custom-header header-29" id="header"><div class="alpha-block elementor elementor-29" data-block-id="29">		<div data-elementor-type="wp-post" data-elementor-id="29" class="elementor elementor-29" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" elementor-section elementor-top-section elementor-element elementor-element-53204d9 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="53204d9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-no" >
+										
+		<div class=" elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-016ea8f flex-1 w-auto overflow-hidden " data-id="016ea8f" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-970dbcd elementor-hidden-mobile elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-udesign_widget_iconlist" data-id="970dbcd" data-element_type="widget" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items">
+			<li class="elementor-icon-list-item">
+			<a href="mailto:#" aria-label="Mail to">				<span class="elementor-icon-list-icon">
+				<i aria-hidden="true" class="  u-icon-envelop"></i>				</span>
+						<span class="elementor-icon-list-text">to@example.com</span>
+							</a>
+					</li>
+		</ul>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-aef4da8 welcome-msg elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-udesign_widget_iconlist" data-id="aef4da8" data-element_type="widget" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items">
+			<li class="elementor-icon-list-item">
+							<span class="elementor-icon-list-icon">
+				<i aria-hidden="true" class="  u-icon-clock"></i>				</span>
+						<span class="elementor-icon-list-text">Mon - Sat 8:00 - 18:00, Sunday-Closed</span>
+					</li>
+		</ul>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a823868 w-auto " data-id="a823868" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-302e5c1 ml-auto elementor-hidden-desktop elementor-hidden-tablet elementor-view-default elementor-widget elementor-widget-icon" data-id="302e5c1" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<a class="elementor-icon" href="mailto:#">
+			<i aria-hidden="true" class="  u-icon-envelop"></i>			</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-b552c52 ml-md-auto mr-lg-2 elementor-widget elementor-widget-udesign_widget_share" data-id="b552c52" data-element_type="widget" data-widget_type="udesign_widget_share.default">
+				<div class="elementor-widget-container">
+			
+<div class="social-icons">
+	<a href="#" class="social-icon  use-hover social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-icon  use-hover social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a><a href="#" class="social-icon  use-hover social-linkedin" target="_blank" title="linkedin" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></div>
+
+		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class=" elementor-section elementor-top-section elementor-element elementor-element-baece65 elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="baece65" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a1e23e6 " data-id="a1e23e6" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-b0045f9 ml-lg-auto mr-auto elementor-widget elementor-widget-udesign_header_site_logo" data-id="b0045f9" data-element_type="widget" data-widget_type="udesign_header_site_logo.default">
+				<div class="elementor-widget-container">
+			
+<a href="https://d-themes.com/wordpress/udesign/real-estate/" class="logo" title="U-Real Estate - UDesign WordPress Demo Site">
+	<img width="138" height="56" src="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/header-logo138x56.png" class="site-logo skip-data-lazy attachment-full size-full" alt="U-Real Estate" /></a>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class=" sticky-content fix-top elementor-section elementor-top-section elementor-element elementor-element-7b4037c elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7b4037c" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-no" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2be6f5b " data-id="2be6f5b" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1c64e29 elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-udesign_widget_menu" data-id="1c64e29" data-element_type="widget" data-widget_type="udesign_widget_menu.default">
+				<div class="elementor-widget-container">
+			<nav class=" main-menu"><ul id="menu-main-menu" class="menu  horizontal-menu menu-active-underline"><li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-16" ><a href="https://d-themes.com/wordpress/udesign/real-estate/"><span>Home</span></a></li>
+<li id="menu-item-1331" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1331" ><a href="https://d-themes.com/wordpress/udesign/real-estate/property/"><span>Properties</span></a></li>
+<li id="menu-item-1726" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-has-children menu-item-1726" ><a href="https://d-themes.com/wordpress/udesign/real-estate/news/"><span>News</span></a>
+<ul>
+	<li id="menu-item-1727" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1727" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/classic/"><span>Classic</span></a></li>
+	<li id="menu-item-1728" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1728" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/grid/"><span>Grid</span></a></li>
+	<li id="menu-item-1729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1729" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/masonry/"><span>Masonry</span></a></li>
+	<li id="menu-item-1730" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1730" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/timeline/"><span>Timeline</span></a></li>
+	<li id="menu-item-1731" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1731" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/08/18/nullam-mattis-mi-at-metus-egestas/"><span>Single Post</span></a>
+	<ul>
+		<li id="menu-item-1732" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1732" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/09/25/nam-nec-telodio-tinci-dunt-auctor/" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1732"><span>Full Width</span></a></li>
+		<li id="menu-item-1733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1733" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/08/31/aliquam-tincidunt-mauris/" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1733"><span>Left Sidebar</span></a></li>
+		<li id="menu-item-1734" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1734" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/08/18/nullam-mattis-mi-at-metus-egestas/" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1734"><span>Right Sidebar</span></a></li>
+
+	</ul>
+</li>
+
+</ul>
+</li>
+<li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17" ><a href="https://d-themes.com/wordpress/udesign/real-estate/about-us/"><span>About Us</span></a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19" ><a href="https://d-themes.com/wordpress/udesign/real-estate/contact-us/"><span>Contact Us</span></a></li>
+<li id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22" ><a href="https://d-themes.com/wordpress/udesign/elements/"><span>Elements</span></a></li>
+</ul></nav>		</div>
+				</div>
+				<div class="elementor-element elementor-element-641b9a8 ml-lg-auto mr-auto elementor-hidden-desktop elementor-widget elementor-widget-udesign_header_site_logo" data-id="641b9a8" data-element_type="widget" data-widget_type="udesign_header_site_logo.default">
+				<div class="elementor-widget-container">
+			
+<a href="https://d-themes.com/wordpress/udesign/real-estate/" class="logo" title="U-Real Estate - UDesign WordPress Demo Site">
+	<img width="138" height="56" src="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/header-logo138x56.png" class="site-logo skip-data-lazy attachment-full size-full" alt="U-Real Estate" /></a>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-ecef7b4 elementor-hidden-desktop elementor-widget elementor-widget-udesign_header_mmenu_toggle" data-id="ecef7b4" data-element_type="widget" data-widget_type="udesign_header_mmenu_toggle.default">
+				<div class="elementor-widget-container">
+			<a href="#" class="mobile-menu-toggle d-lg-none" aria-label="Mobile Menu"><i class="a-icon-hamburger"></i></a>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div></header><div class="alpha-block elementor elementor-1066" data-block-id="1066">		<div data-elementor-type="wp-post" data-elementor-id="1066" class="elementor elementor-1066" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" elementor-section elementor-top-section elementor-element elementor-element-85cc7bb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="85cc7bb" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-be474a9 " data-id="be474a9" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-89716b6 animated-fast elementor-invisible elementor-widget elementor-widget-heading" data-id="89716b6" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUpShorter&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Agent Info</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ca998b9 animated-fast elementor-invisible elementor-widget elementor-widget-udesign_widget_breadcrumb" data-id="ca998b9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUpShorter&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="udesign_widget_breadcrumb.default">
+				<div class="elementor-widget-container">
+			<ul class="breadcrumb"><li><a href="https://d-themes.com/wordpress/udesign/real-estate">Home</a></li><li class="delimiter">/</li><li><a href="https://d-themes.com/wordpress/udesign/real-estate/agents/">Agent</a></li><li class="delimiter">/</li><li>Mary Ann</li></ul><script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Home","@id":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate"}},{"@type":"ListItem","position":2,"item":{"name":"Agent","@id":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/agents\/"}},{"@type":"ListItem","position":3,"item":{"name":"terms","@id":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/agents\/mary-ann\/"}},{"@type":"ListItem","position":4,"item":{"name":"Mary Ann","@id":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/agents\/mary-ann\/"}}]}</script>		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div>
+			
+			<main id="main" class="main">
+
+<div class="page-content">
+	<div class="container"><div class="main-content-wrap"><div class="main-content"><div class="alpha-block elementor elementor-1441" data-block-id="1441">		<div data-elementor-type="wp-post" data-elementor-id="1441" class="elementor elementor-1441" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<section class=" elementor-section elementor-top-section elementor-element elementor-element-5806832 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5806832" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-8a20d33 alpha-sticky-column" data-id="8a20d33" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-19eae25 elementor-widget__width-auto ml-auto mr-auto elementor-widget elementor-widget-image" data-id="19eae25" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img style="padding-top : 109.44%;" width="360" height="394" src="https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/member-5.jpg" class="d-lazyload attachment-full size-full" alt="Agent Image" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-b171b77 elementor-widget elementor-widget-udesign_widget_share" data-id="b171b77" data-element_type="widget" data-widget_type="udesign_widget_share.default">
+				<div class="elementor-widget-container">
+			
+<div class="social-icons">
+	<a href="#" class="social-icon framed use-hover social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-icon framed use-hover social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a><a href="#" class="social-icon framed use-hover social-linkedin" target="_blank" title="linkedin" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></div>
+
+		</div>
+				</div>
+				<div class=" elementor-section elementor-inner-section elementor-element elementor-element-dd44478 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dd44478" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-no" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-8d4c2ba " data-id="8d4c2ba" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-70d848b elementor-widget elementor-widget-heading" data-id="70d848b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Real Estate Inquiry Form</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7cb7df5 elementor-widget elementor-widget-heading" data-id="7cb7df5" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Lorem ipsum dolor sit amet, </p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-21c989b elementor-widget elementor-widget-wpforms" data-id="21c989b" data-element_type="widget" data-widget_type="wpforms.default">
+				<div class="elementor-widget-container">
+			<div class="wpforms-container wpforms-container-full" id="wpforms-1473"><form id="wpforms-form-1473" class="wpforms-validate wpforms-form" data-formid="1473" method="post" enctype="multipart/form-data" action="/wordpress/udesign/real-estate/agents/mary-ann/" data-token="5b6ae8f68e3025d222e295b3974c8d42"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-1473-field_0-container" class="wpforms-field wpforms-field-name" data-field-id="0"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-1473-field_0">Name <span class="wpforms-required-label">*</span></label><input type="text" id="wpforms-1473-field_0" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][0]" placeholder="Your Name" required></div><div id="wpforms-1473-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-1473-field_1">Email <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-1473-field_1" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][1]" placeholder="Your Email Address" required></div><div id="wpforms-1473-field_2-container" class="wpforms-field wpforms-field-textarea" data-field-id="2"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-1473-field_2">Comment or Message <span class="wpforms-required-label">*</span></label><textarea id="wpforms-1473-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" placeholder="Your Message" required></textarea></div></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="1473"><input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]" value="717"><button type="submit" name="wpforms[submit]" class="wpforms-submit " id="wpforms-submit-1473" value="wpforms-submit" aria-live="assertive" data-alt-text="Sending..." data-submit-text="Send Message">Send Message</button></div></form></div>  <!-- .wpforms-container -->		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6d7aa2d " data-id="6d7aa2d" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-0ed02a7 cs-heading mt-6 mb-3 elementor-widget elementor-widget-heading" data-id="0ed02a7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Mary Ann</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ebeaf71 cs-heading elementor-widget elementor-widget-heading" data-id="ebeaf71" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default"><strong class="text-dark">Address : </strong>Morden House Real Estate</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2acb8a1 cs-heading elementor-widget elementor-widget-heading" data-id="2acb8a1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default"><a href="mailto:udesign@mary.com"><strong class="text-dark">Email:</strong>udesign@mary.com</a></p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3e53ef9 cs-heading elementor-widget elementor-widget-heading" data-id="3e53ef9" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default"><a href="tel:+(000)234-4567"><strong class="text-dark">Phone Number:</strong>+(000)234-4567</a></p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-d7135bc cs-heading elementor-widget elementor-widget-heading" data-id="d7135bc" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default"><strong class="text-dark">Service Areas:</strong>Chicago, Miami Beach, New York</p>		</div>
+				</div>
+				<div class=" elementor-section elementor-inner-section elementor-element elementor-element-a1d7a4d cs-chart-layout elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a1d7a4d" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-no" >
+										
+		<div class=" elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-e00a18c mb-6 " data-id="e00a18c" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7d92ef9 elementor-widget elementor-widget-heading" data-id="7d92ef9" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">Property Types</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-578942f mb-2 elementor-widget elementor-widget-udesign_widget_pie_doughnut_chart" data-id="578942f" data-element_type="widget" data-widget_type="udesign_widget_pie_doughnut_chart.default">
+				<div class="elementor-widget-container">
+					<div class="pie-doughnut-chart-container chart-container" data-chart="{&quot;datasets&quot;:[{&quot;data&quot;:[66,17,17],&quot;backgroundColor&quot;:[&quot;#698E9F&quot;,&quot;#7DB5D1&quot;,&quot;#B3D3E3&quot;],&quot;borderWidth&quot;:0,&quot;borderColor&quot;:&quot;#020101&quot;,&quot;hoverBorderColor&quot;:&quot;#020101&quot;}],&quot;labels&quot;:[&quot;Apartment&quot;,&quot;Living Room&quot;,&quot;Office&quot;]}" data-options="{&quot;tooltips&quot;:{&quot;enabled&quot;:true},&quot;legend&quot;:{&quot;display&quot;:true,&quot;position&quot;:&quot;bottom&quot;,&quot;reverse&quot;:false},&quot;maintainAspectRatio&quot;:false,&quot;tooltip&quot;:{&quot;enabled&quot;:true}}" data-type="doughnut">
+			<canvas class="pie-doughnut-chart chart" role="img"></canvas>
+		</div>
+				</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5642062 mb-6 " data-id="5642062" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1ae4dc2 elementor-widget elementor-widget-heading" data-id="1ae4dc2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">Property Status</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-89de258 mb-2 elementor-widget elementor-widget-udesign_widget_pie_doughnut_chart" data-id="89de258" data-element_type="widget" data-widget_type="udesign_widget_pie_doughnut_chart.default">
+				<div class="elementor-widget-container">
+					<div class="pie-doughnut-chart-container chart-container" data-chart="{&quot;datasets&quot;:[{&quot;data&quot;:[66,34],&quot;backgroundColor&quot;:[&quot;#7DB5D1&quot;,&quot;#B3D3E3&quot;],&quot;borderWidth&quot;:0,&quot;borderColor&quot;:&quot;#020101&quot;,&quot;hoverBorderColor&quot;:&quot;#020101&quot;}],&quot;labels&quot;:[&quot;Sale&quot;,&quot;Rent&quot;]}" data-options="{&quot;tooltips&quot;:{&quot;enabled&quot;:true},&quot;legend&quot;:{&quot;display&quot;:true,&quot;position&quot;:&quot;bottom&quot;,&quot;reverse&quot;:false},&quot;maintainAspectRatio&quot;:false,&quot;tooltip&quot;:{&quot;enabled&quot;:true}}" data-type="doughnut">
+			<canvas class="pie-doughnut-chart chart" role="img"></canvas>
+		</div>
+				</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class="elementor-element elementor-element-76335b2 elementor-widget elementor-widget-heading" data-id="76335b2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">My Properties</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5376a2a cs-property-list elementor-widget elementor-widget-shortcode" data-id="5376a2a" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode"><style type="text/css">a.eg-henryharrison-element-1,a.eg-henryharrison-element-2{-webkit-transition:all .4s linear;   -moz-transition:all .4s linear;   -o-transition:all .4s linear;   -ms-transition:all .4s linear;   transition:all .4s linear}.eg-jimmy-carter-element-11 i:before{margin-left:0px; margin-right:0px}.eg-harding-element-17{letter-spacing:1px}.eg-harding-wrapper .esg-entry-media{overflow:hidden; box-sizing:border-box;   -webkit-box-sizing:border-box;   -moz-box-sizing:border-box;   padding:30px 30px 0px 30px}.eg-harding-wrapper .esg-media-poster{overflow:hidden; border-radius:50%;   -webkit-border-radius:50%;   -moz-border-radius:50%}.eg-ulysses-s-grant-wrapper .esg-entry-media{overflow:hidden; box-sizing:border-box;   -webkit-box-sizing:border-box;   -moz-box-sizing:border-box;   padding:30px 30px 0px 30px}.eg-ulysses-s-grant-wrapper .esg-media-poster{overflow:hidden; border-radius:50%;   -webkit-border-radius:50%;   -moz-border-radius:50%}.eg-richard-nixon-wrapper .esg-entry-media{overflow:hidden; box-sizing:border-box;   -webkit-box-sizing:border-box;   -moz-box-sizing:border-box;   padding:30px 30px 0px 30px}.eg-richard-nixon-wrapper .esg-media-poster{overflow:hidden; border-radius:50%;   -webkit-border-radius:50%;   -moz-border-radius:50%}.eg-herbert-hoover-wrapper .esg-media-poster{filter:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");   filter:gray;   -webkit-filter:grayscale(100%)}.eg-herbert-hoover-wrapper:hover .esg-media-poster{filter:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0,0 1 0 0 0,0 0 1 0 0,0 0 0 1 0'/></filter></svg>#grayscale");  -webkit-filter:grayscale(0%)}.eg-lyndon-johnson-wrapper .esg-media-poster{filter:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");   filter:gray;   -webkit-filter:grayscale(100%)}.eg-lyndon-johnson-wrapper:hover .esg-media-poster{filter:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0,0 1 0 0 0,0 0 1 0 0,0 0 0 1 0'/></filter></svg>#grayscale");  -webkit-filter:grayscale(0%)}.esg-overlay.eg-ronald-reagan-container{background:-moz-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(50%,rgba(0,0,0,0)),color-stop(99%,rgba(0,0,0,0.83)),color-stop(100%,rgba(0,0,0,0.85))); background:-webkit-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:-o-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:-ms-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:linear-gradient(to bottom,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000',endColorstr='#d9000000',GradientType=0 )}.eg-georgebush-wrapper .esg-entry-cover{background:-moz-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(50%,rgba(0,0,0,0)),color-stop(99%,rgba(0,0,0,0.83)),color-stop(100%,rgba(0,0,0,0.85))); background:-webkit-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:-o-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:-ms-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); background:linear-gradient(to bottom,rgba(0,0,0,0) 50%,rgba(0,0,0,0.83) 99%,rgba(0,0,0,0.85) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000',endColorstr='#d9000000',GradientType=0 )}.eg-jefferson-wrapper{-webkit-border-radius:5px !important; -moz-border-radius:5px !important; border-radius:5px !important; -webkit-mask-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC) !important}.eg-monroe-element-1{text-shadow:0px 1px 3px rgba(0,0,0,0.1)}.eg-lyndon-johnson-wrapper .esg-entry-cover{background:-moz-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:-webkit-gradient(radial,center center,0px,center center,100%,color-stop(0%,rgba(0,0,0,0.35)),color-stop(96%,rgba(18,18,18,0)),color-stop(100%,rgba(19,19,19,0))); background:-webkit-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:-o-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:-ms-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:radial-gradient(ellipse at center,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000',endColorstr='#00131313',GradientType=1 )}.eg-wilbert-wrapper .esg-entry-cover{background:-moz-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:-webkit-gradient(radial,center center,0px,center center,100%,color-stop(0%,rgba(0,0,0,0.35)),color-stop(96%,rgba(18,18,18,0)),color-stop(100%,rgba(19,19,19,0))); background:-webkit-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:-o-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:-ms-radial-gradient(center,ellipse cover,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); background:radial-gradient(ellipse at center,rgba(0,0,0,0.35) 0%,rgba(18,18,18,0) 96%,rgba(19,19,19,0) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000',endColorstr='#00131313',GradientType=1 )}.eg-wilbert-wrapper .esg-media-poster{-webkit-transition:0.4s ease-in-out;  -moz-transition:0.4s ease-in-out;  -o-transition:0.4s ease-in-out;  transition:0.4s ease-in-out;  filter:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");   filter:gray;   -webkit-filter:grayscale(100%)}.eg-wilbert-wrapper:hover .esg-media-poster{filter:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0,0 1 0 0 0,0 0 1 0 0,0 0 0 1 0'/></filter></svg>#grayscale");  -webkit-filter:grayscale(0%)}.eg-phillie-element-3:after{content:" ";width:0px;height:0px;border-style:solid;border-width:5px 5px 0 5px;border-color:#000 transparent transparent transparent;left:50%;margin-left:-5px; bottom:-5px; position:absolute}.eg-howardtaft-wrapper .esg-media-poster{filter:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0,0 1 0 0 0,0 0 1 0 0,0 0 0 1 0'/></filter></svg>#grayscale");  -webkit-filter:grayscale(0%)}.eg-howardtaft-wrapper:hover .esg-media-poster{filter:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");   filter:gray;   -webkit-filter:grayscale(100%)}.myportfolio-container .added_to_cart.wc-forward{font-family:"Open Sans"; font-size:13px; color:#fff; margin-top:10px}.esgbox-title.esgbox-title-outside-wrap{font-size:15px; font-weight:700; text-align:center}.esgbox-title.esgbox-title-inside-wrap{padding-bottom:10px; font-size:15px; font-weight:700; text-align:center}</style>
+<!-- CACHE CREATED FOR: 6 --><style type="text/css">.minimal-light .navigationbuttons,.minimal-light .esg-pagination,.minimal-light .esg-filters{text-align:center}.minimal-light .esg-filter-wrapper.dropdownstyle >.esg-selected-filterbutton,.minimal-light input.eg-search-input,.minimal-light .esg-filterbutton,.minimal-light .esg-navigationbutton,.minimal-light .esg-sortbutton,.minimal-light .esg-cartbutton a,.minimal-light .esg-filter-wrapper.eg-search-wrapper .eg-search-clean,.minimal-light .esg-filter-wrapper.eg-search-wrapper .eg-search-submit{color:#999; margin-right:5px; cursor:pointer; padding:0px 16px; border:1px solid #e5e5e5; line-height:38px; border-radius:5px; font-size:12px; font-weight:700; font-family:"Open Sans",sans-serif; display:inline-block; background:#fff; margin-bottom:5px; white-space:nowrap; min-height:38px; vertical-align:middle}.minimal-light input.eg-search-input::placeholder{line-height:38px; vertical-align:middle}.minimal-light .esg-navigationbutton *{color:#999}.minimal-light .esg-navigationbutton{padding:0px 16px}.minimal-light .esg-pagination-button:last-child{margin-right:0}.minimal-light .esg-left,.minimal-light .esg-right{padding:0px 11px}.minimal-light .esg-sortbutton-wrapper,.minimal-light .esg-cartbutton-wrapper{display:inline-block}.minimal-light .esg-sortbutton-order,.minimal-light .esg-cartbutton-order{display:inline-block; vertical-align:top; border:1px solid #e5e5e5; width:40px; line-height:38px; border-radius:0px 5px 5px 0px; font-size:12px; font-weight:700; color:#999; cursor:pointer; background:#fff}.minimal-light .esg-cartbutton{color:#333; cursor:default !important}.minimal-light .esg-cartbutton .esgicon-basket{color:#333; font-size:15px; line-height:15px; margin-right:10px}.minimal-light .esg-cartbutton-wrapper{cursor:default !important}.minimal-light .esg-sortbutton,.minimal-light .esg-cartbutton{display:inline-block; position:relative; cursor:pointer; margin-right:0px; border-right:none; border-radius:5px 0px 0px 5px}.minimal-light input.eg-search-input.hovered,.minimal-light input.eg-search-input:focus,.minimal-light .esg-navigationbutton.hovered,.minimal-light .esg-filterbutton.hovered,.minimal-light .esg-sortbutton.hovered,.minimal-light .esg-sortbutton-order.hovered,.minimal-light .esg-cartbutton.hovered a,.minimal-light .esg-filter-wrapper.dropdownstyle >.esg-selected-filterbutton.hovered,.minimal-light .esg-filterbutton.selected,.minimal-light .esg-filter-wrapper.eg-search-wrapper .eg-search-clean.hovered,.minimal-light .esg-filter-wrapper.eg-search-wrapper .eg-search-submit.hovered{background-color:#fff; border-color:#bbb; color:#333; box-shadow:0px 3px 5px 0px rgba(0,0,0,0.13)}.minimal-light .esg-navigationbutton.hovered *{color:#333}.minimal-light .esg-sortbutton-order.hovered .tp-desc{border-color:#bbb; color:#333; box-shadow:0px -3px 5px 0px rgba(0,0,0,0.13) !important}.minimal-light .esg-filter-checked{color:#cbcbcb; background:#cbcbcb; margin-left:10px; font-size:9px; font-weight:300; line-height:9px; vertical-align:middle}.minimal-light .esg-filter-wrapper.dropdownstyle .esg-filter-checked{margin-left:-22px; margin-right:10px}.minimal-light .esg-filterbutton.selected .esg-filter-checked,.minimal-light .esg-filterbutton.hovered .esg-filter-checked{color:#fff; background:#000}.minimal-light .esg-filter-wrapper.eg-search-wrapper{white-space:nowrap}.minimal-light .esg-filter-wrapper.eg-search-wrapper .eg-search-clean,.minimal-light .esg-filter-wrapper.eg-search-wrapper .eg-search-submit{width:40px; padding:0px; margin-left:5px; margin-right:0px}.minimal-light .esg-filter-wrapper.eg-search-wrapper .eg-search-input{width:auto}.minimal-light .esg-dropdown-wrapper{transform:translateZ(10px) translateX(-50%); left:50%; background:rgba(255,255,255,0.95); border-radius:5px; border:1px solid #e5e5e5}.minimal-light .esg-dropdown-wrapper .esg-filterbutton{position:relative; border:none; box-shadow:none; text-align:left; color:#999; background:transparent; line-height:25px; min-height:25px}.minimal-light .esg-dropdown-wrapper .esg-filterbutton.hovered,.minimal-light .esg-dropdown-wrapper .esg-filterbutton.selected{color:#333}.minimal-light .esg-selected-filterbutton .eg-icon-down-open{margin-right:-10px; font-size:12px}.minimal-light .esg-selected-filterbutton.hovered .eg-icon-down-open{color:#333}</style>
+<style type="text/css">.eg-property-list-element-2{font-size:22px; line-height:26.4px; color:#323334; font-weight:700; padding:0px 0px 0px 0px ; border-radius:0px 0px 0px 0px ; background:transparent; z-index:2 !important; display:block; font-family:DM Sans; text-transform:capitalize; letter-spacing:-0.22px}.eg-property-list-element-15{font-size:14px !important; line-height:16.8px !important; color:#ffffff !important; font-weight:400 !important; padding:5px 13px 5px 13px !important; border-radius:0px 0px 0px 0px !important; background:#c69c6d !important; height:auto !important; width:auto !important; z-index:2 !important; display:block; font-family:DM Sans !important; border-top-width:0px !important; border-right-width:0px !important; border-bottom-width:0px !important; border-left-width:0px !important; border-color:#aaaaaa !important; border-style:solid !important}.eg-property-list-element-25{font-size:14px; line-height:16.8px; color:#ffffff; font-weight:400; padding:5px 10px 5px 10px ; border-radius:0px 0px 0px 0px ; background:#323334; height:auto; width:auto; z-index:2 !important; display:block; text-transform:capitalize}.eg-property-list-element-31{font-size:14px; line-height:15px; color:#ffffff; font-weight:800; display:inline-block; float:none; clear:both; margin:10px 0px 0px 0px ; padding:0px 0px 0px 0px ; border-radius:0px 0px 0px 0px ; background:transparent; position:relative; z-index:2 !important; text-transform:uppercase}.eg-property-list-element-3{font-size:14px !important; line-height:16.8px !important; color:#999999 !important; font-weight:400 !important; display:block !important; text-align:left !important; clear:both !important; margin:0px 0px 12px 0px !important; padding:0px 0px 0px 0px !important; border-radius:0px 0px 0px 0px !important; background:transparent !important; position:relative !important; z-index:2 !important; font-family:DM Sans !important; text-transform:capitalize !important; letter-spacing:-0.14px !important}.eg-property-list-element-7{font-size:18px !important; line-height:21.6px !important; color:#323334 !important; font-weight:500 !important; display:inline-block !important; float:none !important; clear:both !important; margin:0px 0px 0px 0px !important; padding:0px 0px 0px 0px !important; border-radius:0px 0px 0px 0px !important; background:transparent !important; position:relative !important; z-index:2 !important; font-family:DM Sans !important; text-transform:uppercase !important}.eg-property-list-element-13{font-size:25px !important; line-height:25px !important; color:#777777 !important; font-weight:400 !important; display:inline-block !important; float:none !important; clear:both !important; margin:0px 10px 0px 0px !important; padding:0px 15px 0px 6px !important; border-radius:0px 0px 0px 0px !important; background:transparent !important; position:relative !important; z-index:2 !important; text-transform:uppercase !important; border-top-width:0px !important; border-right-width:1px !important; border-bottom-width:0px !important; border-left-width:0px !important; border-color:#e1e1e1 !important; border-style:solid !important}.eg-property-list-element-9{font-size:18px !important; line-height:19px !important; color:#323334 !important; font-weight:500 !important; display:inline-block !important; float:none !important; clear:both !important; margin:10px 0px 0px 0px !important; padding:0px 0px 0px 0px !important; border-radius:0px 0px 0px 0px !important; background:transparent !important; position:relative !important; z-index:2 !important; font-family:DM Sans !important; text-transform:uppercase !important}.eg-property-list-element-10{font-size:19px !important; line-height:19px !important; color:#777777 !important; font-weight:700 !important; display:inline-block !important; float:none !important; clear:both !important; margin:0px 9px 0px 0px !important; padding:5px 15px 0px 4px !important; border-radius:0px 0px 0px 0px !important; background:transparent !important; position:relative !important; z-index:2 !important; text-transform:uppercase !important; border-top-width:0px !important; border-right-width:1px !important; border-bottom-width:0px !important; border-left-width:0px !important; border-color:#e1e1e1 !important; border-style:solid !important}.eg-property-list-element-11{font-size:18px !important; line-height:21.6px !important; color:#323334 !important; font-weight:500 !important; display:inline-block !important; float:none !important; clear:both !important; margin:0px 0px 0px 0px !important; padding:0px 0px 0px 0px !important; border-radius:0px 0px 0px 0px !important; background:transparent !important; position:relative !important; z-index:2 !important; font-family:DM Sans !important; text-transform:uppercase !important}.eg-property-list-element-12{font-size:20px !important; line-height:22px !important; color:#777777 !important; font-weight:300 !important; display:inline-block !important; float:none !important; clear:both !important; margin:0px 11px 0px 0px !important; padding:0px 15px 0px 2px !important; border-radius:0px 0px 0px 0px !important; background:transparent !important; position:relative !important; z-index:2 !important; text-transform:uppercase !important; border-top-width:0px !important; border-right-width:1px !important; border-bottom-width:0px !important; border-left-width:0px !important; border-color:#e1e1e1 !important; border-style:solid !important}.eg-property-list-element-14{font-size:14px !important; line-height:16.8px !important; color:#323334 !important; font-weight:400 !important; padding:0px 0px 0px 0px !important; border-radius:0px 0px 0px 0px !important; background:transparent !important; z-index:2 !important; display:block; font-family:DM Sans !important; text-transform:uppercase !important}.eg-property-list-element-6{font-size:14px !important; line-height:16.8px !important; color:#323334 !important; font-weight:400 !important; padding:0px 0px 0px 0px !important; border-radius:0px 0px 0px 0px !important; background:transparent !important; z-index:2 !important; display:block; font-family:DM Sans !important; text-transform:capitalize !important}.eg-property-list-element-17{font-size:22px !important; line-height:30.8px !important; color:#c69c6d !important; font-weight:700 !important; display:block !important; text-align:left !important; clear:both !important; margin:0px 0px 10px 0px !important; padding:0px 0px 0px 0px !important; border-radius:0px 0px 0px 0px !important; background:transparent !important; position:relative !important; z-index:2 !important; text-transform:uppercase !important}.eg-property-list-element-18{font-size:13px !important; line-height:20px !important; color:#888888 !important; font-weight:700 !important; display:inline-block !important; float:none !important; clear:both !important; margin:0px 0px 0px 0px !important; padding:0px 0px 0px 0px !important; border-radius:0px 0px 0px 0px !important; background:transparent !important; position:relative !important; z-index:2 !important; text-transform:uppercase !important}.eg-property-list-element-20{font-size:14px !important; line-height:16.8px !important; color:#888888 !important; font-weight:400 !important; padding:5px 5px 5px 5px !important; border-radius:0px 0px 0px 0px !important; background:transparent !important; z-index:2 !important; display:block; text-transform:capitalize !important}</style>
+<style type="text/css">.eg-property-list-element-14:hover{font-size:14px !important; line-height:16.8px !important; color:#c69c6d !important; font-weight:300 !important; border-radius:0px 0px 0px 0px !important; background:rgba(255,255,255,0.15) !important; font-family:DM Sans !important; text-transform:uppercase !important}.eg-property-list-element-20:hover{font-size:14px !important; line-height:16.8px !important; color:#c69c6d !important; font-weight:400 !important; border-radius:0px 0px 0px 0px !important; background:rgba(255,255,255,0.15) !important; text-transform:capitalize !important}</style>
+<style type="text/css">.eg-property-list-element-2-a{display:block; text-align:left; clear:both; margin:0px 0px 5px 0px ; position:relative}</style>
+<style type="text/css">.eg-property-list-element-20-a{display:inline-block !important; float:none !important; clear:both !important; margin:0px 0px 0px 0px !important; position:relative !important}</style>
+<style type="text/css">.eg-property-list-element-15-a{display:inline-block !important; float:left !important; clear:none !important; margin:0px 0px 0px 0px !important; position:absolute !important; top:20px !important; left:20px !important}</style>
+<style type="text/css">.eg-property-list-element-25-a{display:block; text-align:left; clear:both; margin:0px 0px 0px 0px ; position:absolute; top:20px; left:20px}</style>
+<style type="text/css">.eg-property-list-element-14-a{display:inline-block !important; float:none !important; clear:both !important; margin:0px 0px 0px 0px !important; position:relative !important}</style>
+<style type="text/css">.eg-property-list-element-6-a{display:block !important; text-align:left !important; clear:both !important; margin:12px 0px 0px 0px !important; position:relative !important}</style>
+<style type="text/css">.eg-property-list-container{background:rgba(54,56,57,0.3)}</style>
+<style type="text/css">.eg-property-list-content{background:#ffffff; padding:27px 30px 27px 30px; border-width:0px 0px 0px 0px; border-radius:0px 0px 0px 0px; border-color:transparent; border-style:none; text-align:left}</style>
+<style type="text/css">.esg-grid .mainul li.eg-property-list-wrapper{background:#232323; padding:0px 0px 0px 0px; border-width:0px 0px 0px 0px; border-radius:0px 0px 0px 0px; border-color:transparent; border-style:none}</style>
+<style type="text/css">.esg-grid .mainul li.eg-property-list-wrapper .esg-media-poster{background-size:cover; background-position:center center; background-repeat:no-repeat}</style>
+<!-- THE ESSENTIAL GRID 3.0.11 POST -->
+
+<article class="myportfolio-container minimal-light source_type_post" id="esg-grid-6-1-wrap">
+
+    <div id="esg-grid-6-1" class="esg-grid" style="background: transparent;padding: 0px 0px 0px 0px ; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; display:none">
+<ul>
+<li id="eg-6-post-id-165" data-skin="property-list" class="filterall filter-featured filter-sale filter-apartment eg-property-list-wrapper eg-post-id-165" data-date="1635402854">
+    <div class="esg-media-cover-wrapper">
+<div class="esg-entry-media"><img src="https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/essential-grid/public/assets/images/300x200transparent.png" data-lazythumb="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/5-570x400-25x25.jpg" data-no-lazy="1" data-lazysrc="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/5-570x400.jpg" alt="House Image" width="570" height="400"></div>
+
+            <div class="esg-entry-cover" data-clickable="on">
+
+<a class="eg-invisiblebutton" href="https://d-themes.com/wordpress/udesign/real-estate/property/renovated-studio/" target="_self"></a>                <div class="esg-overlay esg-transition eg-property-list-container esg-cover-blend-overlay" data-delay="0" data-duration="default" data-transition="esg-slide"></div>
+
+				<div class="esg-absolute eg-post-165 eg-property-list-element-15-a"><a class="eg-property-list-element-15 eg-post-165" href="https://d-themes.com/wordpress/udesign/real-estate/property_featured/featured/" style="display:inline">Featured</a></div>
+				<div class="esg-absolute eg-post-165 eg-property-list-element-25-a"><a class="eg-property-list-element-25 eg-post-165" href="https://d-themes.com/wordpress/udesign/real-estate/property_status/sale/" style="display:inline">Sale</a></div>
+				<div class="esg-center eg-post-165 eg-property-list-element-31 esg-transition" data-delay="0.6" data-duration="default" data-transition="esg-zoomfront">Renovated studio</div>
+           </div>
+<div class="esg-entry-content eg-property-list-content">
+				<h3 class="esg-content eg-post-165 eg-property-list-element-2-a"><a class="eg-property-list-element-2 eg-post-165" href="https://d-themes.com/wordpress/udesign/real-estate/property/renovated-studio/" target="_self">Renovated studio</a></h3>
+				<div class="esg-content eg-post-165 eg-property-list-element-3">2436 SW 8th St, Miami, FL 33135, USA</div>
+				<div class="esg-content eg-post-165 eg-property-list-element-7">4</div>
+				<div class="esg-content eg-post-165 eg-property-list-element-13"><i class="u-icon-bed" style="vertical-align: middle;" data-label="Bedrooms"></i></div>
+				<div class="esg-content eg-post-165 eg-property-list-element-9">2</div>
+				<div class="esg-content eg-post-165 eg-property-list-element-10"><i class="u-icon-shower" style="vertical-align: middle;" data-label="Bathrooms"></i></div>
+				<div class="esg-content eg-post-165 eg-property-list-element-11">1200</div>
+				<div class="esg-content eg-post-165 eg-property-list-element-12"><i class="u-icon-square" style="vertical-align: middle;" data-label="Sq Ft"></i></div>
+				<div class="esg-content eg-post-165 eg-property-list-element-14-a"><a class="eg-property-list-element-14 eg-post-165" href="https://d-themes.com/wordpress/udesign/real-estate/property_type/apartment/" style="display:inline">Apartment</a></div>
+				<div class="esg-content eg-post-165 eg-property-list-element-6-a"><a class="eg-property-list-element-6 eg-post-165" href="https://d-themes.com/wordpress/udesign/real-estate/property_status/sale/" style="display:inline">Sale</a></div>
+				<div class="esg-content eg-post-165 eg-property-list-element-17">$540,000</div>
+				<div class="esg-content eg-post-165 eg-property-list-element-18"><i class="u-icon-user"></i></div>
+				<div class="esg-content eg-post-165 eg-property-list-element-20-a"><a class="eg-property-list-element-20 eg-post-165" href="https://d-themes.com/wordpress/udesign/real-estate/property/renovated-studio/">Robin Doe</a></div>
+</div>   </div>
+
+</li>
+<li id="eg-6-post-id-297" data-skin="property-list" class="filterall filter-sale filter-apartment eg-property-list-wrapper eg-post-id-297" data-date="1635533539">
+    <div class="esg-media-cover-wrapper">
+<div class="esg-entry-media"><img src="https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/essential-grid/public/assets/images/300x200transparent.png" data-lazythumb="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/6-570x400-25x25.jpg" data-no-lazy="1" data-lazysrc="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/6-570x400.jpg" alt="House Image" width="570" height="400"></div>
+
+            <div class="esg-entry-cover" data-clickable="on">
+
+<a class="eg-invisiblebutton" href="https://d-themes.com/wordpress/udesign/real-estate/property/new-apartment-nice-view/" target="_self"></a>                <div class="esg-overlay esg-transition eg-property-list-container esg-cover-blend-overlay" data-delay="0" data-duration="default" data-transition="esg-slide"></div>
+
+				<div class="esg-absolute eg-post-297 eg-property-list-element-25-a"><a class="eg-property-list-element-25 eg-post-297" href="https://d-themes.com/wordpress/udesign/real-estate/property_status/sale/" style="display:inline">Sale</a></div>
+				<div class="esg-center eg-post-297 eg-property-list-element-31 esg-transition" data-delay="0.6" data-duration="default" data-transition="esg-zoomfront">New apartment nice view</div>
+           </div>
+<div class="esg-entry-content eg-property-list-content">
+				<h3 class="esg-content eg-post-297 eg-property-list-element-2-a"><a class="eg-property-list-element-2 eg-post-297" href="https://d-themes.com/wordpress/udesign/real-estate/property/new-apartment-nice-view/" target="_self">New apartment nice view</a></h3>
+				<div class="esg-content eg-post-297 eg-property-list-element-3">2436 SW 8th St, Miami, FL 33135, USA</div>
+				<div class="esg-content eg-post-297 eg-property-list-element-7">3</div>
+				<div class="esg-content eg-post-297 eg-property-list-element-13"><i class="u-icon-bed" style="vertical-align: middle;" data-label="Bedrooms"></i></div>
+				<div class="esg-content eg-post-297 eg-property-list-element-9">2</div>
+				<div class="esg-content eg-post-297 eg-property-list-element-10"><i class="u-icon-shower" style="vertical-align: middle;" data-label="Bathrooms"></i></div>
+				<div class="esg-content eg-post-297 eg-property-list-element-11">1789</div>
+				<div class="esg-content eg-post-297 eg-property-list-element-12"><i class="u-icon-square" style="vertical-align: middle;" data-label="Sq Ft"></i></div>
+				<div class="esg-content eg-post-297 eg-property-list-element-14-a"><a class="eg-property-list-element-14 eg-post-297" href="https://d-themes.com/wordpress/udesign/real-estate/property_type/apartment/" style="display:inline">Apartment</a></div>
+				<div class="esg-content eg-post-297 eg-property-list-element-6-a"><a class="eg-property-list-element-6 eg-post-297" href="https://d-themes.com/wordpress/udesign/real-estate/property_status/sale/" style="display:inline">Sale</a></div>
+				<div class="esg-content eg-post-297 eg-property-list-element-17">$876,000</div>
+				<div class="esg-content eg-post-297 eg-property-list-element-18"><i class="u-icon-user"></i></div>
+				<div class="esg-content eg-post-297 eg-property-list-element-20-a"><a class="eg-property-list-element-20 eg-post-297" href="https://d-themes.com/wordpress/udesign/real-estate/property/new-apartment-nice-view/">Mary Ann</a></div>
+</div>   </div>
+
+</li>
+<li id="eg-6-post-id-300" data-skin="property-list" class="filterall filter-sale filter-apartment eg-property-list-wrapper eg-post-id-300" data-date="1635533676">
+    <div class="esg-media-cover-wrapper">
+<div class="esg-entry-media"><img src="https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/essential-grid/public/assets/images/300x200transparent.png" data-lazythumb="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/7-570x400-25x25.jpg" data-no-lazy="1" data-lazysrc="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/7-570x400.jpg" alt="House Image" width="570" height="400"></div>
+
+            <div class="esg-entry-cover" data-clickable="on">
+
+<a class="eg-invisiblebutton" href="https://d-themes.com/wordpress/udesign/real-estate/property/light-and-modern-apartment/" target="_self"></a>                <div class="esg-overlay esg-transition eg-property-list-container esg-cover-blend-overlay" data-delay="0" data-duration="default" data-transition="esg-slide"></div>
+
+				<div class="esg-absolute eg-post-300 eg-property-list-element-25-a"><a class="eg-property-list-element-25 eg-post-300" href="https://d-themes.com/wordpress/udesign/real-estate/property_status/sale/" style="display:inline">Sale</a></div>
+				<div class="esg-center eg-post-300 eg-property-list-element-31 esg-transition" data-delay="0.6" data-duration="default" data-transition="esg-zoomfront">Light and modern apartment</div>
+           </div>
+<div class="esg-entry-content eg-property-list-content">
+				<h3 class="esg-content eg-post-300 eg-property-list-element-2-a"><a class="eg-property-list-element-2 eg-post-300" href="https://d-themes.com/wordpress/udesign/real-estate/property/light-and-modern-apartment/" target="_self">Light and modern apartment</a></h3>
+				<div class="esg-content eg-post-300 eg-property-list-element-3">2436 SW 8th St, Miami, FL 33135, USA</div>
+				<div class="esg-content eg-post-300 eg-property-list-element-7">4</div>
+				<div class="esg-content eg-post-300 eg-property-list-element-13"><i class="u-icon-bed" style="vertical-align: middle;" data-label="Bedrooms"></i></div>
+				<div class="esg-content eg-post-300 eg-property-list-element-9">2</div>
+				<div class="esg-content eg-post-300 eg-property-list-element-10"><i class="u-icon-shower" style="vertical-align: middle;" data-label="Bathrooms"></i></div>
+				<div class="esg-content eg-post-300 eg-property-list-element-11">2560</div>
+				<div class="esg-content eg-post-300 eg-property-list-element-12"><i class="u-icon-square" style="vertical-align: middle;" data-label="Sq Ft"></i></div>
+				<div class="esg-content eg-post-300 eg-property-list-element-14-a"><a class="eg-property-list-element-14 eg-post-300" href="https://d-themes.com/wordpress/udesign/real-estate/property_type/apartment/" style="display:inline">Apartment</a></div>
+				<div class="esg-content eg-post-300 eg-property-list-element-6-a"><a class="eg-property-list-element-6 eg-post-300" href="https://d-themes.com/wordpress/udesign/real-estate/property_status/sale/" style="display:inline">Sale</a></div>
+				<div class="esg-content eg-post-300 eg-property-list-element-17">$450,000</div>
+				<div class="esg-content eg-post-300 eg-property-list-element-18"><i class="u-icon-user"></i></div>
+				<div class="esg-content eg-post-300 eg-property-list-element-20-a"><a class="eg-property-list-element-20 eg-post-300" href="https://d-themes.com/wordpress/udesign/real-estate/property/light-and-modern-apartment/">Tomasz Treflerzan	</a></div>
+</div>   </div>
+
+</li>
+<li id="eg-6-post-id-568" data-skin="property-list" class="filterall filter-featured filter-rent filter-apartment eg-property-list-wrapper eg-post-id-568" data-date="1635559528">
+    <div class="esg-media-cover-wrapper">
+<div class="esg-entry-media"><img src="https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/essential-grid/public/assets/images/300x200transparent.png" data-lazythumb="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/9-1-570x400-25x25.jpg" data-no-lazy="1" data-lazysrc="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/9-1-570x400.jpg" alt="House Image" width="570" height="400"></div>
+
+            <div class="esg-entry-cover" data-clickable="on">
+
+<a class="eg-invisiblebutton" href="https://d-themes.com/wordpress/udesign/real-estate/property/ample-apartment/" target="_self"></a>                <div class="esg-overlay esg-transition eg-property-list-container esg-cover-blend-overlay" data-delay="0" data-duration="default" data-transition="esg-slide"></div>
+
+				<div class="esg-absolute eg-post-568 eg-property-list-element-15-a"><a class="eg-property-list-element-15 eg-post-568" href="https://d-themes.com/wordpress/udesign/real-estate/property_featured/featured/" style="display:inline">Featured</a></div>
+				<div class="esg-absolute eg-post-568 eg-property-list-element-25-a"><a class="eg-property-list-element-25 eg-post-568" href="https://d-themes.com/wordpress/udesign/real-estate/property_status/rent/" style="display:inline">Rent</a></div>
+				<div class="esg-center eg-post-568 eg-property-list-element-31 esg-transition" data-delay="0.6" data-duration="default" data-transition="esg-zoomfront">Ample apartment</div>
+           </div>
+<div class="esg-entry-content eg-property-list-content">
+				<h3 class="esg-content eg-post-568 eg-property-list-element-2-a"><a class="eg-property-list-element-2 eg-post-568" href="https://d-themes.com/wordpress/udesign/real-estate/property/ample-apartment/" target="_self">Ample apartment</a></h3>
+				<div class="esg-content eg-post-568 eg-property-list-element-3">3617 Clarington Ave, Los Angeles, CA 90034, USA</div>
+				<div class="esg-content eg-post-568 eg-property-list-element-7">3</div>
+				<div class="esg-content eg-post-568 eg-property-list-element-13"><i class="u-icon-bed" style="vertical-align: middle;" data-label="Bedrooms"></i></div>
+				<div class="esg-content eg-post-568 eg-property-list-element-9">2</div>
+				<div class="esg-content eg-post-568 eg-property-list-element-10"><i class="u-icon-shower" style="vertical-align: middle;" data-label="Bathrooms"></i></div>
+				<div class="esg-content eg-post-568 eg-property-list-element-11">2300</div>
+				<div class="esg-content eg-post-568 eg-property-list-element-12"><i class="u-icon-square" style="vertical-align: middle;" data-label="Sq Ft"></i></div>
+				<div class="esg-content eg-post-568 eg-property-list-element-14-a"><a class="eg-property-list-element-14 eg-post-568" href="https://d-themes.com/wordpress/udesign/real-estate/property_type/apartment/" style="display:inline">Apartment</a></div>
+				<div class="esg-content eg-post-568 eg-property-list-element-6-a"><a class="eg-property-list-element-6 eg-post-568" href="https://d-themes.com/wordpress/udesign/real-estate/property_status/rent/" style="display:inline">Rent</a></div>
+				<div class="esg-content eg-post-568 eg-property-list-element-17">$190,000</div>
+				<div class="esg-content eg-post-568 eg-property-list-element-18"><i class="u-icon-user"></i></div>
+				<div class="esg-content eg-post-568 eg-property-list-element-20-a"><a class="eg-property-list-element-20 eg-post-568" href="https://d-themes.com/wordpress/udesign/real-estate/property/ample-apartment/">Janice Doe</a></div>
+</div>   </div>
+
+</li>
+<li id="eg-6-post-id-571" data-skin="property-list" class="filterall filter-rent filter-office eg-property-list-wrapper eg-post-id-571" data-date="1635559789">
+    <div class="esg-media-cover-wrapper">
+<div class="esg-entry-media"><img src="https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/essential-grid/public/assets/images/300x200transparent.png" data-lazythumb="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/3-2-570x400-25x25.jpg" data-no-lazy="1" data-lazysrc="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/3-2-570x400.jpg" alt="House Image" width="570" height="400"></div>
+
+            <div class="esg-entry-cover" data-clickable="on">
+
+<a class="eg-invisiblebutton" href="https://d-themes.com/wordpress/udesign/real-estate/property/office-in-downtown/" target="_self"></a>                <div class="esg-overlay esg-transition eg-property-list-container esg-cover-blend-overlay" data-delay="0" data-duration="default" data-transition="esg-slide"></div>
+
+				<div class="esg-absolute eg-post-571 eg-property-list-element-25-a"><a class="eg-property-list-element-25 eg-post-571" href="https://d-themes.com/wordpress/udesign/real-estate/property_status/rent/" style="display:inline">Rent</a></div>
+				<div class="esg-center eg-post-571 eg-property-list-element-31 esg-transition" data-delay="0.6" data-duration="default" data-transition="esg-zoomfront">Office in downtown</div>
+           </div>
+<div class="esg-entry-content eg-property-list-content">
+				<h3 class="esg-content eg-post-571 eg-property-list-element-2-a"><a class="eg-property-list-element-2 eg-post-571" href="https://d-themes.com/wordpress/udesign/real-estate/property/office-in-downtown/" target="_self">Office in downtown</a></h3>
+				<div class="esg-content eg-post-571 eg-property-list-element-3">1417 Glendale Blvd, Los Angeles, CA 90026, USA</div>
+				<div class="esg-content eg-post-571 eg-property-list-element-7">5</div>
+				<div class="esg-content eg-post-571 eg-property-list-element-13"><i class="u-icon-bed" style="vertical-align: middle;" data-label="Bedrooms"></i></div>
+				<div class="esg-content eg-post-571 eg-property-list-element-9">2</div>
+				<div class="esg-content eg-post-571 eg-property-list-element-10"><i class="u-icon-shower" style="vertical-align: middle;" data-label="Bathrooms"></i></div>
+				<div class="esg-content eg-post-571 eg-property-list-element-11">3100</div>
+				<div class="esg-content eg-post-571 eg-property-list-element-12"><i class="u-icon-square" style="vertical-align: middle;" data-label="Sq Ft"></i></div>
+				<div class="esg-content eg-post-571 eg-property-list-element-14-a"><a class="eg-property-list-element-14 eg-post-571" href="https://d-themes.com/wordpress/udesign/real-estate/property_type/office/" style="display:inline">Office</a></div>
+				<div class="esg-content eg-post-571 eg-property-list-element-6-a"><a class="eg-property-list-element-6 eg-post-571" href="https://d-themes.com/wordpress/udesign/real-estate/property_status/rent/" style="display:inline">Rent</a></div>
+				<div class="esg-content eg-post-571 eg-property-list-element-17">$900,000</div>
+				<div class="esg-content eg-post-571 eg-property-list-element-18"><i class="u-icon-user"></i></div>
+				<div class="esg-content eg-post-571 eg-property-list-element-20-a"><a class="eg-property-list-element-20 eg-post-571" href="https://d-themes.com/wordpress/udesign/real-estate/property/office-in-downtown/">Viktoriia Demianenko	</a></div>
+</div>   </div>
+
+</li>
+</ul>
+    </div>
+
+</article>
+<div class="clear"></div>
+<script type="text/javascript">
+var essapi_6_1;
+function esginit_6_1() {
+jQuery(document).ready(function() {
+	essapi_6_1 = jQuery("#esg-grid-6-1").tpessential({
+        gridID:6,
+        layout:"masonry",
+        forceFullWidth:"off",
+        lazyLoad:"on",
+        lazyLoadColor:"#878787",
+        row:5,
+		apiName: "essapi_6_1",
+        loadMoreAjaxToken:"bb4314817f",
+        loadMoreAjaxUrl:"https://d-themes.com/wordpress/udesign/real-estate/wp-admin/admin-ajax.php",
+        loadMoreAjaxAction:"Essential_Grid_Front_request_ajax",
+        ajaxContentTarget:"ess-grid-ajax-container-",
+        ajaxScrollToOffset:"0",
+        ajaxCloseButton:"off",
+        ajaxContentSliding:"on",
+        ajaxScrollToOnLoad:"on",
+        ajaxCallbackArgument:"off",
+        ajaxNavButton:"off",
+        ajaxCloseType:"type1",
+        ajaxCloseInner:"false",
+        ajaxCloseStyle:"light",
+        ajaxClosePosition:"tr",
+        space:30,
+        pageAnimation:"fade",
+        videoPlaybackInGrid: "on",
+        videoPlaybackOnHover: "off",
+        videoInlineMute: "on",
+        videoInlineControls: "off",
+        keepLayersInline: "off",
+        startAnimation: "none",
+        startAnimationSpeed: 1000,
+        startAnimationDelay: 100,
+        startAnimationType: "item",
+        animationType: "item",
+        paginationScrollToTop:"off",
+        paginationAutoplay:"off",
+        spinner:"spinner0",
+		minVisibleItems:3,
+        lightBoxMode:"single",
+		lightboxHash:"group",
+		lightboxPostMinWid:"75%",
+		lightboxPostMaxWid:"75%",
+        lightboxSpinner:"off",
+        lightBoxFeaturedImg:"off",
+        lightBoxPostTitle:"off",
+        lightBoxPostTitleTag:"h2",
+		lightboxMargin : "0|0|0|0",
+		lbContentPadding : "0|0|0|0",
+		lbContentOverflow : "auto",
+        animSpeed:1000,
+        delayBasic:1,
+        mainhoverdelay:1,
+        filterType:"single",
+        showDropFilter:"hover",
+        filterGroupClass:"esg-fgc-6",
+        filterNoMatch:"No Items for the Selected Filter",
+        filterDeepLink:"off",
+        hideMarkups: "on",
+        inViewport: true,
+        viewportBuffer: 20,
+        youtubeNoCookie:"false",
+        convertFilterMobile:false,
+        paginationSwipe: "off",
+        paginationDragVer: "on",
+        pageSwipeThrottle: 0,
+        hideBlankItemsAt: "1",
+        responsiveEntries: [
+						{ width:1400,amount:1,mmheight:0},
+						{ width:1170,amount:1,mmheight:0},
+						{ width:1024,amount:1,mmheight:0},
+						{ width:960,amount:1,mmheight:0},
+						{ width:778,amount:1,mmheight:0},
+						{ width:640,amount:1,mmheight:0},
+						{ width:480,amount:1,mmheight:0}
+						]
+	});
+
+	var arrows = true,
+        lightboxOptions = {
+		margin : [0,0,0,0],
+		buttons : ["share","thumbs","close"],
+		infobar : true,
+		loop : true,
+		slideShow : {"autoStart": false, "speed": 3000},
+		videoAutoPlay : true,
+		animationEffect : "fade",
+		animationDuration : 500,
+		beforeShow: function(a, c) {
+          if(!arrows) {
+              jQuery("body").addClass("esgbox-hidearrows");
+          }
+			var i = 0,
+				multiple = false;
+			a = a.slides;
+			for(var b in a) {
+				i++;
+				if(i > 1) {
+					multiple = true;
+					break;
+				}
+			}
+			if(!multiple) jQuery("body").addClass("esgbox-single");
+			if(c.type === "image") jQuery(".esgbox-button--zoom").show();
+		},
+		beforeLoad: function(a, b) {
+			jQuery("body").removeClass("esg-four-by-three");
+			if(b.opts.$orig.data("ratio") === "4:3") jQuery("body").addClass("esg-four-by-three");
+		},
+		afterLoad: function() {jQuery(window).trigger("resize.esglb");},
+		afterClose : function() {jQuery("body").removeClass("esgbox-hidearrows esgbox-single");},
+		transitionEffect : "fade",
+		transitionDuration : 500,
+		hash : "group",
+		arrows : true,
+		wheel : false,
+	};
+
+	jQuery("#esg-grid-6-1").data("lightboxsettings", lightboxOptions);
+
+
+});
+} // End of EsgInitScript
+var once_6_1 = false;
+if (document.readyState === "loading") document.addEventListener('readystatechange',function() { if((document.readyState === "interactive" || document.readyState === "complete") && !once_6_1 )	{ once_6_1 = true; esginit_6_1();}}); else {once_6_1 = true;  esginit_6_1();}
+</script>
+	
+</div>
+				</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</section>
+				<div class=" elementor-section elementor-top-section elementor-element elementor-element-f109294 mt-md-10 mt-4 pt-2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f109294" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a1dbe8a " data-id="a1dbe8a" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a43211e mb-6 elementor-widget elementor-widget-heading" data-id="a43211e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Other Agents</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-373e610 elementor-widget elementor-widget-udesign_single_related_posts" data-id="373e610" data-element_type="widget" data-widget_type="udesign_single_related_posts.default">
+				<div class="elementor-widget-container">
+			<div class="posts members gutter-lg slider-wrapper posts members  row cols-lg-3 cols-md-3 cols-sm-2 cols-2" data-slider-options="{&quot;spaceBetween&quot;:30,&quot;slidesPerView&quot;:3,&quot;breakpoints&quot;:{&quot;992&quot;:{&quot;slidesPerView&quot;:3},&quot;768&quot;:{&quot;slidesPerView&quot;:3},&quot;576&quot;:{&quot;slidesPerView&quot;:2},&quot;0&quot;:{&quot;slidesPerView&quot;:2,&quot;spaceBetween&quot;:20},&quot;480&quot;:{&quot;slidesPerView&quot;:2,&quot;spaceBetween&quot;:30}},&quot;statusClass&quot;:&quot;slider-dots-default&quot;}" data-post-type="info">
+<div class="post-wrap " data-post-image="alpha-thumb-custom-4">
+		<article class="post-712 udesign_member type-udesign_member status-publish has-post-thumbnail hentry post overlay-zoom overlay-dark  member-info">
+			<figure class="post-media">
+		<a href="https://d-themes.com/wordpress/udesign/real-estate/agents/tomasz-treflerzan/">
+			<img style="padding-top : 100%;" width="360" height="360" src="https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/member-15-360x360.jpg" class="d-lazyload attachment-alpha-thumb-custom-4 size-alpha-thumb-custom-4 wp-post-image" alt="" srcset="https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/member-15-360x360.jpg 360w, https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/member-15-150x150.jpg 150w"  data-sizes="(max-width: 360px) 100vw, 360px" />		</a>
+			</figure>
+	<div class="post-details">
+	<h3 class="post-title">
+	<a href="https://d-themes.com/wordpress/udesign/real-estate/agents/tomasz-treflerzan/">
+		Tomasz Treflerzan	</a>
+</h3>
+<div class="post-content">
+	<p>Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Sed velit dignissim sodales ut eu sem integer. Pulvinar elementum&hellip;</p></div>
+<div class="social-icons"><a href="#" class="social-icon framed use-hover fab fa-facebook-f social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"></a><a href="#" class="social-icon framed use-hover fab fa-twitter social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"></a><a href="#" class="social-icon framed use-hover fab fa-linkedin-in social-linkedin" target="_blank" title="linkedin" rel="noopener noreferrer"></a></div></div>
+	</article>
+	</div>
+
+
+<div class="post-wrap " data-post-image="alpha-thumb-custom-4">
+		<article class="post-719 udesign_member type-udesign_member status-publish has-post-thumbnail hentry post overlay-zoom overlay-dark  member-info">
+			<figure class="post-media">
+		<a href="https://d-themes.com/wordpress/udesign/real-estate/agents/robin-doe/">
+			<img style="padding-top : 100%;" width="360" height="360" src="https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/member-7-360x360.jpg" class="d-lazyload attachment-alpha-thumb-custom-4 size-alpha-thumb-custom-4 wp-post-image" alt="Agent Image" srcset="https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/member-7-360x360.jpg 360w, https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/member-7-150x150.jpg 150w"  data-sizes="(max-width: 360px) 100vw, 360px" />		</a>
+			</figure>
+	<div class="post-details">
+	<h3 class="post-title">
+	<a href="https://d-themes.com/wordpress/udesign/real-estate/agents/robin-doe/">
+		Robin Doe	</a>
+</h3>
+<div class="post-content">
+	<p>Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Sed velit dignissim sodales ut eu sem integer. Pulvinar elementum&hellip;</p></div>
+<div class="social-icons"><a href="#" class="social-icon framed use-hover fab fa-facebook-f social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"></a><a href="#" class="social-icon framed use-hover fab fa-twitter social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"></a><a href="#" class="social-icon framed use-hover fab fa-linkedin-in social-linkedin" target="_blank" title="linkedin" rel="noopener noreferrer"></a></div></div>
+	</article>
+	</div>
+
+
+<div class="post-wrap " data-post-image="alpha-thumb-custom-4">
+		<article class="post-1510 udesign_member type-udesign_member status-publish has-post-thumbnail hentry post overlay-zoom overlay-dark  member-info">
+			<figure class="post-media">
+		<a href="https://d-themes.com/wordpress/udesign/real-estate/agents/john-david/">
+			<img style="padding-top : 100%;" width="360" height="360" src="https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/member-16-360x360.jpg" class="d-lazyload attachment-alpha-thumb-custom-4 size-alpha-thumb-custom-4 wp-post-image" alt="Agent Image" srcset="https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/member-16-360x360.jpg 360w, https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/member-16-150x150.jpg 150w"  data-sizes="(max-width: 360px) 100vw, 360px" />		</a>
+			</figure>
+	<div class="post-details">
+	<h3 class="post-title">
+	<a href="https://d-themes.com/wordpress/udesign/real-estate/agents/john-david/">
+		John David	</a>
+</h3>
+<div class="post-content">
+	<p>Ultrices eros in cursus turpis massa tincidunt. Ante in nibh mauris cursus mattis. Cras ornare arcu dui vivamus arcu felis&hellip;</p></div>
+<div class="social-icons"><a href="#" class="social-icon framed use-hover fab fa-facebook-f social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"></a><a href="#" class="social-icon framed use-hover fab fa-twitter social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"></a><a href="#" class="social-icon framed use-hover fab fa-linkedin-in social-linkedin" target="_blank" title="linkedin" rel="noopener noreferrer"></a></div></div>
+	</article>
+	</div>
+
+
+<div class="post-wrap " data-post-image="alpha-thumb-custom-4">
+		<article class="post-1515 udesign_member type-udesign_member status-publish has-post-thumbnail hentry post overlay-zoom overlay-dark  member-info">
+			<figure class="post-media">
+		<a href="https://d-themes.com/wordpress/udesign/real-estate/agents/viktoriia-demianenko/">
+			<img style="padding-top : 100%;" width="360" height="360" src="https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/11/member-2-360x360.jpg" class="d-lazyload attachment-alpha-thumb-custom-4 size-alpha-thumb-custom-4 wp-post-image" alt="Agent Image" srcset="https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/11/member-2-360x360.jpg 360w, https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/11/member-2-150x150.jpg 150w"  data-sizes="(max-width: 360px) 100vw, 360px" />		</a>
+			</figure>
+	<div class="post-details">
+	<h3 class="post-title">
+	<a href="https://d-themes.com/wordpress/udesign/real-estate/agents/viktoriia-demianenko/">
+		Viktoriia Demianenko	</a>
+</h3>
+<div class="post-content">
+	<p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor nisi elit consequat. Sed lectus&hellip;</p></div>
+<div class="social-icons"><a href="#" class="social-icon framed use-hover fab fa-facebook-f social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"></a><a href="#" class="social-icon framed use-hover fab fa-twitter social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"></a><a href="#" class="social-icon framed use-hover fab fa-linkedin-in social-linkedin" target="_blank" title="linkedin" rel="noopener noreferrer"></a></div></div>
+	</article>
+	</div>
+
+</div>		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div></div></div></div></div>
+
+			</main>
+
+			
+							<footer class="footer custom-footer footer-782" id="footer">
+						<div class="alpha-block elementor elementor-782" data-block-id="782">		<div data-elementor-type="wp-post" data-elementor-id="782" class="elementor elementor-782" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" elementor-section elementor-top-section elementor-element elementor-element-9803539 elementor-section-content-middle cs-footer-top elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9803539" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-9393af9 mb-2 " data-id="9393af9" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c1e21a4 bg-transparent elementor-widget elementor-widget-image" data-id="c1e21a4" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://d-themes.com/wordpress/udesign/real-estate/">
+							<img style="padding-top : 40%;" width="280" height="112" src="https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/footer-logo280x112.png" class="d-lazyload attachment-full size-full" alt="Footer Logo" />								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-80f94a0 elementor-widget elementor-widget-heading" data-id="80f94a0" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Lorem Ipsum. Proin gravida nibh vel velitauc cil tor aliquet. Aenean solli citudin lorem</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-85acde7 elementor-widget elementor-widget-udesign_widget_share" data-id="85acde7" data-element_type="widget" data-widget_type="udesign_widget_share.default">
+				<div class="elementor-widget-container">
+			
+<div class="social-icons">
+	<a href="#" class="social-icon stacked use-hover social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-icon stacked use-hover social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a><a href="#" class="social-icon stacked use-hover social-linkedin" target="_blank" title="linkedin" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></div>
+
+		</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-62a830d mb-2 " data-id="62a830d" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-684df83 cs-text-editor elementor-widget elementor-widget-text-editor" data-id="684df83" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p style="margin-bottom: .4rem;"><label>Email:</label> <a href="mailto:mail@udesign.com">mail@udesign.com</a></p>
+
+<p class="mb-1"><label>Address:</label> <span class="address">123 Street Name, New York, Ny10000,USA</span></p>
+
+<p style="margin-bottom: .9rem;"><label>Fax:</label> <a href="fax:000123456789">+000 123-456-789</a></p>
+
+<p class="mb-2"><label>Phone Number:</label> <a href="tel://0004567890">+000-456-7890</a></p>						</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-17f7c7c mb-2 " data-id="17f7c7c" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-057e861 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-udesign_widget_iconlist" data-id="057e861" data-element_type="widget" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items">
+			<li class="elementor-icon-list-item">
+			<a href="https://d-themes.com/wordpress/udesign/real-estate/about-us/">			<span class="elementor-icon-list-text">About Us</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Order History</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Returns</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Custom Service</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Terms</span>
+							</a>
+					</li>
+		</ul>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-f66c710 mb-2 " data-id="f66c710" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1240ab5 elementor-widget elementor-widget-google_maps" data-id="1240ab5" data-element_type="widget" data-widget_type="google_maps.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-custom-embed">
+			<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+					src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&#038;t=m&#038;z=10&#038;output=embed&#038;iwloc=near"
+					title="London Eye, London, United Kingdom"
+					aria-label="London Eye, London, United Kingdom"
+			></iframe>
+		</div>
+				</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class=" elementor-section elementor-top-section elementor-element elementor-element-acf5700 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="acf5700" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6884173 " data-id="6884173" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-540d3de elementor-widget elementor-widget-shortcode" data-id="540d3de" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode"><p class="mb-0 text-center copyright">UDesign Wordpress 
+© 2022. All Rights Reserved</p></div>
+				</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div>					</footer>
+					
+		</div>
+
+					<div class="cookies-popup">
+				<div class="cookies-popup-inner d-flex align-items-center">
+					<div class="cookies-info">
+						By browsing this website, you agree to our <a href="https://d-themes.com/wordpress/udesign/real-estate/privacy-policy/">privacy policy</a>.					</div>
+					<a href="#" rel="nofollow noopener" class="btn btn-sm accept-cookie-btn">I Agree</a>
+					<a href="#" class="btn close-cookie-btn decline-cookie-btn btn-close" aria-label="Close Cookie Consent"><i class="a-icon-times-solid"></i></a>
+				</div>
+			</div>
+			
+					<a id="scroll-top" class="scroll-top" href="#top" title="Top" role="button">
+				<i class="a-icon-long-arrow-up"></i>
+				<svg  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					viewBox="0 0 70 70" enable-background="new 0 0 70 70" xml:space="preserve">
+					<circle id="progress-indicator" fill="transparent" stroke="#000000" stroke-miterlimit="10" cx="35" cy="35" r="34"/>
+				</svg>
+			</a>
+		
+					<div class="mobile-menu-wrapper">
+				<div class="mobile-menu-overlay"></div>
+				<div class="mobile-menu-container" style="height: 100vh;">
+					<!-- Need to ajax load mobile menus -->
+				</div>
+				<a class="mobile-menu-close" href="#"><i class="close-icon"></i></a>
+			</div>
+		
+		
+		<link rel='stylesheet' id='wpforms-full-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/wpforms-lite/assets/css/wpforms-full.min.css?ver=1.6.9' media='all' />
+<link rel='stylesheet' id='alpha-wpforms-style-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/inc/plugins/wpforms/wpforms.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='e-animations-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.4.0' media='all' />
+<script async="async" src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/framework/addons/live-search/jquery.autocomplete.min.js?ver=5.8.3' id='jquery-autocomplete-js'></script>
+<script id='alpha-framework-js-extra'>
+var alpha_vars = {"theme":"udesign","framework_icon_prefix":"a","alpha_gap":"15px","home_url":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/","ajax_url":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/wp-admin\/admin-ajax.php","nonce":"31d2430d17","lazyload":"1","container":"1290","assets_url":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/wp-content\/themes\/u-design\/assets","texts":{"loading":"Loading...","loadmore_error":"Loading failed","popup_error":"The content could not be loaded.","ribbon":"Ribbon"},"resource_async_js":"1","resource_split_tasks":"1","resource_after_load":"1","alpha_cache_key":"alpha_cache_d293ab6d9f8e9ac45d8ed7c1cecde424","lazyload_menu":"","countdown":{"labels":["Years","Months","Weeks","Days","Hours","Minutes","Seconds"],"labels_short":["Years","Months","Weeks","Days","Hrs","Mins","Secs"],"label1":["Year","Month","Week","Day","Hour","Minute","Second"],"label1_short":["Year","Month","Week","Day","Hour","Min","Sec"]},"placeholder_img":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/wp-content\/themes\/u-design\/assets\/images\/placeholders\/post-placeholder.jpg","placeholder_alt":"UDesign Placeholder","placeholder_width":"730","placeholder_height":"570","search_result":"There are no results.","cookie_version":"1"};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/framework/assets/js/framework.js?ver=4.0.0' id='alpha-framework-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/framework/assets/js/framework-async.js?ver=4.0.0' id='alpha-framework-async-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/js/theme.js?ver=4.0.0' id='alpha-theme-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/framework/addons/gdpr/gdpr.js?ver=4.0.0' id='alpha-gdpr-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/inc/cpt/post_types/member/assets/member.js?ver=4.0.0' id='alpha-member-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js?ver=4.0.0' id='bootstrap-datepicker-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/assets/vendor/bootstrap-timepicker/js/bootstrap-timepicker.js?ver=4.0.0' id='bootstrap-timepicker-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/vendor/jquery.magnific-popup/jquery.magnific-popup.js?ver=1.1.0' id='jquery-magnific-popup-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-includes/js/comment-reply.js?ver=5.8.3' id='comment-reply-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-includes/js/wp-embed.js?ver=5.8.3' id='wp-embed-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/framework/addons/lazyload-images/lazyload.js?ver=5.8.3' id='lazyload-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/assets/js/chart.min.js?ver=4.0.0' id='alpha-chart-lib-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/framework/widgets/pie-doughnut-chart/pie-doughnut-chart.js?ver=4.0.0' id='alpha-pie-doughnut-chart-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/essential-grid/public/assets/js/rbtools.min.js?ver=6.2.0' id='tp-tools-js'></script>
+<script id='essential-grid-essential-grid-script-js-extra'>
+var eg_ajax_var = {"url":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/wp-admin\/admin-ajax.php","nonce":"c528b41ecb"};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/essential-grid/public/assets/js/esg.min.js?ver=3.0.11' id='essential-grid-essential-grid-script-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/swiper/swiper.js?ver=5.3.6' id='swiper-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/inc/addons/post-like/post-like.js?ver=4.0.0' id='alpha-post-like-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/js/webpack.runtime.js?ver=3.4.0' id='elementor-webpack-runtime-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/js/frontend-modules.js?ver=3.4.0' id='elementor-frontend-modules-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-includes/js/jquery/ui/core.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/share-link/share-link.js?ver=3.4.0' id='share-link-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/dialog/dialog.js?ver=4.8.1' id='elementor-dialog-js'></script>
+<script id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":true},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":992,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":991,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.4.0","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"landing-pages":true,"elements-color-picker":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"viewport_tablet":991,"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":717,"title":"Mary%20Ann%20%E2%80%93%20U-Real%20Estate","excerpt":"","featuredImage":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/wp-content\/uploads\/sites\/16\/2021\/10\/member-5.jpg"}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":true},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":992,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":991,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.4.0","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"landing-pages":true,"elements-color-picker":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"viewport_tablet":991,"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":717,"title":"Mary%20Ann%20%E2%80%93%20U-Real%20Estate","excerpt":"","featuredImage":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/wp-content\/uploads\/sites\/16\/2021\/10\/member-5.jpg"}};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/js/frontend.js?ver=3.4.0' id='elementor-frontend-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/js/preloaded-modules.js?ver=3.4.0' id='preloaded-modules-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-includes/js/underscore.min.js?ver=1.13.1' id='underscore-js'></script>
+<script id='wp-util-js-extra'>
+var _wpUtilSettings = {"ajax":{"url":"\/wordpress\/udesign\/real-estate\/wp-admin\/admin-ajax.php"}};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-includes/js/wp-util.js?ver=5.8.3' id='wp-util-js'></script>
+<script id='wpforms-elementor-js-extra'>
+var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.6.9' id='wpforms-elementor-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/wpforms-lite/assets/js/jquery.validate.min.js?ver=1.19.0' id='wpforms-validation-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/wpforms-lite/assets/js/mailcheck.min.js?ver=1.1.2' id='wpforms-mailcheck-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/wpforms-lite/assets/js/punycode.min.js?ver=1.0.0' id='wpforms-punycode-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/wpforms-lite/assets/js/wpforms.js?ver=1.6.9' id='wpforms-js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpforms_settings = {"val_required":"This field is required.","val_email":"Please enter a valid email address.","val_email_suggestion":"Did you mean {suggestion}?","val_email_suggestion_title":"Click to accept this suggestion.","val_email_restricted":"This email address is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number.","val_confirm":"Field values do not match.","val_checklimit":"You have exceeded the number of allowed selections: {#}.","val_limit_characters":"{count} of {limit} max characters.","val_limit_words":"{count} of {limit} max words.","val_recaptcha_fail_msg":"Google reCAPTCHA verification failed, please try again later.","val_empty_blanks":"Please fill out all blanks.","uuid_cookie":"","locale":"en","wpforms_plugin_url":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/wp-content\/plugins\/wpforms-lite\/","gdpr":"","ajaxurl":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/wp-admin\/admin-ajax.php","mailcheck_enabled":"1","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"],"is_ssl":"1"}
+/* ]]> */
+</script>
+	</body>
+</html>

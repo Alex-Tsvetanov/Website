@@ -1,0 +1,70 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//U-Education - ECPv5.9.1//NONSGML v1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:U-Education
+X-ORIGINAL-URL:https://d-themes.com/wordpress/udesign/education
+X-WR-CALDESC:Events for U-Education
+BEGIN:VTIMEZONE
+TZID:UTC
+BEGIN:STANDARD
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+TZNAME:UTC
+DTSTART:20210101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=UTC:20211231T080000
+DTEND;TZID=UTC:20230722T223000
+DTSTAMP:20220219T131504
+CREATED:20211016T013331Z
+LAST-MODIFIED:20211208T023410Z
+UID:189-1640937600-1690065000@d-themes.com
+SUMMARY:Opening Digital Science Conference
+DESCRIPTION:Lorem ipsum dolor sit amet\, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh\, viverra non semper suscipit\, posuere a pede. Donec nec justo eget felis facilisis fermentum. \nContents\nLorem ipsum dolor sit amet\, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh\, viverra non semper suscipit\, posuere a pede. Donec nec justo eget felis facilisis fermentum. \n\nLorem ipsum dolor sit amet\nConsectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.\nNullam malesuada erat ut turpis.\nSuspendisse urna nibh\, viverra non semper suscipit\,\nPosuere a pede. Donec nec justo eget felis facilisis fermentum.\nAliquam porttitor mauris sit amet orci.
+URL:https://d-themes.com/wordpress/udesign/education/event/opening-digital-science-conference/
+LOCATION:Birmingham\, UK\, Birmingham\, United Kingdom
+ATTACH;FMTTYPE=image/jpeg:https://d-themes.com/wordpress/udesign/education/wp-content/uploads/sites/14/2021/10/event-3.jpg
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20220131
+DTEND;VALUE=DATE:20221217
+DTSTAMP:20220219T131504
+CREATED:20211016T010940Z
+LAST-MODIFIED:20211117T173443Z
+UID:182-1643587200-1671235199@d-themes.com
+SUMMARY:Build Education Website Using UDesign
+DESCRIPTION:Tech you how to build a complete Learning Management System with UDesign. \nContents\nCourse content designed by considering current software testing technology and the job market. Learn Software Testing and Automation basics from a professional trainer from your own desk. \n\nLorem ipsum dolor sit amet\nConsectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.\nNullam malesuada erat ut turpis.\nSuspendisse urna nibh\, viverra non semper suscipit\,\nPosuere a pede. Donec nec justo eget felis facilisis fermentum.\nAliquam porttitor mauris sit amet orci.
+URL:https://d-themes.com/wordpress/udesign/education/event/build-education-website-using-udesign/
+LOCATION:New York\, US\, NY\, United States
+ATTACH;FMTTYPE=image/jpeg:https://d-themes.com/wordpress/udesign/education/wp-content/uploads/sites/14/2021/10/event-4.jpg
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=UTC:20220331T080000
+DTEND;TZID=UTC:20230913T170000
+DTSTAMP:20220219T131504
+CREATED:20211016T011638Z
+LAST-MODIFIED:20211016T024951Z
+UID:185-1648713600-1694624400@d-themes.com
+SUMMARY:Enhance Education Skills
+DESCRIPTION:Lorem ipsum dolor sit amet\, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh\, viverra non semper suscipit\, posuere a pede. Donec nec justo eget felis facilisis fermentum. \nContents\nLorem ipsum dolor sit amet\, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh\, viverra non semper suscipit\, posuere a pede. Donec nec justo eget felis facilisis fermentum. \n\nLorem ipsum dolor sit amet\nConsectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.\nNullam malesuada erat ut turpis.\nSuspendisse urna nibh\, viverra non semper suscipit\,\nPosuere a pede. Donec nec justo eget felis facilisis fermentum.\nAliquam porttitor mauris sit amet orci.
+URL:https://d-themes.com/wordpress/udesign/education/event/enhance-education-skills/
+LOCATION:Colorado\, US\, CO\, United States
+ATTACH;FMTTYPE=image/jpeg:https://d-themes.com/wordpress/udesign/education/wp-content/uploads/sites/14/2021/10/event-2.jpg
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=UTC:20220531T000000
+DTEND;TZID=UTC:20230715T000000
+DTSTAMP:20220219T131504
+CREATED:20211016T015907Z
+LAST-MODIFIED:20211016T025005Z
+UID:191-1653955200-1689379200@d-themes.com
+SUMMARY:Raise Mobile App Sales
+DESCRIPTION:Lorem ipsum dolor sit amet\, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh\, viverra non semper suscipit\, posuere a pede. Donec nec justo eget felis facilisis fermentum. \nContents\nLorem ipsum dolor sit amet\, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh\, viverra non semper suscipit\, posuere a pede. Donec nec justo eget felis facilisis fermentum. \n\nLorem ipsum dolor sit amet\nConsectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.\nNullam malesuada erat ut turpis.\nSuspendisse urna nibh\, viverra non semper suscipit\,\nPosuere a pede. Donec nec justo eget felis facilisis fermentum.\nAliquam porttitor mauris sit amet orci.
+URL:https://d-themes.com/wordpress/udesign/education/event/raise-mobile-app-sales/
+LOCATION:Texas\, US\, TX\, United States
+ATTACH;FMTTYPE=image/jpeg:https://d-themes.com/wordpress/udesign/education/wp-content/uploads/sites/14/2021/10/event-1.jpg
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,987 @@
+
+<!DOCTYPE html>
+	<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+		
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<link rel="pingback" href="https://d-themes.com/wordpress/udesign/corporate/xmlrpc.php" />
+
+		<link rel="shortcut icon" href="https://d-themes.com/wordpress/udesign/corporate/wp-content/themes/u-design/assets/images/favicon.png" type="image/x-icon" />
+		
+		<title>Contact Us &#8211; U-Corporate</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="U-Corporate &raquo; Feed" href="https://d-themes.com/wordpress/udesign/corporate/feed/" />
+<link rel="alternate" type="application/rss+xml" title="U-Corporate &raquo; Comments Feed" href="https://d-themes.com/wordpress/udesign/corporate/comments/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-includes/css/dist/block-library/style.css?ver=5.8.3' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+#start-resizable-editor-section {
+  display: none;
+}
+
+.wp-block-audio figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-audio figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-code {
+  font-family: Menlo, Consolas, monaco, monospace;
+  color: #1e1e1e;
+  padding: 0.8em 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.wp-block-embed figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-embed figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.blocks-gallery-caption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .blocks-gallery-caption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-image figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-image figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-pullquote {
+  border-top: 4px solid currentColor;
+  border-bottom: 4px solid currentColor;
+  margin-bottom: 1.75em;
+  color: currentColor;
+}
+.wp-block-pullquote cite,
+.wp-block-pullquote footer, .wp-block-pullquote__citation {
+  color: currentColor;
+  text-transform: uppercase;
+  font-size: 0.8125em;
+  font-style: normal;
+}
+
+.wp-block-quote {
+  border-left: 0.25em solid currentColor;
+  margin: 0 0 1.75em 0;
+  padding-left: 1em;
+}
+.wp-block-quote cite,
+.wp-block-quote footer {
+  color: currentColor;
+  font-size: 0.8125em;
+  position: relative;
+  font-style: normal;
+}
+.wp-block-quote.has-text-align-right {
+  border-left: none;
+  border-right: 0.25em solid currentColor;
+  padding-left: 0;
+  padding-right: 1em;
+}
+.wp-block-quote.has-text-align-center {
+  border: none;
+  padding-left: 0;
+}
+.wp-block-quote.is-style-large, .wp-block-quote.is-large {
+  border: none;
+}
+
+.wp-block-search .wp-block-search__label {
+  font-weight: bold;
+}
+
+.wp-block-group.has-background {
+  padding: 1.25em 2.375em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.wp-block-separator {
+  border: none;
+  border-bottom: 2px solid currentColor;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.4;
+}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+  width: 100px;
+}
+.wp-block-separator.has-background:not(.is-style-dots) {
+  border-bottom: none;
+  height: 1px;
+}
+.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+  height: 2px;
+}
+
+.wp-block-table thead {
+  border-bottom: 3px solid;
+}
+.wp-block-table tfoot {
+  border-top: 3px solid;
+}
+.wp-block-table td,
+.wp-block-table th {
+  padding: 0.5em;
+  border: 1px solid;
+  word-break: normal;
+}
+.wp-block-table figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-table figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-video figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-video figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-template-part.has-background {
+  padding: 1.25em 2.375em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#end-resizable-editor-section {
+  display: none;
+}
+</style>
+<link rel='stylesheet' id='wpforms-full-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/wpforms-lite/assets/css/wpforms-full.min.css?ver=1.6.9' media='all' />
+<link rel='stylesheet' id='alpha-gdpr-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/u-design-core/framework/addons/gdpr/gdpr.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.css?ver=5.12.0' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/elementor/css/custom-frontend.css?ver=1641574931' media='all' />
+<style id='elementor-frontend-inline-css'>
+@font-face{font-family:eicons;src:url(https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0);src:url(https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0#iefix) format("embedded-opentype"),url(https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0) format("woff2"),url(https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.10.0) format("woff"),url(https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.10.0) format("truetype"),url(https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.10.0#eicon) format("svg");font-weight:400;font-style:normal}
+</style>
+<link rel='stylesheet' id='font-awesome-5-all-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.css?ver=3.4.0' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.css?ver=3.4.0' media='all' />
+<link rel='stylesheet' id='alpha-core-framework-style-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/u-design-core/assets/css/framework.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='fontawesome-free-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/themes/u-design/assets/vendor/fontawesome-free/css/all.min.css?ver=5.14.0' media='all' />
+<link rel='stylesheet' id='alpha-icons-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/themes/u-design/assets/vendor/alpha-icons/css/icons.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='theme-icons-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/themes/u-design/assets/vendor/udesign-icons/css/icons.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='animate-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/themes/u-design/assets/vendor/animate/animate.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/themes/u-design/assets/vendor/jquery.magnific-popup/magnific-popup.min.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='elementor-post-3-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/elementor/css/post-3.css?ver=1641574931' media='all' />
+<link rel='stylesheet' id='alpha-theme-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/themes/u-design/assets/css/theme.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-dynamic-vars-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/udesign_styles/dynamic_css_vars.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C500%2C600%2C700&#038;ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-single-portfolio-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/u-design-core/inc/cpt/post_types/portfolio/assets/single-portfolio.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-portfolio-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/u-design-core/inc/cpt/post_types/portfolio/assets/portfolio.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-member-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/u-design-core/inc/cpt/post_types/member/assets/member.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-wpforms-style-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/themes/u-design/inc/plugins/wpforms/wpforms.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-elementor-style-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/u-design-core/framework/plugins/elementor/assets/elementor.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-elementor-extend-style-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/u-design-core/inc/plugins/elementor/assets/elementor-extend.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='elementor-post-6-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/elementor/css/post-6.css?ver=5.8.3' media='all' />
+<style id='elementor-post-6-inline-css'>
+.nowrap-col .elementor-widget-wrap{flex-wrap:nowrap}.custom-header{position:absolute;top:0;left:0;right:0;background:transparent;z-index:11}.custom-header .sticky-content.fixed{border-bottom-width:0}.menu-active-underline>li>a:before{border-width:1px;bottom:21px}.custom-header .menu>.menu-item-has-children{padding-right:0}.custom-header .menu>.menu-item-has-children>a{padding-right:1.5rem}@media (max-width:1199px){.main-menu .menu>li:not(:last-child){margin-right:2.5rem}}@media (max-width:767px){.custom-top-list .elementor-icon-list-item .elementor-icon-list-text,.custom-account span{display:none}.custom-header-search .search-toggle i{margin-right:0;font-size:2rem}.custom-top-list.elementor-element .elementor-icon-list-items li.elementor-icon-list-item:not(:last-child):after{content:none}}
+</style>
+<link rel='stylesheet' id='elementor-post-537-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/elementor/css/post-537.css?ver=5.8.3' media='all' />
+<style id='elementor-post-537-inline-css'>
+.custom-contact-info p{margin-bottom:0;line-height:1.72}.custom-contact-info strong{font-weight:500;color:#e1e1e1}.custom-contact .info-box.info-box-side{justify-content:flex-start}.custom-width{max-width:315px}
+</style>
+<link rel='stylesheet' id='elementor-post-2152-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/elementor/css/post-2152.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='elementor-post-1030-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/elementor/css/post-1030.css?ver=1641580469' media='all' />
+<link rel='stylesheet' id='alpha-style-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/themes/u-design/style.css?ver=4.0.0' media='all' />
+<style id='alpha-style-inline-css'>
+/* Page CSS */
+.main {
+    padding-top: 0;
+}
+
+.custom-icon-box > .elementor-widget-container {
+    height: 100%;
+}
+
+.custom-icon-box a {
+    color: inherit;
+}
+
+.custom-icon-box a:hover {
+    color: var(--alpha-primary-color, $primary-color);
+}
+
+.breadcrumb-wrap {
+background-color: #f7f7f7;
+}
+
+.custom-form.elementor-element .elementor-widget-container .wpforms-container  textarea {
+    height: 15.5rem;
+}
+
+.custom-form .wpforms-container .wpforms-form .wpforms-submit-container {
+    padding-top: 1.8rem;
+}
+</style>
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=5.8.3' media='all' />
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-includes/js/jquery/jquery.js?ver=3.6.0' id='jquery-core-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.js?ver=3.4.0' id='font-awesome-4-shim-js'></script>
+<link rel="https://api.w.org/" href="https://d-themes.com/wordpress/udesign/corporate/wp-json/" /><link rel="alternate" type="application/json" href="https://d-themes.com/wordpress/udesign/corporate/wp-json/wp/v2/pages/1030" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://d-themes.com/wordpress/udesign/corporate/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://d-themes.com/wordpress/udesign/corporate/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.3" />
+<link rel="canonical" href="https://d-themes.com/wordpress/udesign/corporate/contact-us/" />
+<link rel='shortlink' href='https://d-themes.com/wordpress/udesign/corporate/?p=1030' />
+<link rel="alternate" type="application/json+oembed" href="https://d-themes.com/wordpress/udesign/corporate/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fd-themes.com%2Fwordpress%2Fudesign%2Fcorporate%2Fcontact-us%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://d-themes.com/wordpress/udesign/corporate/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fd-themes.com%2Fwordpress%2Fudesign%2Fcorporate%2Fcontact-us%2F&#038;format=xml" />
+		<meta name="application-name" content="UDesign - MULTI-PURPOSE PREMIUM WordPress THEME">
+		<meta name="author" content="Andon">
+		<meta name="description" content="A slick, powerful and clean theme UDesign provides an intuitive set of options to help you setup your WordPress site quickly and effectively. Flexibility is key and it has been optimized for SEO and speed. It is also responsive & mobile ready should you choose that option. The UDesign theme features include: unlimited colors, widgetized home page, over 600 fonts to choose from, WooCommerce Integration, it is also translation and multilingual ready, step by step documentation, exclusive UDesign support forum and a helpful community. Always up-to-date security and many new features are constantly added as the theme evolves.">
+		<style id="kirki-inline-styles"></style>	</head>
+	<body class="page-template-default page page-id-1030 wp-custom-logo wp-embed-responsive alpha-single-page-layout alpha-rounded-skin elementor-default elementor-kit-3 elementor-page elementor-page-1030 udesign-demo">
+		
+		
+		
+		<div class="page-wrapper">
+
+			<header class="header custom-header header-6" id="header"><div class="alpha-block elementor elementor-6" data-block-id="6">		<div data-elementor-type="wp-post" data-elementor-id="6" class="elementor elementor-6" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" elementor-section elementor-top-section elementor-element elementor-element-b737782 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b737782" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container container-fluid elementor-column-gap-no" >
+										
+		<div class=" elementor-column elementor-col-flex-1 elementor-top-column elementor-element elementor-element-3bc6110 overflow-hidden " data-id="3bc6110" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-ad50e44 elementor-icon-list--layout-inline custom-top-list elementor-hidden-mobile elementor-list-item-link-full_width elementor-widget elementor-widget-udesign_widget_iconlist" data-id="ad50e44" data-element_type="widget" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items elementor-inline-items">
+			<li class="elementor-icon-list-item elementor-inline-item">
+			<a href="mailto:#" aria-label="Mail to">				<span class="elementor-icon-list-icon">
+				<i aria-hidden="true" class="  u-icon-envelop"></i>				</span>
+						<span class="elementor-icon-list-text">to@example.com</span>
+							</a>
+					</li>
+		</ul>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-a13a7a6 elementor-hidden-mobile elementor-widget elementor-widget-udesign_header_v_divider" data-id="a13a7a6" data-element_type="widget" data-widget_type="udesign_header_v_divider.default">
+				<div class="elementor-widget-container">
+			<span class="divider"></span>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-3ee3946 welcome-msg elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-udesign_widget_iconlist" data-id="3ee3946" data-element_type="widget" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items">
+			<li class="elementor-icon-list-item">
+							<span class="elementor-icon-list-icon">
+				<i aria-hidden="true" class="  u-icon-clock"></i>				</span>
+						<span class="elementor-icon-list-text">Mon – Sat 8:00 – 18:00, Sunday-CLOSED</span>
+					</li>
+		</ul>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-flex-auto elementor-top-column elementor-element elementor-element-077ce13 pl--lg-1 " data-id="077ce13" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e7ce1fb elementor-hidden-desktop elementor-hidden-tablet elementor-view-default elementor-widget elementor-widget-icon" data-id="e7ce1fb" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<a class="elementor-icon" href="mailto:#">
+			<i aria-hidden="true" class="  u-icon-envelop"></i>			</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-b93900b elementor-icon-list--layout-inline custom-top-list elementor-list-item-link-full_width elementor-widget elementor-widget-udesign_widget_iconlist" data-id="b93900b" data-element_type="widget" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items elementor-inline-items">
+			<li class="elementor-icon-list-item elementor-inline-item">
+			<a href="https://d-themes.com/wordpress/udesign/corporate/contact-us/" aria-label="Need Help">				<span class="elementor-icon-list-icon">
+				<i aria-hidden="true" class="  u-icon-exclamation"></i>				</span>
+						<span class="elementor-icon-list-text">Need Help</span>
+							</a>
+					</li>
+		</ul>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-08e93ea elementor-hidden-mobile elementor-widget elementor-widget-udesign_header_v_divider" data-id="08e93ea" data-element_type="widget" data-widget_type="udesign_header_v_divider.default">
+				<div class="elementor-widget-container">
+			<span class="divider"></span>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-d1ce3cc custom-account elementor-widget elementor-widget-udesign_header_account" data-id="d1ce3cc" data-element_type="widget" data-widget_type="udesign_header_account.default">
+				<div class="elementor-widget-container">
+			<div class="account  inline-type "><a class="login inline-type " href="https://d-themes.com/wordpress/udesign/corporate/wp-login.php?redirect_to=https%3A%2F%2Fd-themes.com%2Fwordpress%2Fudesign%2Fcorporate" aria-label="Login"><i class="  u-icon-account"></i><span>Sign In</span></a><span class="delimiter">/</span><a class="register inline-type " href="#" aria-label="Register"><span>Register</span></a></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-69ee4f6 elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-udesign_header_v_divider" data-id="69ee4f6" data-element_type="widget" data-widget_type="udesign_header_v_divider.default">
+				<div class="elementor-widget-container">
+			<span class="divider"></span>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-2c2a372 elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-udesign_widget_share" data-id="2c2a372" data-element_type="widget" data-widget_type="udesign_widget_share.default">
+				<div class="elementor-widget-container">
+			
+<div class="social-icons social-icons-separated">
+	<a href="#" class="social-icon  social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-icon  social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a><a href="#" class="social-icon  social-linkedin" target="_blank" title="linkedin" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></div>
+
+		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class=" sticky-content fix-top elementor-section elementor-top-section elementor-element elementor-element-a75891d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a75891d" data-element_type="section">
+										<div class="elementor-container container-fluid elementor-column-gap-no" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d03814c " data-id="d03814c" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-422eb82 mr-xl-10 pr-xl-8 elementor-widget elementor-widget-udesign_header_site_logo" data-id="422eb82" data-element_type="widget" data-widget_type="udesign_header_site_logo.default">
+				<div class="elementor-widget-container">
+			
+<a href="https://d-themes.com/wordpress/udesign/corporate/" class="logo" title="U-Corporate - UDesign WordPress Demo Site">
+	<img width="278" height="50" src="https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/2021/09/logo.png" class="site-logo skip-data-lazy attachment-full size-full" alt="U-Corporate" srcset="https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/2021/09/logo.png 278w, https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/2021/09/logo-150x27.png 150w" sizes="(max-width: 278px) 100vw, 278px" /></a>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-7f62636 elementor-hidden-tablet elementor-hidden-phone ml-auto mr-auto elementor-widget elementor-widget-udesign_widget_menu" data-id="7f62636" data-element_type="widget" data-widget_type="udesign_widget_menu.default">
+				<div class="elementor-widget-container">
+			<nav class=" main-menu"><ul id="menu-main-menu" class="menu  horizontal-menu menu-active-underline"><li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-58" ><a href="https://d-themes.com/wordpress/udesign/corporate/"><span>Home</span></a></li>
+<li id="menu-item-2639" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-2639" ><a href="#"><span>Pages</span></a>
+<ul>
+	<li id="menu-item-2640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2640" ><a href="https://d-themes.com/wordpress/udesign/corporate/about-us/"><span>About us</span></a></li>
+	<li id="menu-item-2641" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1030 current_page_item menu-item-2641" ><a href="https://d-themes.com/wordpress/udesign/corporate/contact-us/"><span>Contact Us</span></a></li>
+	<li id="menu-item-2642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2642" ><a href="https://d-themes.com/wordpress/udesign/corporate/services/"><span>Services</span></a></li>
+	<li id="menu-item-2643" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2643" ><a href="https://d-themes.com/wordpress/udesign/corporate/testimonials/"><span>Testimonials</span></a></li>
+	<li id="menu-item-2644" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2644" ><a href="https://d-themes.com/wordpress/udesign/corporate/404"><span>Error 404</span></a></li>
+
+</ul>
+</li>
+<li id="menu-item-2625" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2625" ><a href="https://d-themes.com/wordpress/udesign/corporate/portfolio/"><span>Portfolio</span></a>
+<ul class="megamenu mp-left" style="width: 467px;">
+	<li id="menu-item-1616" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1616" ><a href="#" class="nolink menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1618"><span>Portfolio Layouts</span></a>
+		<ul>
+			<li id="menu-item-1620" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1620" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/grid-2-columns/"><span>Grid 2 Columns</span></a></li>
+			<li id="menu-item-1621" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1621" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/grid-3-columns/"><span>Grid 3 Columns</span></a></li>
+			<li id="menu-item-1622" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1622" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/grid-4-columns/"><span>Grid 4 Columns</span></a></li>
+			<li id="menu-item-1623" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1623" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/grid-6-columns/"><span>Grid 6 Columns</span></a></li>
+			<li id="menu-item-1624" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1624" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/masonry-2-columns/"><span>Masonry 2 Columns</span></a></li>
+			<li id="menu-item-1625" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1625" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/masonry-3-columns/"><span>Masonry 3 Columns</span></a></li>
+			<li id="menu-item-1626" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1626" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/masonry-4-columns/"><span>Masonry 4 Columns</span></a></li>
+			<li id="menu-item-1627" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1627" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio_skill/masonry-6-columns/"><span>Masonry 6 Columns</span></a></li>
+
+		</ul>
+</li>
+	<li id="menu-item-1617" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1617" ><a href="#" class="nolink menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1619"><span>Single Portfolio</span></a>
+		<ul>
+			<li id="menu-item-1628" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1628" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/quisque-a-lectus/"><span>Default</span></a></li>
+			<li id="menu-item-1629" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1629" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/quisque-volutpat-mattiseros/"><span>Full Width</span></a></li>
+			<li id="menu-item-1630" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1630" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/fusce-lacinia-arcu-etnulla/"><span>Sticky Content</span></a></li>
+			<li id="menu-item-1631" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1631" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/aliquam-tincidunt-mauris-eurisus/"><span>Slider</span></a></li>
+			<li id="menu-item-1632" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1632" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/utaliquam-sollicitudin-leo/"><span>Gallery</span></a></li>
+			<li id="menu-item-1633" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1633" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/cras-ornare-tristique-elit/"><span>Full Width Video</span></a></li>
+			<li id="menu-item-1634" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1634" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/donec-quis-dui-at-dolor/"><span>With Left Sidebar</span></a></li>
+			<li id="menu-item-1635" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1635" ><a href="https://d-themes.com/wordpress/udesign/elements/portfolio/vivamus-vestibulum-ntulla/"><span>With Right Sidebar</span></a></li>
+
+		</ul>
+</li>
+
+</ul>
+</li>
+<li id="menu-item-1615" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1615" ><a href="https://d-themes.com/wordpress/udesign/corporate/member/"><span>Our Team</span></a></li>
+<li id="menu-item-683" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-683" ><a href="https://d-themes.com/wordpress/udesign/corporate/news/"><span>News</span></a>
+<ul>
+	<li id="menu-item-1636" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1636" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/classic/"><span>Classic</span></a></li>
+	<li id="menu-item-1637" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1637" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/grid/"><span>Grid</span></a></li>
+	<li id="menu-item-1638" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1638" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/masonry/"><span>Masonry</span></a></li>
+	<li id="menu-item-1639" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1639" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/timeline/"><span>Timeline</span></a></li>
+	<li id="menu-item-1640" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1640" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/08/18/nullam-mattis-mi-at-metus-egestas/"><span>Single Post</span></a>
+	<ul>
+		<li id="menu-item-1641" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1641" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/09/25/nam-nec-telodio-tinci-dunt-auctor/" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1641"><span>Full Width</span></a></li>
+		<li id="menu-item-1642" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1642" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/08/31/aliquam-tincidunt-mauris/" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1642"><span>Left Sidebar</span></a></li>
+		<li id="menu-item-1643" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1643" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/08/18/nullam-mattis-mi-at-metus-egestas/" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1643"><span>Right Sidebar</span></a></li>
+
+	</ul>
+</li>
+
+</ul>
+</li>
+<li id="menu-item-1307" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1307" ><a href="https://d-themes.com/wordpress/udesign/elements/"><span>Elements</span></a></li>
+</ul></nav>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c49f753 elementor-widget__width-auto elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-udesign_widget_search" data-id="c49f753" data-element_type="widget" data-widget_type="udesign_widget_search.default">
+				<div class="elementor-widget-container">
+			
+	<div class="search-wrapper  hs-toggle hs-dropdown hs-right light-style">
+							<a href="#" class="search-toggle" aria-label="Search">
+			<i class="a-icon-search"></i>
+									<span>Search</span>
+					</a>
+		
+							<form action="https://d-themes.com/wordpress/udesign/corporate/" method="get" class="input-wrapper">
+			<input type="hidden" name="post_type" value=""/>
+
+			<input type="search" aria-label="Search" class="form-control" name="s" placeholder="Search in..." required="" autocomplete="off">
+
+									<div class="live-search-list"></div>
+			
+			<button class="btn btn-search" aria-label="Search Button" type="submit">
+				<i class="a-icon-search"></i>
+			</button>
+
+					
+		</form>
+						</div>
+
+							</div>
+				</div>
+				<div class="elementor-element elementor-element-9e5c867 ml-lg-0 ml-auto d-sm-block d-none elementor-widget elementor-widget-udesign_widget_button" data-id="9e5c867" data-element_type="widget" data-widget_type="udesign_widget_button.default">
+				<div class="elementor-widget-container">
+			<a class="btn btn-md btn-rounded btn-primary" href="https://d-themes.com/wordpress/udesign/corporate/contact-us/" ><span >Contact Us</span></a>		</div>
+				</div>
+				<div class="elementor-element elementor-element-8102c9e order-sm-first ml-sm-0 ml-auto mr-sm-4 elementor-widget elementor-widget-udesign_header_mmenu_toggle" data-id="8102c9e" data-element_type="widget" data-widget_type="udesign_header_mmenu_toggle.default">
+				<div class="elementor-widget-container">
+			<a href="#" class="mobile-menu-toggle d-lg-none" aria-label="Mobile Menu"><i class="  a-icon-hamburger"></i></a>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div></header><div class="alpha-block elementor elementor-2152" data-block-id="2152">		<div data-elementor-type="wp-post" data-elementor-id="2152" class="elementor elementor-2152" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" background-trans elementor-section elementor-top-section elementor-element elementor-element-f6266e2 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="f6266e2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-no banner banner-fixed" >
+													<figure class="banner-img"
+													style="background-color:#474546"
+						>
+						<img width="1903" height="595" src="https://d-themes.com/wordpress/udesign/corporate/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/2021/09/banner-6-1.jpg" class="d-lazyload attachment-full size-full" alt="Banner" style="padding-top : 31.27%;background-color:#474546" srcset="https://d-themes.com/wordpress/udesign/corporate/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/2021/09/banner-6-1.jpg 1903w, https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/2021/09/banner-6-1-300x94.jpg 300w, https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/2021/09/banner-6-1-1024x320.jpg 1024w, https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/2021/09/banner-6-1-768x240.jpg 768w, https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/2021/09/banner-6-1-1536x480.jpg 1536w, https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/2021/09/banner-6-1-150x47.jpg 150w, https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/2021/09/banner-6-1-600x188.jpg 600w"  data-sizes="(max-width: 1903px) 100vw, 1903px" />					</figure>
+								
+		<div class=" banner-content t-c elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e21b2b6 " data-id="e21b2b6" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-de252f9 elementor-invisible elementor-widget elementor-widget-heading" data-id="de252f9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUpShorter&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Get in Touch</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-9740195 elementor-invisible elementor-widget elementor-widget-heading" data-id="9740195" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUpShorter&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Contact Us</h1>		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div><div class="breadcrumb-wrap"><div class="breadcrumb-container container"><ul class="breadcrumb"><li><a href="https://d-themes.com/wordpress/udesign/corporate">Home</a></li><li class="delimiter"><i class="a-icon-angle-right"></i></li><li>Contact Us</li></ul><script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Home","@id":"https:\/\/d-themes.com\/wordpress\/udesign\/corporate"}},{"@type":"ListItem","position":2,"item":{"name":"terms","@id":"https:\/\/d-themes.com\/wordpress\/udesign\/corporate\/contact-us\/"}},{"@type":"ListItem","position":3,"item":{"name":"Contact Us","@id":"https:\/\/d-themes.com\/wordpress\/udesign\/corporate\/contact-us\/"}}]}</script></div></div>
+			
+			<main id="main" class="main">
+
+<div class="page-content">
+
+	<div class="main-content-wrap"><div class="main-content">		<div data-elementor-type="wp-page" data-elementor-id="1030" class="elementor elementor-1030" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" elementor-section elementor-top-section elementor-element elementor-element-6b06a8a pt-10 pb-10 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6b06a8a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1b09989 mt-7 mb-10 mb-lg-7 pb-lg-0 pb-6 elementor-invisible " data-id="1b09989" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInUpShorter&quot;}">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="slider-container">			<div class=" row cols-lg-3 cols-md-2 cols-sm-2 cols-1 gutter-lg slider-wrapper" data-slider-options="{&quot;spaceBetween&quot;:30,&quot;pagination&quot;:true,&quot;slidesPerView&quot;:3,&quot;breakpoints&quot;:{&quot;992&quot;:{&quot;slidesPerView&quot;:3},&quot;768&quot;:{&quot;slidesPerView&quot;:2},&quot;576&quot;:{&quot;slidesPerView&quot;:2},&quot;0&quot;:{&quot;slidesPerView&quot;:1,&quot;spaceBetween&quot;:20},&quot;480&quot;:{&quot;slidesPerView&quot;:1,&quot;spaceBetween&quot;:30}},&quot;statusClass&quot;:&quot;slider-dots-dark slider-shadow slider-same-height&quot;}">
+					<div class="elementor-element elementor-element-d5ac694 custom-icon-box elementor-widget elementor-widget-udesign_widget_iconbox" data-id="d5ac694" data-element_type="widget" data-widget_type="udesign_widget_iconbox.default">
+				<div class="elementor-widget-container">
+			<div class="info-box position-top icon-default"><div class="info-box-feature"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="55px" height="55px" viewBox="0 0 55 55" xml:space="preserve">
+<path d="M26.591,54.561c0.249,0.279,0.604,0.438,0.977,0.438c0.378,0.021,0.735-0.161,0.983-0.444  c0.45-0.512,11.102-12.708,16.979-26.178c1.293-2.702,1.948-5.566,1.948-8.517C47.479,8.909,38.516,0,27.501,0  C16.484,0,7.521,8.909,7.521,19.859c0,2.995,0.646,5.86,1.901,8.475C15.318,41.85,26.133,54.048,26.591,54.561z M27.501,2.619  c9.572,0,17.358,7.734,17.358,17.241c0,2.556-0.57,5.041-1.711,7.428c-4.71,10.794-12.801,21.021-15.588,24.383  C24.74,48.315,16.53,38.078,11.804,27.244c-1.104-2.3-1.663-4.785-1.663-7.385C10.141,10.353,17.929,2.619,27.501,2.619z"></path>
+<path d="M27.5,29.115c5.226,0,9.478-4.251,9.478-9.477c0-5.225-4.252-9.477-9.478-9.477  c-5.225,0-9.477,4.251-9.477,9.477C18.023,24.864,22.275,29.115,27.5,29.115z M27.5,12.781c3.781,0,6.858,3.076,6.858,6.858  c0,3.781-3.077,6.858-6.858,6.858c-3.782,0-6.858-3.077-6.858-6.858C20.642,15.857,23.718,12.781,27.5,12.781z"></path>
+</svg></div><div class="info-box-content"><h2 class="info-box-title">UDesign Address</h2><p class="info-box-desc">8500 Bevery boulevard Los Angeles,
+New York, CA 90048</p></div></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-18bed3a custom-icon-box elementor-widget elementor-widget-udesign_widget_iconbox" data-id="18bed3a" data-element_type="widget" data-widget_type="udesign_widget_iconbox.default">
+				<div class="elementor-widget-container">
+			<div class="info-box position-top icon-default"><div class="info-box-feature"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="55px" height="55px" viewBox="0 0 55 55" xml:space="preserve">
+<g>
+	<path d="M27.5,0C12.336,0,0,12.336,0,27.5C0,42.663,12.336,55,27.5,55C42.663,55,55,42.663,55,27.5   C55,12.336,42.663,0,27.5,0z M27.5,52.963C13.459,52.963,2.037,41.54,2.037,27.5c0-14.041,11.422-25.463,25.463-25.463   c14.04,0,25.463,11.422,25.463,25.463C52.963,41.54,41.54,52.963,27.5,52.963z"></path>
+	<path d="M28.519,22.51V6.111c0-0.563-0.456-1.019-1.019-1.019s-1.019,0.456-1.019,1.019V22.51   c-1.992,0.406-3.565,1.979-3.971,3.971h-9.27c-0.563,0-1.019,0.456-1.019,1.019s0.456,1.019,1.019,1.019h9.27   c0.474,2.321,2.53,4.074,4.99,4.074c2.808,0,5.093-2.285,5.093-5.093C32.593,25.041,30.84,22.984,28.519,22.51z M27.5,30.556   c-1.685,0-3.056-1.371-3.056-3.056c0-1.685,1.371-3.056,3.056-3.056c1.685,0,3.056,1.371,3.056,3.056   C30.556,29.185,29.185,30.556,27.5,30.556z"></path>
+</g>
+</svg></div><div class="info-box-content"><h2 class="info-box-title">Business Hours</h2><p class="info-box-desc">We are open 6 days a week from 7am to 9pm, Sunday closed</p></div></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-f534787 custom-icon-box elementor-widget elementor-widget-udesign_widget_iconbox" data-id="f534787" data-element_type="widget" data-widget_type="udesign_widget_iconbox.default">
+				<div class="elementor-widget-container">
+			<div class="info-box position-top icon-default"><div class="info-box-feature"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px" y="0px" width="55px" height="55px" viewBox="0 0 55 55" xml:space="preserve">
+<g>
+	<path d="M54.28,44.819c-0.143-0.966-0.77-1.817-1.916-2.602l-11.832-8.096c-0.61-0.416-1.321-0.637-2.055-0.637   c-1.143,0-2.213,0.539-2.868,1.448l-3.071,4.347c-0.241,0.337-0.297,0.752-0.313,1.152c-1.174,0.173-4.579,0.067-10.166-5.518   c-5.402-5.395-7.96-9.362-7.628-11.812c0.06-0.029,0.103-0.088,0.157-0.129c0.282-0.078,0.541-0.174,0.75-0.337l4.24-3.212   c1.513-1.142,1.81-3.362,0.658-4.955l-8.48-11.563c-1.631-2.222-3.55-2.454-5.609-0.685C4.844,3.338,2.683,6.035,1.787,7.657   c-0.491,0.869-0.695,1.766-0.608,2.668c-0.313,1.299-0.996,5.127,0.141,10.466c1.545,7.257,5.724,14.224,12.421,20.708   c11.198,10.835,21.034,12.453,25.9,12.454c0,0,0,0,0.001,0c2.862,0,4.856-0.525,5.776-0.912c0.855,0.036,1.699-0.204,2.523-0.698   c1.596-0.944,4.217-3.194,5.289-4.538C54.079,46.755,54.421,45.778,54.28,44.819z M51.671,46.552   c-0.924,1.159-3.364,3.251-4.75,4.071c-0.188,0.112-0.374,0.194-0.558,0.263c-1.351-0.586-3.726-1.828-4.438-2.719   c-0.345-0.431-0.975-0.501-1.405-0.156c-0.431,0.346-0.501,0.975-0.156,1.406c0.628,0.785,1.83,1.568,2.927,2.178   c-0.877,0.19-2.096,0.357-3.648,0.357h-0.001c-4.563-0.001-13.817-1.546-24.509-11.892C-0.115,25.299,2.781,12.097,3.162,10.641   c0.034-0.13,0.041-0.266,0.021-0.398c-0.078-0.529,0.035-1.054,0.35-1.61C4.315,7.215,6.328,4.702,7.45,3.74   c0.516-0.444,0.975-0.679,1.327-0.679c0.151,0,0.611,0,1.367,1.029l8.476,11.558c0.515,0.712,0.404,1.69-0.248,2.183l-4.195,3.183   c-0.017,0.008-0.046,0.018-0.074,0.026c-1.105-0.849-2.619-2.129-3.096-2.859c-0.301-0.463-0.922-0.592-1.384-0.292   c-0.462,0.302-0.593,0.922-0.291,1.384c0.646,0.991,2.208,2.301,3.206,3.085c-0.796,3.258,1.734,7.607,8.109,13.973   c5.08,5.078,8.783,6.144,10.995,6.144c0.97,0,1.696-0.216,2.052-0.418c0.268-0.152,0.451-0.419,0.496-0.724   c0.02-0.136,0.026-0.332,0.029-0.548c0.001-0.12,0.004-0.326,0.018-0.44l3.002-4.248c0.457-0.634,1.476-0.793,2.167-0.322   l11.83,8.095c0.653,0.446,1.012,0.864,1.067,1.242C52.356,45.481,52.146,45.965,51.671,46.552z"></path>
+	<path d="M26.359,12.569c7.735,2.362,13.787,8.383,16.189,16.105c0.133,0.429,0.528,0.703,0.955,0.703   c0.098,0,0.198-0.015,0.297-0.045c0.527-0.164,0.822-0.725,0.658-1.252c-2.6-8.355-9.146-14.869-17.515-17.423   c-0.529-0.166-1.087,0.136-1.249,0.664C25.533,11.849,25.831,12.408,26.359,12.569z"></path>
+	<path d="M27.731,5.159C39.328,7.9,48.194,17.246,50.318,28.968c0.087,0.482,0.509,0.821,0.983,0.821   c0.059,0,0.119-0.005,0.179-0.016c0.544-0.099,0.904-0.619,0.806-1.163C50.021,16.106,40.563,6.136,28.191,3.211   c-0.537-0.122-1.076,0.206-1.203,0.743C26.861,4.493,27.194,5.031,27.731,5.159z"></path>
+</g>
+</svg></div><div class="info-box-content"><h2 class="info-box-title">Let’s Talk</h2><p class="info-box-desc">Phone Number: <a href="tel:123456789">(000) 123-456-789</a><br><a href="fax:#">
+Fax: +000 123-456-789</a></p></div></div>		</div>
+				</div>
+					</div>
+						</div>
+							</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class=" elementor-section elementor-top-section elementor-element elementor-element-23f3784 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="23f3784" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7d4eed5 " data-id="7d4eed5" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-b3390dd elementor-invisible elementor-widget elementor-widget-heading" data-id="b3390dd" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">LET'S GET IN TOUGH​</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5ce8732 elementor-invisible elementor-widget elementor-widget-heading" data-id="5ce8732" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">How we can help you?</h2>		</div>
+				</div>
+				<div class=" elementor-section elementor-inner-section elementor-element elementor-element-f1e0443 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f1e0443" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-da9b78e elementor-invisible " data-id="da9b78e" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInLeftShorter&quot;}">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3e85c42 elementor-widget elementor-widget-google_maps" data-id="3e85c42" data-element_type="widget" data-widget_type="google_maps.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-custom-embed">
+			<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+					src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&#038;t=m&#038;z=10&#038;output=embed&#038;iwloc=near"
+					title="London Eye, London, United Kingdom"
+					aria-label="London Eye, London, United Kingdom"
+			></iframe>
+		</div>
+				</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-59ccf37 elementor-invisible " data-id="59ccf37" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInRightShorter&quot;}">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-12a3f2e custom-form elementor-widget elementor-widget-wpforms" data-id="12a3f2e" data-element_type="widget" data-widget_type="wpforms.default">
+				<div class="elementor-widget-container">
+			<div class="wpforms-container wpforms-container-full" id="wpforms-1116"><form id="wpforms-form-1116" class="wpforms-validate wpforms-form" data-formid="1116" method="post" enctype="multipart/form-data" action="/wordpress/udesign/corporate/contact-us/" data-token="d797293cb937bd9a2d7b69532e2a641d"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-1116-field_1-container" class="wpforms-field wpforms-field-name" data-field-id="1"><input type="text" id="wpforms-1116-field_1" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][1]" placeholder="Your Name" required></div><div id="wpforms-1116-field_2-container" class="wpforms-field wpforms-field-email" data-field-id="2"><input type="email" id="wpforms-1116-field_2" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][2]" placeholder="Your Email Address" required></div><div id="wpforms-1116-field_3-container" class="wpforms-field wpforms-field-textarea" data-field-id="3"><textarea id="wpforms-1116-field_3" class="wpforms-field-medium" name="wpforms[fields][3]" placeholder="Your Message" ></textarea></div></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="1116"><input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]" value="1030"><button type="submit" name="wpforms[submit]" class="wpforms-submit btn btn-primary btn-rounded btn-outline" id="wpforms-submit-1116" value="wpforms-submit" aria-live="assertive" data-alt-text="Sending..." data-submit-text="Send Message">Send Message</button></div></form></div>  <!-- .wpforms-container -->		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div></div>
+</div>
+
+			</main>
+
+			
+							<footer class="footer custom-footer footer-537" id="footer">
+						<div class="alpha-block elementor elementor-537" data-block-id="537">		<div data-elementor-type="wp-post" data-elementor-id="537" class="elementor elementor-537" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" elementor-section elementor-top-section elementor-element elementor-element-170d5a4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="170d5a4" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-df369a3 mb-2 " data-id="df369a3" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-f77b558 bg-transparent elementor-widget elementor-widget-image" data-id="f77b558" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://d-themes.com/wordpress/udesign/corporate/">
+							<img style="padding-top : 18.05%;" width="266" height="48" src="https://d-themes.com/wordpress/udesign/corporate/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/2021/08/logo-footer.png" class="d-lazyload attachment-full size-full" alt="Footer Logo" />								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-55e72af elementor-widget elementor-widget-heading" data-id="55e72af" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">This site has been setup purely for huge demonstration purposes and more
+
+</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-57f7960 elementor-widget elementor-widget-heading" data-id="57f7960" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Contact Info</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5641d80 custom-contact-info elementor-widget elementor-widget-wp-widget-text" data-id="5641d80" data-element_type="widget" data-widget_type="wp-widget-text.default">
+				<div class="elementor-widget-container">
+			<div class="widget widget_text widget-collapsible">			<div class="textwidget"><p><label class="text-white">Email:</label> <a href="mailto:mail@udesign.com">mail@udesign.com</a></p>
+<p><label class="text-white">Address:</label> 123 Street Name, City. England</p>
+<p><label class="text-white">Fax:</label> <a href="fax:000123456789">+000 123-456-789</a></p>
+</div>
+		</div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-867095a elementor-widget elementor-widget-udesign_widget_contact" data-id="867095a" data-element_type="widget" data-widget_type="udesign_widget_contact.default">
+				<div class="elementor-widget-container">
+			<div class="contact">
+	<a class="d-flex" href="tel://1234567890" aria-label="Contact">
+	<i class="mb-0 a-icon-call"></i>	</a>
+	<div class="contact-content">
+		<a href="tel://1234567890" class="live-chat">Call us now</a> <span class="contact-delimiter"></span> <a href="tel://1234567890" class="telephone">(000) 123-456-789</a>	</div>
+</div>
+
+
+
+		</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-139a7bb mb-2 " data-id="139a7bb" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-9f4adae elementor-widget elementor-widget-heading" data-id="9f4adae" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Customer</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3f48cd1 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-udesign_widget_iconlist" data-id="3f48cd1" data-element_type="widget" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items">
+			<li class="elementor-icon-list-item">
+			<a href="https://themeforest.net/item/udesign-responsive-wordpress-theme/253220">			<span class="elementor-icon-list-text">Get UDesign</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="https://d-themes.com/wordpress/udesign/documentation/">			<span class="elementor-icon-list-text">Documentation</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Help Center</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="https://d-themes.com/wordpress/udesign/corporate/privacy-policy/">			<span class="elementor-icon-list-text">Privacy Policy</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Pricing</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">FAQ</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="https://d-themes.com/wordpress/udesign/corporate/contact-us/">			<span class="elementor-icon-list-text">Contact Us</span>
+							</a>
+					</li>
+		</ul>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-32df75f mb-2 " data-id="32df75f" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7a26380 elementor-widget elementor-widget-heading" data-id="7a26380" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Company</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c5953fd elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-udesign_widget_iconlist" data-id="c5953fd" data-element_type="widget" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items">
+			<li class="elementor-icon-list-item">
+			<a href="https://d-themes.com/wordpress/udesign/corporate/about-us/">			<span class="elementor-icon-list-text">About Us</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Careers</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="https://d-themes.com/wordpress/udesign/corporate/portfolio/">			<span class="elementor-icon-list-text">Projects</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="https://d-themes.com/wordpress/udesign/corporate/member/">			<span class="elementor-icon-list-text">Join Our Team</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="https://d-themes.com/wordpress/udesign/corporate/news/">			<span class="elementor-icon-list-text">Our Blog</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Legal & Security</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Terms of use</span>
+							</a>
+					</li>
+		</ul>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-d85b801 mb-4 custom-width " data-id="d85b801" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-f3cc23c elementor-widget elementor-widget-udesign_widget_heading" data-id="f3cc23c" data-element_type="widget" data-widget_type="udesign_widget_heading.default">
+				<div class="elementor-widget-container">
+			<div class="title-wrapper  title-left"><h3 class="title elementor-heading-title">Our Location</h3></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-9904d9b elementor-widget elementor-widget-udesign_widget_banner" data-id="9904d9b" data-element_type="widget" data-widget_type="udesign_widget_banner.default">
+				<div class="elementor-widget-container">
+			<div class="banner banner-fixed">	<figure class="banner-img">
+		<img width="285" height="179" src="https://d-themes.com/wordpress/udesign/corporate/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/2021/08/footer-map.jpg" class="d-lazyload attachment-full size-full" alt="Map" style="padding-top : 62.81%;background-color:#181818" srcset="https://d-themes.com/wordpress/udesign/corporate/wp-content/themes/u-design/assets/images/lazy.png" data-lazyset="https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/2021/08/footer-map.jpg 285w, https://d-themes.com/wordpress/udesign/corporate/wp-content/uploads/sites/5/2021/08/footer-map-150x94.jpg 150w"  data-sizes="(max-width: 285px) 100vw, 285px" />	</figure>
+	<div class="hotspot-wrapper elementor-repeater-item-bb13f8d hotspot-html hotspot-type1">
+			<span class="hotspot">
+		
+					<i class="a-icon-plus"></i>
+						</span>		<div class="hotspot-box hotspot-box-right">
+		Ottawa	</div>
+	</div>
+<div class="hotspot-wrapper elementor-repeater-item-3856374 hotspot-html hotspot-type1">
+			<span class="hotspot">
+		
+					<i class="a-icon-plus"></i>
+						</span>		<div class="hotspot-box hotspot-box-bottom">
+		California	</div>
+	</div>
+<div class="hotspot-wrapper elementor-repeater-item-9979346 hotspot-html hotspot-type1">
+			<span class="hotspot">
+		
+					<i class="a-icon-plus"></i>
+						</span>		<div class="hotspot-box hotspot-box-bottom">
+		Lisbong	</div>
+	</div>
+<div class="hotspot-wrapper elementor-repeater-item-674f698 hotspot-html hotspot-type1">
+			<span class="hotspot">
+		
+					<i class="a-icon-plus"></i>
+						</span>		<div class="hotspot-box hotspot-box-bottom">
+		Othmsc	</div>
+	</div>
+<div class="hotspot-wrapper elementor-repeater-item-ff31c80 hotspot-html hotspot-type1">
+			<span class="hotspot">
+		
+					<i class="a-icon-plus"></i>
+						</span>		<div class="hotspot-box hotspot-box-bottom">
+		Tokyo	</div>
+	</div>
+<div class="hotspot-wrapper elementor-repeater-item-6edf67e hotspot-html hotspot-type1">
+			<span class="hotspot">
+		
+					<i class="a-icon-plus"></i>
+						</span>		<div class="hotspot-box hotspot-box-top">
+		Sydney	</div>
+	</div>
+<div class="hotspot-wrapper elementor-repeater-item-6edf67e hotspot-html hotspot-type1"></div></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7cd0710 elementor-widget elementor-widget-udesign_widget_share" data-id="7cd0710" data-element_type="widget" data-widget_type="udesign_widget_share.default">
+				<div class="elementor-widget-container">
+			
+<div class="social-icons">
+	<a href="#" class="social-icon stacked use-hover social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-icon stacked use-hover social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a><a href="#" class="social-icon stacked use-hover social-linkedin" target="_blank" title="linkedin" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></div>
+
+		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class=" elementor-section elementor-top-section elementor-element elementor-element-fa5c439 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fa5c439" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fed2477 " data-id="fed2477" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-f3c4485 elementor-widget elementor-widget-shortcode" data-id="f3c4485" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode"><p class="mb-0 text-center copyright">UDesign Wordpress 
+© 2022. All Rights Reserved</p></div>
+				</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div>					</footer>
+					
+		</div>
+
+					<div class="cookies-popup">
+				<div class="cookies-popup-inner d-flex align-items-center">
+					<div class="cookies-info">
+						By browsing this website, you agree to our <a href="https://d-themes.com/wordpress/udesign/corporate/privacy-policy/">privacy policy</a>.					</div>
+					<a href="#" rel="nofollow noopener" class="btn btn-sm accept-cookie-btn">I Agree</a>
+					<a href="#" class="btn close-cookie-btn decline-cookie-btn btn-close" aria-label="Close Cookie Consent"><i class="a-icon-times-solid"></i></a>
+				</div>
+			</div>
+			
+					<a id="scroll-top" class="scroll-top" href="#top" title="Top" role="button">
+				<i class="a-icon-long-arrow-up"></i>
+				<svg  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					viewBox="0 0 70 70" enable-background="new 0 0 70 70" xml:space="preserve">
+					<circle id="progress-indicator" fill="transparent" stroke="#000000" stroke-miterlimit="10" cx="35" cy="35" r="34"/>
+				</svg>
+			</a>
+		
+					<div class="mobile-menu-wrapper">
+				<div class="mobile-menu-overlay"></div>
+				<div class="mobile-menu-container" style="height: 100vh;">
+					<!-- Need to ajax load mobile menus -->
+				</div>
+				<a class="mobile-menu-close" href="#"><i class="close-icon"></i></a>
+			</div>
+		
+		
+		<link rel='stylesheet' id='e-animations-css'  href='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.4.0' media='all' />
+<script async="async" src='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/u-design-core/framework/addons/live-search/jquery.autocomplete.min.js?ver=5.8.3' id='jquery-autocomplete-js'></script>
+<script id='alpha-framework-js-extra'>
+var alpha_vars = {"theme":"udesign","framework_icon_prefix":"a","alpha_gap":"15px","home_url":"https:\/\/d-themes.com\/wordpress\/udesign\/corporate\/","ajax_url":"https:\/\/d-themes.com\/wordpress\/udesign\/corporate\/wp-admin\/admin-ajax.php","nonce":"31d2430d17","lazyload":"1","container":"1290","assets_url":"https:\/\/d-themes.com\/wordpress\/udesign\/corporate\/wp-content\/themes\/u-design\/assets","texts":{"loading":"Loading...","loadmore_error":"Loading failed","popup_error":"The content could not be loaded.","ribbon":"Ribbon"},"resource_async_js":"1","resource_split_tasks":"1","resource_after_load":"1","alpha_cache_key":"alpha_cache_ae6b6d18340e500cc19cc0dac7fe1330","lazyload_menu":"","countdown":{"labels":["Years","Months","Weeks","Days","Hours","Minutes","Seconds"],"labels_short":["Years","Months","Weeks","Days","Hrs","Mins","Secs"],"label1":["Year","Month","Week","Day","Hour","Minute","Second"],"label1_short":["Year","Month","Week","Day","Hour","Min","Sec"]},"placeholder_img":"https:\/\/d-themes.com\/wordpress\/udesign\/corporate\/wp-content\/themes\/u-design\/assets\/images\/placeholders\/post-placeholder.jpg","placeholder_alt":"UDesign Placeholder","placeholder_width":"730","placeholder_height":"570","search_result":"There are no results.","cookie_version":"1"};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-content/themes/u-design/framework/assets/js/framework.js?ver=4.0.0' id='alpha-framework-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/corporate/wp-content/themes/u-design/framework/assets/js/framework-async.js?ver=4.0.0' id='alpha-framework-async-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/corporate/wp-content/themes/u-design/assets/js/theme.js?ver=4.0.0' id='alpha-theme-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/u-design-core/framework/addons/gdpr/gdpr.js?ver=4.0.0' id='alpha-gdpr-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/u-design-core/inc/cpt/post_types/member/assets/member.js?ver=4.0.0' id='alpha-member-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/corporate/wp-content/themes/u-design/assets/vendor/jquery.magnific-popup/jquery.magnific-popup.js?ver=1.1.0' id='jquery-magnific-popup-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-includes/js/wp-embed.js?ver=5.8.3' id='wp-embed-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/u-design-core/framework/addons/lazyload-images/lazyload.js?ver=5.8.3' id='lazyload-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/elementor/assets/lib/swiper/swiper.js?ver=5.3.6' id='swiper-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/corporate/wp-content/themes/u-design/assets/vendor/parallax/parallax.min.js?ver=5.8.3' id='jquery-parallax-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/u-design-core/inc/addons/post-like/post-like.js?ver=4.0.0' id='alpha-post-like-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/elementor/assets/js/webpack.runtime.js?ver=3.4.0' id='elementor-webpack-runtime-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-includes/js/jquery/jquery-migrate.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/elementor/assets/js/frontend-modules.js?ver=3.4.0' id='elementor-frontend-modules-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-includes/js/jquery/ui/core.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/elementor/assets/lib/share-link/share-link.js?ver=3.4.0' id='share-link-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/elementor/assets/lib/dialog/dialog.js?ver=4.8.1' id='elementor-dialog-js'></script>
+<script id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":true},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":992,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":991,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.4.0","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"e_import_export":true,"landing-pages":true,"elements-color-picker":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/d-themes.com\/wordpress\/udesign\/corporate\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"viewport_tablet":991,"active_breakpoints":["viewport_mobile","viewport_tablet"],"lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":1030,"title":"Contact%20Us%20%E2%80%93%20U-Corporate","excerpt":"","featuredImage":false}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":true},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":992,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":991,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.4.0","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"e_import_export":true,"landing-pages":true,"elements-color-picker":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/d-themes.com\/wordpress\/udesign\/corporate\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"viewport_tablet":991,"active_breakpoints":["viewport_mobile","viewport_tablet"],"lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":1030,"title":"Contact%20Us%20%E2%80%93%20U-Corporate","excerpt":"","featuredImage":false}};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/elementor/assets/js/frontend.js?ver=3.4.0' id='elementor-frontend-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/elementor/assets/js/preloaded-modules.js?ver=3.4.0' id='preloaded-modules-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-includes/js/underscore.min.js?ver=1.13.1' id='underscore-js'></script>
+<script id='wp-util-js-extra'>
+var _wpUtilSettings = {"ajax":{"url":"\/wordpress\/udesign\/corporate\/wp-admin\/admin-ajax.php"}};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-includes/js/wp-util.js?ver=5.8.3' id='wp-util-js'></script>
+<script id='wpforms-elementor-js-extra'>
+var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.6.9' id='wpforms-elementor-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/wpforms-lite/assets/js/jquery.validate.min.js?ver=1.19.0' id='wpforms-validation-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/wpforms-lite/assets/js/mailcheck.min.js?ver=1.1.2' id='wpforms-mailcheck-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/wpforms-lite/assets/js/punycode.min.js?ver=1.0.0' id='wpforms-punycode-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/corporate/wp-content/plugins/wpforms-lite/assets/js/wpforms.js?ver=1.6.9' id='wpforms-js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpforms_settings = {"val_required":"This field is required.","val_email":"Please enter a valid email address.","val_email_suggestion":"Did you mean {suggestion}?","val_email_suggestion_title":"Click to accept this suggestion.","val_email_restricted":"This email address is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number.","val_confirm":"Field values do not match.","val_checklimit":"You have exceeded the number of allowed selections: {#}.","val_limit_characters":"{count} of {limit} max characters.","val_limit_words":"{count} of {limit} max words.","val_recaptcha_fail_msg":"Google reCAPTCHA verification failed, please try again later.","val_empty_blanks":"Please fill out all blanks.","uuid_cookie":"","locale":"en","wpforms_plugin_url":"https:\/\/d-themes.com\/wordpress\/udesign\/corporate\/wp-content\/plugins\/wpforms-lite\/","gdpr":"","ajaxurl":"https:\/\/d-themes.com\/wordpress\/udesign\/corporate\/wp-admin\/admin-ajax.php","mailcheck_enabled":"1","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"],"is_ssl":"1"}
+/* ]]> */
+</script>
+	</body>
+</html>

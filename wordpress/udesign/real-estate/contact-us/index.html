@@ -1,0 +1,903 @@
+
+<!DOCTYPE html>
+	<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+		
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<link rel="pingback" href="https://d-themes.com/wordpress/udesign/real-estate/xmlrpc.php" />
+
+		<link rel="shortcut icon" href="https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/images/favicon.png" type="image/x-icon" />
+		
+		<title>Contact Us &#8211; U-Real Estate</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="U-Real Estate &raquo; Feed" href="https://d-themes.com/wordpress/udesign/real-estate/feed/" />
+<link rel="alternate" type="application/rss+xml" title="U-Real Estate &raquo; Comments Feed" href="https://d-themes.com/wordpress/udesign/real-estate/comments/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-includes/css/dist/block-library/style.css?ver=5.8.3' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+#start-resizable-editor-section {
+  display: none;
+}
+
+.wp-block-audio figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-audio figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-code {
+  font-family: Menlo, Consolas, monaco, monospace;
+  color: #1e1e1e;
+  padding: 0.8em 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.wp-block-embed figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-embed figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.blocks-gallery-caption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .blocks-gallery-caption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-image figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-image figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-pullquote {
+  border-top: 4px solid currentColor;
+  border-bottom: 4px solid currentColor;
+  margin-bottom: 1.75em;
+  color: currentColor;
+}
+.wp-block-pullquote cite,
+.wp-block-pullquote footer, .wp-block-pullquote__citation {
+  color: currentColor;
+  text-transform: uppercase;
+  font-size: 0.8125em;
+  font-style: normal;
+}
+
+.wp-block-quote {
+  border-left: 0.25em solid currentColor;
+  margin: 0 0 1.75em 0;
+  padding-left: 1em;
+}
+.wp-block-quote cite,
+.wp-block-quote footer {
+  color: currentColor;
+  font-size: 0.8125em;
+  position: relative;
+  font-style: normal;
+}
+.wp-block-quote.has-text-align-right {
+  border-left: none;
+  border-right: 0.25em solid currentColor;
+  padding-left: 0;
+  padding-right: 1em;
+}
+.wp-block-quote.has-text-align-center {
+  border: none;
+  padding-left: 0;
+}
+.wp-block-quote.is-style-large, .wp-block-quote.is-large {
+  border: none;
+}
+
+.wp-block-search .wp-block-search__label {
+  font-weight: bold;
+}
+
+.wp-block-group.has-background {
+  padding: 1.25em 2.375em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.wp-block-separator {
+  border: none;
+  border-bottom: 2px solid currentColor;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.4;
+}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+  width: 100px;
+}
+.wp-block-separator.has-background:not(.is-style-dots) {
+  border-bottom: none;
+  height: 1px;
+}
+.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+  height: 2px;
+}
+
+.wp-block-table thead {
+  border-bottom: 3px solid;
+}
+.wp-block-table tfoot {
+  border-top: 3px solid;
+}
+.wp-block-table td,
+.wp-block-table th {
+  padding: 0.5em;
+  border: 1px solid;
+  word-break: normal;
+}
+.wp-block-table figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-table figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-video figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-video figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-template-part.has-background {
+  padding: 1.25em 2.375em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#end-resizable-editor-section {
+  display: none;
+}
+</style>
+<link rel='stylesheet' id='essential-grid-plugin-settings-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=3.0.11' media='all' />
+<link rel='stylesheet' id='tp-fontello-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/essential-grid/public/assets/font/fontello/css/fontello.css?ver=3.0.11' media='all' />
+<link rel='stylesheet' id='wpforms-full-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/wpforms-lite/assets/css/wpforms-full.min.css?ver=1.6.9' media='all' />
+<link rel='stylesheet' id='alpha-gdpr-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/framework/addons/gdpr/gdpr.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.css?ver=5.12.0' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/elementor/css/custom-frontend.css?ver=1641541693' media='all' />
+<style id='elementor-frontend-inline-css'>
+@font-face{font-family:eicons;src:url(https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0);src:url(https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0#iefix) format("embedded-opentype"),url(https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0) format("woff2"),url(https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.10.0) format("woff"),url(https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.10.0) format("truetype"),url(https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.10.0#eicon) format("svg");font-weight:400;font-style:normal}
+</style>
+<link rel='stylesheet' id='font-awesome-5-all-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.css?ver=3.4.0' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.css?ver=3.4.0' media='all' />
+<link rel='stylesheet' id='alpha-core-framework-style-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/assets/css/framework.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='fontawesome-free-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/vendor/fontawesome-free/css/all.min.css?ver=5.14.0' media='all' />
+<link rel='stylesheet' id='alpha-icons-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/vendor/alpha-icons/css/icons.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='theme-icons-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/vendor/udesign-icons/css/icons.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='animate-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/vendor/animate/animate.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/vendor/jquery.magnific-popup/magnific-popup.min.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='elementor-post-3-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/elementor/css/post-3.css?ver=1641541687' media='all' />
+<link rel='stylesheet' id='alpha-theme-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/css/theme.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-dynamic-vars-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/udesign_styles/dynamic_css_vars.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-google-fonts-css'  href='https://fonts.googleapis.com/css?family=DM+Sans%3A300%2C400%2C500%2C600%2C700&#038;ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-member-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/inc/cpt/post_types/member/assets/member.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-wpforms-style-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/inc/plugins/wpforms/wpforms.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-elementor-style-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/framework/plugins/elementor/assets/elementor.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-elementor-extend-style-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/inc/plugins/elementor/assets/elementor-extend.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='elementor-post-29-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/elementor/css/post-29.css?ver=5.8.3' media='all' />
+<style id='elementor-post-29-inline-css'>
+.menu>.menu-item:not(:last-child){border-right:1px solid #e1e1e1}.menu-active-underline>li>a:before{bottom:auto;top:0}.menu.menu-active-underline>li{padding-right:0}.menu.menu-active-underline>.menu-item-has-children>a{padding-right:4.2rem}.menu.menu-active-underline>li>a:after{right:2.7rem}.menu>.menu-item-has-children:hover>ul{left:0}
+</style>
+<link rel='stylesheet' id='elementor-post-782-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/elementor/css/post-782.css?ver=5.8.3' media='all' />
+<style id='elementor-post-782-inline-css'>
+.cs-text-editor .elementor-widget-container .address{color:#999;line-height:2.4}@media (max-width:575px){.cs-footer-top .elementor-container>.elementor-column{width:100%}}
+</style>
+<link rel='stylesheet' id='elementor-post-1344-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/elementor/css/post-1344.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='elementor-post-14-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/elementor/css/post-14.css?ver=1641582184' media='all' />
+<link rel='stylesheet' id='alpha-style-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/style.css?ver=4.0.0' media='all' />
+<style id='alpha-style-inline-css'>
+/* Global CSS */
+.single-property .page-wrapper {
+    background-color: #f8f8f8;
+}
+
+.single-property .post-cats-date,
+.single-property .post-title,
+.single-property .post-meta {
+    display: none;
+}
+
+.eg-property-default-element-5::after,
+.eg-property-default-element-7::after, 
+.eg-property-default-element-9::after {
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    line-height: 1;
+		color: #888;
+}
+
+.eg-property-default-element-5::after {
+    content: 'Bedrooms';
+}
+
+.eg-property-default-element-7::after {
+    content: 'Bathrooms';
+}
+
+.eg-property-default-element-9::after {
+    content: 'Sq Ft';
+}
+
+.esg-content i {
+    vertical-align: middle;
+}
+
+.esg-content i.u-icon-shower,
+.esg-content i.u-icon-square {
+		position: relative;
+		top: -.1em
+}
+
+.eg-property-default-element-1-a + .eg-property-default-element-13-a {
+    left: 102px;
+}
+
+.eg-property-list-element-15-a + .eg-property-list-element-25-a {
+    left: 109px;
+}
+
+.eg-property-default-element-13-a a:hover,
+.eg-property-default-element-13-a a:focus,
+.eg-property-list-element-25-a a:hover,
+.eg-property-list-element-25-a a:focus {
+    color: #fff;
+}
+
+.esg-filters.esg-singlefilters .esg-navigationbutton i {
+    transition: color .3s;
+}
+
+.esg-filters.esg-singlefilters .esg-navigationbutton.hovered  {
+    box-shadow: none;
+}
+
+@media (max-width: 479px) {
+    .eg-property-default-wrapper .esg-entry-content {
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+}
+/* Page CSS */
+.main {
+    padding-top: 8.3rem;
+    padding-bottom: 0;
+}
+.justify-content-start .info-box {
+    justify-content: flex-start;
+}
+.cs-icon-box svg {
+    stroke-width: 0;
+}
+.cs-icon-box a {
+    color: inherit;
+}
+.cs-wpforms .wpforms-container-full .wpforms-form .wpforms-field {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 50%;
+}
+.cs-wpforms .wpforms-form {
+    margin: 0 -1.5rem;
+}
+.cs-wpforms .wpforms-container .wpforms-form .wpforms-submit-container {
+    padding-top: 4rem;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .cs-wpforms .wpforms-field.wpforms-field-textarea.wpforms-one-half {
+        margin: -148px 0 0;
+    }    
+    .cs-wpforms .wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+        height: 202px;
+    }    
+    .cs-wpforms .wpforms-field.wpforms-field-textarea.wpforms-one-half.wpforms-has-error {
+        margin-top: -192px;
+    }    
+    .cs-wpforms .wpforms-container-full .wpforms-form textarea.wpforms-field-medium.wpforms-error {
+        height: 246px;
+    }
+}
+@media (max-width: 767px) {
+    .cs-wpforms .wpforms-container-full .wpforms-form .wpforms-field {
+        width: 100%;
+    }
+    .cs-wpforms .wpforms-field.wpforms-field-textarea.wpforms-one-half {
+        margin: 0;
+    }
+}
+</style>
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=5.8.3' media='all' />
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-includes/js/jquery/jquery.js?ver=3.6.0' id='jquery-core-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-includes/js/jquery/jquery-migrate.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.js?ver=3.4.0' id='font-awesome-4-shim-js'></script>
+<link rel="https://api.w.org/" href="https://d-themes.com/wordpress/udesign/real-estate/wp-json/" /><link rel="alternate" type="application/json" href="https://d-themes.com/wordpress/udesign/real-estate/wp-json/wp/v2/pages/14" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://d-themes.com/wordpress/udesign/real-estate/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://d-themes.com/wordpress/udesign/real-estate/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.3" />
+<link rel="canonical" href="https://d-themes.com/wordpress/udesign/real-estate/contact-us/" />
+<link rel='shortlink' href='https://d-themes.com/wordpress/udesign/real-estate/?p=14' />
+<link rel="alternate" type="application/json+oembed" href="https://d-themes.com/wordpress/udesign/real-estate/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fd-themes.com%2Fwordpress%2Fudesign%2Freal-estate%2Fcontact-us%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://d-themes.com/wordpress/udesign/real-estate/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fd-themes.com%2Fwordpress%2Fudesign%2Freal-estate%2Fcontact-us%2F&#038;format=xml" />
+		<meta name="application-name" content="UDesign - MULTI-PURPOSE PREMIUM WordPress THEME">
+		<meta name="author" content="Andon">
+		<meta name="description" content="A slick, powerful and clean theme UDesign provides an intuitive set of options to help you setup your WordPress site quickly and effectively. Flexibility is key and it has been optimized for SEO and speed. It is also responsive & mobile ready should you choose that option. The UDesign theme features include: unlimited colors, widgetized home page, over 600 fonts to choose from, WooCommerce Integration, it is also translation and multilingual ready, step by step documentation, exclusive UDesign support forum and a helpful community. Always up-to-date security and many new features are constantly added as the theme evolves.">
+		<style id="kirki-inline-styles"></style>	</head>
+	<body class="page-template-default page page-id-14 wp-custom-logo wp-embed-responsive alpha-single-page-layout alpha-rounded-skin elementor-default elementor-kit-3 elementor-page elementor-page-14 udesign-demo">
+		
+		
+		
+		<div class="page-wrapper">
+
+			<header class="header custom-header header-29" id="header"><div class="alpha-block elementor elementor-29" data-block-id="29">		<div data-elementor-type="wp-post" data-elementor-id="29" class="elementor elementor-29" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" elementor-section elementor-top-section elementor-element elementor-element-53204d9 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="53204d9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-no" >
+										
+		<div class=" elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-016ea8f flex-1 w-auto overflow-hidden " data-id="016ea8f" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-970dbcd elementor-hidden-mobile elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-udesign_widget_iconlist" data-id="970dbcd" data-element_type="widget" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items">
+			<li class="elementor-icon-list-item">
+			<a href="mailto:#" aria-label="Mail to">				<span class="elementor-icon-list-icon">
+				<i aria-hidden="true" class="  u-icon-envelop"></i>				</span>
+						<span class="elementor-icon-list-text">to@example.com</span>
+							</a>
+					</li>
+		</ul>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-aef4da8 welcome-msg elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-udesign_widget_iconlist" data-id="aef4da8" data-element_type="widget" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items">
+			<li class="elementor-icon-list-item">
+							<span class="elementor-icon-list-icon">
+				<i aria-hidden="true" class="  u-icon-clock"></i>				</span>
+						<span class="elementor-icon-list-text">Mon - Sat 8:00 - 18:00, Sunday-Closed</span>
+					</li>
+		</ul>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a823868 w-auto " data-id="a823868" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-302e5c1 ml-auto elementor-hidden-desktop elementor-hidden-tablet elementor-view-default elementor-widget elementor-widget-icon" data-id="302e5c1" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<a class="elementor-icon" href="mailto:#">
+			<i aria-hidden="true" class="  u-icon-envelop"></i>			</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-b552c52 ml-md-auto mr-lg-2 elementor-widget elementor-widget-udesign_widget_share" data-id="b552c52" data-element_type="widget" data-widget_type="udesign_widget_share.default">
+				<div class="elementor-widget-container">
+			
+<div class="social-icons">
+	<a href="#" class="social-icon  use-hover social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-icon  use-hover social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a><a href="#" class="social-icon  use-hover social-linkedin" target="_blank" title="linkedin" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></div>
+
+		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class=" elementor-section elementor-top-section elementor-element elementor-element-baece65 elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="baece65" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a1e23e6 " data-id="a1e23e6" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-b0045f9 ml-lg-auto mr-auto elementor-widget elementor-widget-udesign_header_site_logo" data-id="b0045f9" data-element_type="widget" data-widget_type="udesign_header_site_logo.default">
+				<div class="elementor-widget-container">
+			
+<a href="https://d-themes.com/wordpress/udesign/real-estate/" class="logo" title="U-Real Estate - UDesign WordPress Demo Site">
+	<img width="138" height="56" src="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/header-logo138x56.png" class="site-logo skip-data-lazy attachment-full size-full" alt="U-Real Estate" /></a>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class=" sticky-content fix-top elementor-section elementor-top-section elementor-element elementor-element-7b4037c elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7b4037c" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-no" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2be6f5b " data-id="2be6f5b" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1c64e29 elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-udesign_widget_menu" data-id="1c64e29" data-element_type="widget" data-widget_type="udesign_widget_menu.default">
+				<div class="elementor-widget-container">
+			<nav class=" main-menu"><ul id="menu-main-menu" class="menu  horizontal-menu menu-active-underline"><li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-16" ><a href="https://d-themes.com/wordpress/udesign/real-estate/"><span>Home</span></a></li>
+<li id="menu-item-1331" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1331" ><a href="https://d-themes.com/wordpress/udesign/real-estate/property/"><span>Properties</span></a></li>
+<li id="menu-item-1726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1726" ><a href="https://d-themes.com/wordpress/udesign/real-estate/news/"><span>News</span></a>
+<ul>
+	<li id="menu-item-1727" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1727" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/classic/"><span>Classic</span></a></li>
+	<li id="menu-item-1728" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1728" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/grid/"><span>Grid</span></a></li>
+	<li id="menu-item-1729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1729" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/masonry/"><span>Masonry</span></a></li>
+	<li id="menu-item-1730" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1730" ><a href="https://d-themes.com/wordpress/udesign/elements/tag/timeline/"><span>Timeline</span></a></li>
+	<li id="menu-item-1731" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1731" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/08/18/nullam-mattis-mi-at-metus-egestas/"><span>Single Post</span></a>
+	<ul>
+		<li id="menu-item-1732" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1732" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/09/25/nam-nec-telodio-tinci-dunt-auctor/" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1732"><span>Full Width</span></a></li>
+		<li id="menu-item-1733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1733" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/08/31/aliquam-tincidunt-mauris/" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1733"><span>Left Sidebar</span></a></li>
+		<li id="menu-item-1734" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1734" ><a href="https://d-themes.com/wordpress/udesign/elements/2021/08/18/nullam-mattis-mi-at-metus-egestas/" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-1734"><span>Right Sidebar</span></a></li>
+
+	</ul>
+</li>
+
+</ul>
+</li>
+<li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17" ><a href="https://d-themes.com/wordpress/udesign/real-estate/about-us/"><span>About Us</span></a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-14 current_page_item menu-item-19" ><a href="https://d-themes.com/wordpress/udesign/real-estate/contact-us/"><span>Contact Us</span></a></li>
+<li id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22" ><a href="https://d-themes.com/wordpress/udesign/elements/"><span>Elements</span></a></li>
+</ul></nav>		</div>
+				</div>
+				<div class="elementor-element elementor-element-641b9a8 ml-lg-auto mr-auto elementor-hidden-desktop elementor-widget elementor-widget-udesign_header_site_logo" data-id="641b9a8" data-element_type="widget" data-widget_type="udesign_header_site_logo.default">
+				<div class="elementor-widget-container">
+			
+<a href="https://d-themes.com/wordpress/udesign/real-estate/" class="logo" title="U-Real Estate - UDesign WordPress Demo Site">
+	<img width="138" height="56" src="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/header-logo138x56.png" class="site-logo skip-data-lazy attachment-full size-full" alt="U-Real Estate" /></a>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-ecef7b4 elementor-hidden-desktop elementor-widget elementor-widget-udesign_header_mmenu_toggle" data-id="ecef7b4" data-element_type="widget" data-widget_type="udesign_header_mmenu_toggle.default">
+				<div class="elementor-widget-container">
+			<a href="#" class="mobile-menu-toggle d-lg-none" aria-label="Mobile Menu"><i class="a-icon-hamburger"></i></a>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div></header><div class="alpha-block elementor elementor-1344" data-block-id="1344">		<div data-elementor-type="wp-post" data-elementor-id="1344" class="elementor elementor-1344" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" elementor-section elementor-top-section elementor-element elementor-element-c42c418 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="c42c418" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f5b39c3 elementor-invisible " data-id="f5b39c3" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
+			
+			<div data-lazy="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/11/bg-3.jpg" style="background: #f4f4f4;" class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3e7fcc4 elementor-invisible elementor-widget elementor-widget-heading" data-id="3e7fcc4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUpShorter&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Contact Us</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-03b8329 elementor-invisible elementor-widget elementor-widget-udesign_widget_breadcrumb" data-id="03b8329" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUpShorter&quot;}" data-widget_type="udesign_widget_breadcrumb.default">
+				<div class="elementor-widget-container">
+			<ul class="breadcrumb"><li><a href="https://d-themes.com/wordpress/udesign/real-estate">Home</a></li><li class="delimiter">/</li><li>Contact Us</li></ul><script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Home","@id":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate"}},{"@type":"ListItem","position":2,"item":{"name":"terms","@id":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/contact-us\/"}},{"@type":"ListItem","position":3,"item":{"name":"Contact Us","@id":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/contact-us\/"}}]}</script>		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div>
+			
+			<main id="main" class="main">
+
+<div class="page-content">
+
+	<div class="main-content-wrap"><div class="main-content">		<div data-elementor-type="wp-page" data-elementor-id="14" class="elementor elementor-14" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" elementor-section elementor-top-section elementor-element elementor-element-2aee1e7 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2aee1e7" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6444668 " data-id="6444668" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a79b566 elementor-invisible elementor-widget elementor-widget-image" data-id="a79b566" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeftShorter&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img style="padding-top : 66.61%;" width="599" height="399" src="https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/11/7.jpg" class="d-lazyload attachment-full size-full" alt="Banner" />															</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f708717 " data-id="f708717" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-0319ead elementor-invisible elementor-widget elementor-widget-heading" data-id="0319ead" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUpShorter&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Contact Info</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-669c1e8 mb-5 elementor-invisible elementor-widget elementor-widget-heading" data-id="669c1e8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUpShorter&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1683a2e justify-content-start mb-4 elementor-invisible elementor-widget elementor-widget-udesign_widget_iconbox" data-id="1683a2e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUpShorter&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="udesign_widget_iconbox.default">
+				<div class="elementor-widget-container">
+			<div class="info-box info-box-side position-left icon-stacked shape-circle"><div class="info-box-feature"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px" height="80px" viewBox="0 0 80 80" xml:space="preserve">
+<g>
+	<path d="M38.676,79.362c0.362,0.404,0.88,0.635,1.421,0.635c0.549,0.03,1.068-0.234,1.43-0.646   c0.656-0.745,16.15-18.486,24.697-38.079c1.881-3.928,2.835-8.096,2.835-12.386C69.06,12.958,56.023,0,40.001,0   C23.976,0,10.94,12.958,10.94,28.887c0,4.356,0.939,8.524,2.765,12.326C22.28,60.872,38.011,78.615,38.676,79.362z M40.001,2.977   c14.246,0,25.839,11.512,25.839,25.662c0,3.804-0.849,7.503-2.546,11.057C56.278,55.762,44.239,70.984,40.09,75.989   c-4.2-4.996-16.42-20.231-23.455-36.358c-1.644-3.423-2.476-7.123-2.476-10.993C14.16,14.489,25.753,2.977,40.001,2.977z"></path>
+	<path d="M39.999,42.35c7.602,0,13.786-6.184,13.786-13.785S47.601,14.78,39.999,14.78   c-7.6,0-13.784,6.184-13.784,13.785S32.399,42.35,39.999,42.35z M39.999,18.103c5.629,0,10.207,4.579,10.207,10.208   c0,5.628-4.578,10.209-10.207,10.209c-5.628,0-10.208-4.581-10.208-10.209C29.791,22.682,34.371,18.103,39.999,18.103z"></path>
+</g>
+</svg></div><div class="info-box-content"><h3 class="info-box-title">Address</h3><p class="info-box-desc">123 Street Name City. First America Califonia</p></div></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-10d2b19 justify-content-start mb-4 cs-icon-box elementor-invisible elementor-widget elementor-widget-udesign_widget_iconbox" data-id="10d2b19" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUpShorter&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="udesign_widget_iconbox.default">
+				<div class="elementor-widget-container">
+			<div class="info-box info-box-side position-left icon-stacked shape-circle"><div class="info-box-feature"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" xml:space="preserve">
+<g>
+	<g>
+		<path d="M-262.919-226.523c-0.066,0-0.134-0.004-0.2-0.011c-0.065-0.005-0.131-0.016-0.196-0.03    c-0.065-0.012-0.13-0.028-0.194-0.047c-0.062-0.02-0.125-0.042-0.187-0.067s-0.122-0.054-0.18-0.085    c-0.058-0.031-0.115-0.064-0.17-0.102c-0.055-0.036-0.109-0.075-0.159-0.117c-0.053-0.042-0.102-0.088-0.149-0.134    c-0.047-0.047-0.092-0.097-0.134-0.149c-0.042-0.051-0.081-0.105-0.118-0.159c-0.036-0.056-0.071-0.114-0.103-0.172    s-0.06-0.118-0.083-0.178c-0.026-0.061-0.049-0.125-0.068-0.188c-0.019-0.062-0.035-0.127-0.049-0.192    c-0.013-0.065-0.022-0.131-0.03-0.197c-0.006-0.066-0.009-0.133-0.009-0.199c0-0.066,0.003-0.134,0.009-0.2    c0.007-0.065,0.017-0.131,0.03-0.196c0.014-0.065,0.03-0.13,0.049-0.193c0.019-0.063,0.042-0.126,0.068-0.187    c0.024-0.061,0.052-0.122,0.083-0.18c0.031-0.058,0.066-0.115,0.103-0.17c0.037-0.056,0.076-0.108,0.118-0.16    s0.087-0.101,0.134-0.148c0.047-0.046,0.096-0.092,0.149-0.134c0.05-0.042,0.104-0.081,0.159-0.118    c0.056-0.037,0.112-0.072,0.17-0.103c0.058-0.03,0.119-0.058,0.18-0.084s0.125-0.049,0.187-0.068    c0.063-0.019,0.129-0.035,0.194-0.048c0.064-0.012,0.131-0.023,0.196-0.03c0.132-0.014,0.266-0.014,0.398,0    c0.066,0.007,0.132,0.018,0.197,0.03c0.065,0.014,0.13,0.03,0.192,0.048c0.063,0.019,0.125,0.042,0.187,0.068    c0.061,0.026,0.121,0.054,0.18,0.084c0.058,0.031,0.116,0.066,0.17,0.103c0.055,0.037,0.109,0.076,0.161,0.118    c0.051,0.042,0.102,0.087,0.147,0.134c0.048,0.047,0.092,0.097,0.134,0.148s0.083,0.104,0.119,0.16    c0.037,0.055,0.07,0.112,0.102,0.17c0.031,0.058,0.06,0.119,0.085,0.18c0.024,0.061,0.047,0.124,0.066,0.187    c0.021,0.063,0.037,0.128,0.049,0.193c0.013,0.064,0.023,0.131,0.03,0.196c0.006,0.066,0.011,0.134,0.011,0.2    c0,0.066-0.004,0.132-0.011,0.199c-0.007,0.066-0.017,0.132-0.03,0.197c-0.012,0.065-0.028,0.13-0.049,0.192    c-0.019,0.063-0.042,0.127-0.066,0.188c-0.025,0.061-0.054,0.12-0.085,0.178s-0.065,0.116-0.102,0.172    c-0.036,0.054-0.077,0.108-0.119,0.159c-0.042,0.052-0.086,0.102-0.134,0.149c-0.045,0.046-0.096,0.092-0.147,0.134    c-0.052,0.042-0.105,0.081-0.161,0.117c-0.054,0.037-0.112,0.071-0.17,0.102c-0.059,0.031-0.118,0.06-0.18,0.085    c-0.061,0.026-0.123,0.047-0.187,0.067c-0.063,0.019-0.127,0.035-0.192,0.047c-0.065,0.014-0.131,0.024-0.197,0.03    C-262.788-226.527-262.854-226.523-262.919-226.523z"></path>
+	</g>
+</g>
+<g>
+	<path d="M-262.919-226.523c-0.066,0-0.134-0.004-0.2-0.011c-0.065-0.005-0.131-0.016-0.196-0.03   c-0.065-0.012-0.13-0.028-0.194-0.047c-0.062-0.02-0.125-0.042-0.187-0.067s-0.122-0.054-0.18-0.085   c-0.058-0.031-0.115-0.064-0.17-0.102c-0.055-0.036-0.109-0.075-0.159-0.117c-0.053-0.042-0.102-0.088-0.149-0.134   c-0.047-0.047-0.092-0.097-0.134-0.149c-0.042-0.051-0.081-0.105-0.118-0.159c-0.036-0.056-0.071-0.114-0.103-0.172   s-0.06-0.118-0.083-0.178c-0.026-0.061-0.049-0.125-0.068-0.188c-0.019-0.062-0.035-0.127-0.049-0.192   c-0.013-0.065-0.022-0.131-0.03-0.197c-0.006-0.066-0.009-0.133-0.009-0.199c0-0.066,0.003-0.134,0.009-0.2   c0.007-0.065,0.017-0.131,0.03-0.196c0.014-0.065,0.03-0.13,0.049-0.193c0.019-0.063,0.042-0.126,0.068-0.187   c0.024-0.061,0.052-0.122,0.083-0.18c0.031-0.058,0.066-0.115,0.103-0.17c0.037-0.056,0.076-0.108,0.118-0.16   s0.087-0.101,0.134-0.148c0.047-0.046,0.096-0.092,0.149-0.134c0.05-0.042,0.104-0.081,0.159-0.118   c0.056-0.037,0.112-0.072,0.17-0.103c0.058-0.03,0.119-0.058,0.18-0.084s0.125-0.049,0.187-0.068   c0.063-0.019,0.129-0.035,0.194-0.048c0.064-0.012,0.131-0.023,0.196-0.03c0.132-0.014,0.266-0.014,0.398,0   c0.066,0.007,0.132,0.018,0.197,0.03c0.065,0.014,0.13,0.03,0.192,0.048c0.063,0.019,0.125,0.042,0.187,0.068   c0.061,0.026,0.121,0.054,0.18,0.084c0.058,0.031,0.116,0.066,0.17,0.103c0.055,0.037,0.109,0.076,0.161,0.118   c0.051,0.042,0.102,0.087,0.147,0.134c0.048,0.047,0.092,0.097,0.134,0.148s0.083,0.104,0.119,0.16   c0.037,0.055,0.07,0.112,0.102,0.17c0.031,0.058,0.06,0.119,0.085,0.18c0.024,0.061,0.047,0.124,0.066,0.187   c0.021,0.063,0.037,0.128,0.049,0.193c0.013,0.064,0.023,0.131,0.03,0.196c0.006,0.066,0.011,0.134,0.011,0.2   c0,0.066-0.004,0.132-0.011,0.199c-0.007,0.066-0.017,0.132-0.03,0.197c-0.012,0.065-0.028,0.13-0.049,0.192   c-0.019,0.063-0.042,0.127-0.066,0.188c-0.025,0.061-0.054,0.12-0.085,0.178s-0.065,0.116-0.102,0.172   c-0.036,0.054-0.077,0.108-0.119,0.159c-0.042,0.052-0.086,0.102-0.134,0.149c-0.045,0.046-0.096,0.092-0.147,0.134   c-0.052,0.042-0.105,0.081-0.161,0.117c-0.054,0.037-0.112,0.071-0.17,0.102c-0.059,0.031-0.118,0.06-0.18,0.085   c-0.061,0.026-0.123,0.047-0.187,0.067c-0.063,0.019-0.127,0.035-0.192,0.047c-0.065,0.014-0.131,0.024-0.197,0.03   C-262.788-226.527-262.854-226.523-262.919-226.523z"></path>
+</g>
+<g>
+	<path d="M70.412,64.224c-0.112-0.762-0.606-1.434-1.512-2.053l-9.334-6.387c-0.481-0.328-1.043-0.502-1.621-0.502   c-0.901,0-1.746,0.425-2.264,1.143l-2.422,3.429c-0.19,0.266-0.234,0.594-0.247,0.909c-0.928,0.137-3.613,0.054-8.02-4.353   c-4.262-4.256-6.28-7.386-6.019-9.318c0.047-0.023,0.082-0.069,0.124-0.102c0.222-0.062,0.426-0.137,0.591-0.266l3.345-2.534   c1.193-0.901,1.428-2.653,0.519-3.909l-6.69-9.123c-1.287-1.752-2.801-1.936-4.425-0.54c-1.028,0.881-2.733,3.008-3.439,4.288   c-0.388,0.686-0.548,1.393-0.479,2.105c-0.247,1.024-0.786,4.044,0.111,8.256c1.219,5.725,4.516,11.221,9.799,16.336   c8.835,8.548,16.594,9.824,20.433,9.825l0,0c2.259,0,3.832-0.414,4.559-0.72c0.675,0.028,1.34-0.161,1.99-0.551   c1.259-0.745,3.327-2.52,4.173-3.58C70.254,65.751,70.523,64.98,70.412,64.224z M68.354,65.591   c-0.729,0.914-2.654,2.564-3.747,3.212c-0.148,0.088-0.295,0.153-0.439,0.207c-1.066-0.463-2.939-1.442-3.501-2.146   c-0.272-0.339-0.77-0.395-1.109-0.123c-0.34,0.272-0.396,0.77-0.123,1.109c0.495,0.62,1.444,1.237,2.31,1.719   c-0.692,0.149-1.653,0.281-2.88,0.281l0,0c-3.601,0-10.899-1.22-19.335-9.381c-12.029-11.646-9.745-22.061-9.444-23.209   c0.026-0.103,0.032-0.209,0.017-0.314c-0.062-0.417,0.027-0.831,0.276-1.271c0.617-1.118,2.205-3.101,3.09-3.86   c0.407-0.351,0.769-0.535,1.047-0.535c0.119,0,0.482,0,1.078,0.812l6.687,9.118c0.406,0.562,0.319,1.333-0.196,1.722l-3.309,2.511   c-0.014,0.006-0.037,0.014-0.059,0.021c-0.873-0.669-2.066-1.68-2.443-2.256c-0.237-0.365-0.728-0.467-1.092-0.23   c-0.365,0.238-0.467,0.728-0.229,1.092c0.51,0.782,1.742,1.815,2.529,2.434c-0.628,2.57,1.368,6.001,6.397,11.023   c4.008,4.006,6.929,4.847,8.673,4.847c0.766,0,1.339-0.17,1.619-0.33c0.211-0.12,0.356-0.33,0.392-0.57   c0.016-0.107,0.021-0.262,0.023-0.433c0.001-0.095,0.003-0.257,0.014-0.348l2.368-3.351c0.36-0.5,1.163-0.626,1.71-0.254   l9.333,6.386c0.515,0.352,0.798,0.682,0.842,0.979C68.895,64.746,68.729,65.127,68.354,65.591z"></path>
+	<path d="M48.384,38.781c6.102,1.863,10.876,6.613,12.772,12.705c0.104,0.338,0.417,0.555,0.754,0.555   c0.077,0,0.156-0.012,0.234-0.035c0.416-0.13,0.648-0.572,0.519-0.988c-2.051-6.591-7.216-11.729-13.818-13.745   c-0.417-0.131-0.857,0.107-0.985,0.524C47.733,38.213,47.968,38.654,48.384,38.781z"></path>
+	<path d="M49.467,32.935c9.149,2.163,16.144,9.536,17.82,18.784c0.068,0.38,0.401,0.647,0.775,0.647   c0.046,0,0.094-0.004,0.141-0.013c0.43-0.078,0.714-0.488,0.636-0.918c-1.787-9.864-9.249-17.729-19.008-20.037   c-0.423-0.096-0.849,0.163-0.949,0.586C48.781,32.41,49.044,32.834,49.467,32.935z"></path>
+</g>
+</svg></div><div class="info-box-content"><h3 class="info-box-title">Phone</h3><p class="info-box-desc"><a href="tel:#">+(123)456-7890</a></p></div></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5fb9c19 justify-content-start  cs-icon-box elementor-invisible elementor-widget elementor-widget-udesign_widget_iconbox" data-id="5fb9c19" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUpShorter&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="udesign_widget_iconbox.default">
+				<div class="elementor-widget-container">
+			<div class="info-box info-box-side position-left icon-stacked shape-circle"><div class="info-box-feature"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" xml:space="preserve">
+<g>
+	<path d="M66.666,46.251l-5.783,3.943v-7.966c0-0.429-0.348-0.777-0.777-0.777H39.887c-0.43,0-0.778,0.348-0.778,0.777v7.966   l-5.783-3.943c-0.354-0.242-0.839-0.15-1.08,0.204c-0.242,0.355-0.151,0.839,0.204,1.081l14.539,9.911   c0.844,0.576,1.926,0.862,3.008,0.862s2.164-0.286,3.009-0.862l14.537-9.911c0.354-0.242,0.446-0.726,0.205-1.081   C67.505,46.101,67.021,46.01,66.666,46.251z M52.128,56.163c-1.156,0.788-3.107,0.788-4.264,0l-7.319-4.99   c0.069-0.117,0.12-0.246,0.12-0.392v-7.776h18.663v7.776c0,0.146,0.052,0.274,0.12,0.392L52.128,56.163z"></path>
+	<path d="M69.81,43.268L52.936,30.288c-0.791-0.609-1.834-0.943-2.939-0.943c-1.105,0-2.148,0.334-2.939,0.943L30.176,43.273   C29.505,43.789,29,44.843,29,45.727v21.385C29,69.256,30.745,71,32.888,71h34.215c2.145,0,3.889-1.744,3.889-3.889V45.727   C70.992,44.844,70.483,43.787,69.81,43.268z M69.438,67.111c0,1.287-1.047,2.334-2.334,2.334H32.888   c-1.287,0-2.333-1.047-2.333-2.334V45.727c0-0.395,0.281-0.999,0.568-1.219l16.881-12.986c0.513-0.395,1.239-0.622,1.991-0.622   c0.752,0,1.479,0.227,1.991,0.622L68.861,44.5c0.29,0.224,0.576,0.832,0.576,1.227V67.111z"></path>
+	<path d="M55.439,46.116H44.553c-0.43,0-0.777,0.348-0.777,0.777c0,0.43,0.348,0.778,0.777,0.778h10.887   c0.43,0,0.778-0.348,0.778-0.778C56.218,46.464,55.869,46.116,55.439,46.116z"></path>
+	<path d="M55.439,49.227H44.553c-0.43,0-0.777,0.348-0.777,0.777s0.348,0.777,0.777,0.777h10.887c0.43,0,0.778-0.348,0.778-0.777   S55.869,49.227,55.439,49.227z"></path>
+</g>
+</svg></div><div class="info-box-content"><h3 class="info-box-title">E-mail</h3><p class="info-box-desc"><a href="mailto:#">udesign@domain.com</a></p></div></div>		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class=" elementor-section elementor-top-section elementor-element elementor-element-24cd2d7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="24cd2d7" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bf04610 " data-id="bf04610" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-9efd500 elementor-invisible elementor-widget elementor-widget-heading" data-id="9efd500" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUpShorter&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Send me Message</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3192fa1 cs-wpforms elementor-invisible elementor-widget elementor-widget-wpforms" data-id="3192fa1" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="wpforms.default">
+				<div class="elementor-widget-container">
+			<div class="wpforms-container wpforms-container-full" id="wpforms-1378"><form id="wpforms-form-1378" class="wpforms-validate wpforms-form" data-formid="1378" method="post" enctype="multipart/form-data" action="/wordpress/udesign/real-estate/contact-us/" data-token="5b6ae8f68e3025d222e295b3974c8d42"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-1378-field_0-container" class="wpforms-field wpforms-field-name wpforms-one-half wpforms-first" data-field-id="0"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-1378-field_0">Name <span class="wpforms-required-label">*</span></label><input type="text" id="wpforms-1378-field_0" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][0]" placeholder="Your Name" required></div><div id="wpforms-1378-field_1-container" class="wpforms-field wpforms-field-email wpforms-one-half wpforms-first" data-field-id="1"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-1378-field_1">Email <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-1378-field_1" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][1]" placeholder="Your Email Address" required></div><div id="wpforms-1378-field_3-container" class="wpforms-field wpforms-field-number wpforms-one-half wpforms-first" data-field-id="3"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-1378-field_3">Numbers <span class="wpforms-required-label">*</span></label><input type="number" pattern="\d*" id="wpforms-1378-field_3" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][3]" placeholder="Phone Number" required></div><div id="wpforms-1378-field_2-container" class="wpforms-field wpforms-field-textarea wpforms-one-half" data-field-id="2"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-1378-field_2">Comment or Message <span class="wpforms-required-label">*</span></label><textarea id="wpforms-1378-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" placeholder="Your Message" required></textarea></div></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="1378"><input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]" value="14"><button type="submit" name="wpforms[submit]" class="wpforms-submit " id="wpforms-submit-1378" value="wpforms-submit" aria-live="assertive" data-alt-text="Sending..." data-submit-text="Send Message">Send Message</button></div></form></div>  <!-- .wpforms-container -->		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class=" elementor-section elementor-top-section elementor-element elementor-element-a5f3152 elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="a5f3152" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+										<div class="elementor-container elementor-column-gap-no" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2e5f2b0 " data-id="2e5f2b0" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4971398 elementor-widget elementor-widget-google_maps" data-id="4971398" data-element_type="widget" data-widget_type="google_maps.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-custom-embed">
+			<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+					src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&#038;t=m&#038;z=10&#038;output=embed&#038;iwloc=near"
+					title="London Eye, London, United Kingdom"
+					aria-label="London Eye, London, United Kingdom"
+			></iframe>
+		</div>
+				</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div></div>
+</div>
+
+			</main>
+
+			
+							<footer class="footer custom-footer footer-782" id="footer">
+						<div class="alpha-block elementor elementor-782" data-block-id="782">		<div data-elementor-type="wp-post" data-elementor-id="782" class="elementor elementor-782" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<div class=" elementor-section elementor-top-section elementor-element elementor-element-9803539 elementor-section-content-middle cs-footer-top elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9803539" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-9393af9 mb-2 " data-id="9393af9" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c1e21a4 bg-transparent elementor-widget elementor-widget-image" data-id="c1e21a4" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://d-themes.com/wordpress/udesign/real-estate/">
+							<img style="padding-top : 40%;" width="280" height="112" src="https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/images/lazy.png" data-lazy="https://d-themes.com/wordpress/udesign/real-estate/wp-content/uploads/sites/16/2021/10/footer-logo280x112.png" class="d-lazyload attachment-full size-full" alt="Footer Logo" />								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-80f94a0 elementor-widget elementor-widget-heading" data-id="80f94a0" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Lorem Ipsum. Proin gravida nibh vel velitauc cil tor aliquet. Aenean solli citudin lorem</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-85acde7 elementor-widget elementor-widget-udesign_widget_share" data-id="85acde7" data-element_type="widget" data-widget_type="udesign_widget_share.default">
+				<div class="elementor-widget-container">
+			
+<div class="social-icons">
+	<a href="#" class="social-icon stacked use-hover social-facebook" target="_blank" title="facebook" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-icon stacked use-hover social-twitter" target="_blank" title="twitter" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a><a href="#" class="social-icon stacked use-hover social-linkedin" target="_blank" title="linkedin" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></div>
+
+		</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-62a830d mb-2 " data-id="62a830d" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-684df83 cs-text-editor elementor-widget elementor-widget-text-editor" data-id="684df83" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p style="margin-bottom: .4rem;"><label>Email:</label> <a href="mailto:mail@udesign.com">mail@udesign.com</a></p>
+
+<p class="mb-1"><label>Address:</label> <span class="address">123 Street Name, New York, Ny10000,USA</span></p>
+
+<p style="margin-bottom: .9rem;"><label>Fax:</label> <a href="fax:000123456789">+000 123-456-789</a></p>
+
+<p class="mb-2"><label>Phone Number:</label> <a href="tel://0004567890">+000-456-7890</a></p>						</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-17f7c7c mb-2 " data-id="17f7c7c" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-057e861 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-udesign_widget_iconlist" data-id="057e861" data-element_type="widget" data-widget_type="udesign_widget_iconlist.default">
+				<div class="elementor-widget-container">
+			<ul class="elementor-icon-list-items">
+			<li class="elementor-icon-list-item">
+			<a href="https://d-themes.com/wordpress/udesign/real-estate/about-us/">			<span class="elementor-icon-list-text">About Us</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Order History</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Returns</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Custom Service</span>
+							</a>
+					</li>
+				<li class="elementor-icon-list-item">
+			<a href="#">			<span class="elementor-icon-list-text">Terms</span>
+							</a>
+					</li>
+		</ul>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+						
+		<div class=" elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-f66c710 mb-2 " data-id="f66c710" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1240ab5 elementor-widget elementor-widget-google_maps" data-id="1240ab5" data-element_type="widget" data-widget_type="google_maps.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-custom-embed">
+			<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+					src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&#038;t=m&#038;z=10&#038;output=embed&#038;iwloc=near"
+					title="London Eye, London, United Kingdom"
+					aria-label="London Eye, London, United Kingdom"
+			></iframe>
+		</div>
+				</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+				<div class=" elementor-section elementor-top-section elementor-element elementor-element-acf5700 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="acf5700" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6884173 " data-id="6884173" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-540d3de elementor-widget elementor-widget-shortcode" data-id="540d3de" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode"><p class="mb-0 text-center copyright">UDesign Wordpress 
+© 2022. All Rights Reserved</p></div>
+				</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+		</div>					</footer>
+					
+		</div>
+
+					<div class="cookies-popup">
+				<div class="cookies-popup-inner d-flex align-items-center">
+					<div class="cookies-info">
+						By browsing this website, you agree to our <a href="https://d-themes.com/wordpress/udesign/real-estate/privacy-policy/">privacy policy</a>.					</div>
+					<a href="#" rel="nofollow noopener" class="btn btn-sm accept-cookie-btn">I Agree</a>
+					<a href="#" class="btn close-cookie-btn decline-cookie-btn btn-close" aria-label="Close Cookie Consent"><i class="a-icon-times-solid"></i></a>
+				</div>
+			</div>
+			
+					<a id="scroll-top" class="scroll-top" href="#top" title="Top" role="button">
+				<i class="a-icon-long-arrow-up"></i>
+				<svg  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					viewBox="0 0 70 70" enable-background="new 0 0 70 70" xml:space="preserve">
+					<circle id="progress-indicator" fill="transparent" stroke="#000000" stroke-miterlimit="10" cx="35" cy="35" r="34"/>
+				</svg>
+			</a>
+		
+					<div class="mobile-menu-wrapper">
+				<div class="mobile-menu-overlay"></div>
+				<div class="mobile-menu-container" style="height: 100vh;">
+					<!-- Need to ajax load mobile menus -->
+				</div>
+				<a class="mobile-menu-close" href="#"><i class="close-icon"></i></a>
+			</div>
+		
+		
+		<link rel='stylesheet' id='e-animations-css'  href='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.4.0' media='all' />
+<script async="async" src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/framework/addons/live-search/jquery.autocomplete.min.js?ver=5.8.3' id='jquery-autocomplete-js'></script>
+<script id='alpha-framework-js-extra'>
+var alpha_vars = {"theme":"udesign","framework_icon_prefix":"a","alpha_gap":"15px","home_url":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/","ajax_url":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/wp-admin\/admin-ajax.php","nonce":"31d2430d17","lazyload":"1","container":"1290","assets_url":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/wp-content\/themes\/u-design\/assets","texts":{"loading":"Loading...","loadmore_error":"Loading failed","popup_error":"The content could not be loaded.","ribbon":"Ribbon"},"resource_async_js":"1","resource_split_tasks":"1","resource_after_load":"1","alpha_cache_key":"alpha_cache_d293ab6d9f8e9ac45d8ed7c1cecde424","lazyload_menu":"","countdown":{"labels":["Years","Months","Weeks","Days","Hours","Minutes","Seconds"],"labels_short":["Years","Months","Weeks","Days","Hrs","Mins","Secs"],"label1":["Year","Month","Week","Day","Hour","Minute","Second"],"label1_short":["Year","Month","Week","Day","Hour","Min","Sec"]},"placeholder_img":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/wp-content\/themes\/u-design\/assets\/images\/placeholders\/post-placeholder.jpg","placeholder_alt":"UDesign Placeholder","placeholder_width":"730","placeholder_height":"570","search_result":"There are no results.","cookie_version":"1"};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/framework/assets/js/framework.js?ver=4.0.0' id='alpha-framework-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/framework/assets/js/framework-async.js?ver=4.0.0' id='alpha-framework-async-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/js/theme.js?ver=4.0.0' id='alpha-theme-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/framework/addons/gdpr/gdpr.js?ver=4.0.0' id='alpha-gdpr-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/inc/cpt/post_types/member/assets/member.js?ver=4.0.0' id='alpha-member-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/themes/u-design/assets/vendor/jquery.magnific-popup/jquery.magnific-popup.js?ver=1.1.0' id='jquery-magnific-popup-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-includes/js/wp-embed.js?ver=5.8.3' id='wp-embed-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/framework/addons/lazyload-images/lazyload.js?ver=5.8.3' id='lazyload-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/u-design-core/inc/addons/post-like/post-like.js?ver=4.0.0' id='alpha-post-like-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/js/webpack.runtime.js?ver=3.4.0' id='elementor-webpack-runtime-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/js/frontend-modules.js?ver=3.4.0' id='elementor-frontend-modules-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-includes/js/jquery/ui/core.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/swiper/swiper.js?ver=5.3.6' id='swiper-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/share-link/share-link.js?ver=3.4.0' id='share-link-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/lib/dialog/dialog.js?ver=4.8.1' id='elementor-dialog-js'></script>
+<script id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":true},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":992,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":991,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.4.0","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"landing-pages":true,"elements-color-picker":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"viewport_tablet":991,"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":14,"title":"Contact%20Us%20%E2%80%93%20U-Real%20Estate","excerpt":"","featuredImage":false}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":true},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":992,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":991,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.4.0","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"landing-pages":true,"elements-color-picker":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"viewport_tablet":991,"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":14,"title":"Contact%20Us%20%E2%80%93%20U-Real%20Estate","excerpt":"","featuredImage":false}};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/js/frontend.js?ver=3.4.0' id='elementor-frontend-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/elementor/assets/js/preloaded-modules.js?ver=3.4.0' id='preloaded-modules-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-includes/js/underscore.min.js?ver=1.13.1' id='underscore-js'></script>
+<script id='wp-util-js-extra'>
+var _wpUtilSettings = {"ajax":{"url":"\/wordpress\/udesign\/real-estate\/wp-admin\/admin-ajax.php"}};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-includes/js/wp-util.js?ver=5.8.3' id='wp-util-js'></script>
+<script id='wpforms-elementor-js-extra'>
+var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.6.9' id='wpforms-elementor-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/wpforms-lite/assets/js/jquery.validate.min.js?ver=1.19.0' id='wpforms-validation-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/wpforms-lite/assets/js/mailcheck.min.js?ver=1.1.2' id='wpforms-mailcheck-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/wpforms-lite/assets/js/punycode.min.js?ver=1.0.0' id='wpforms-punycode-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/real-estate/wp-content/plugins/wpforms-lite/assets/js/wpforms.js?ver=1.6.9' id='wpforms-js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpforms_settings = {"val_required":"This field is required.","val_email":"Please enter a valid email address.","val_email_suggestion":"Did you mean {suggestion}?","val_email_suggestion_title":"Click to accept this suggestion.","val_email_restricted":"This email address is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number.","val_confirm":"Field values do not match.","val_checklimit":"You have exceeded the number of allowed selections: {#}.","val_limit_characters":"{count} of {limit} max characters.","val_limit_words":"{count} of {limit} max words.","val_recaptcha_fail_msg":"Google reCAPTCHA verification failed, please try again later.","val_empty_blanks":"Please fill out all blanks.","uuid_cookie":"","locale":"en","wpforms_plugin_url":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/wp-content\/plugins\/wpforms-lite\/","gdpr":"","ajaxurl":"https:\/\/d-themes.com\/wordpress\/udesign\/real-estate\/wp-admin\/admin-ajax.php","mailcheck_enabled":"1","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"],"is_ssl":"1"}
+/* ]]> */
+</script>
+	</body>
+</html>

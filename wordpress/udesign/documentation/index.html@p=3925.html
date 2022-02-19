@@ -1,0 +1,796 @@
+
+<!DOCTYPE html>
+	<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+		
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<link rel="pingback" href="https://d-themes.com/wordpress/udesign/documentation/xmlrpc.php" />
+
+		<link rel="shortcut icon" href="https://d-themes.com/wordpress/udesign/documentation/wp-content/themes/u-design/assets/images/favicon.png" type="image/x-icon" />
+		
+		<title>How to use a UDesign Studio block to build your own website? &#8211; Documentation</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Documentation &raquo; Feed" href="https://d-themes.com/wordpress/udesign/documentation/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Documentation &raquo; Comments Feed" href="https://d-themes.com/wordpress/udesign/documentation/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Documentation &raquo; How to use a UDesign Studio block to build your own website? Comments Feed" href="https://d-themes.com/wordpress/udesign/documentation/2022/01/04/how-to-use-a-udesign-studio-block-to-build-your-own-website/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-includes/css/dist/block-library/style.css?ver=5.8.3' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+/**
+ * Colors
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+#start-resizable-editor-section {
+  display: none;
+}
+
+.wp-block-audio figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-audio figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-code {
+  font-family: Menlo, Consolas, monaco, monospace;
+  color: #1e1e1e;
+  padding: 0.8em 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.wp-block-embed figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-embed figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.blocks-gallery-caption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .blocks-gallery-caption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-image figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-image figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-pullquote {
+  border-top: 4px solid currentColor;
+  border-bottom: 4px solid currentColor;
+  margin-bottom: 1.75em;
+  color: currentColor;
+}
+.wp-block-pullquote cite,
+.wp-block-pullquote footer, .wp-block-pullquote__citation {
+  color: currentColor;
+  text-transform: uppercase;
+  font-size: 0.8125em;
+  font-style: normal;
+}
+
+.wp-block-quote {
+  border-left: 0.25em solid currentColor;
+  margin: 0 0 1.75em 0;
+  padding-left: 1em;
+}
+.wp-block-quote cite,
+.wp-block-quote footer {
+  color: currentColor;
+  font-size: 0.8125em;
+  position: relative;
+  font-style: normal;
+}
+.wp-block-quote.has-text-align-right {
+  border-left: none;
+  border-right: 0.25em solid currentColor;
+  padding-left: 0;
+  padding-right: 1em;
+}
+.wp-block-quote.has-text-align-center {
+  border: none;
+  padding-left: 0;
+}
+.wp-block-quote.is-style-large, .wp-block-quote.is-large {
+  border: none;
+}
+
+.wp-block-search .wp-block-search__label {
+  font-weight: bold;
+}
+
+.wp-block-group.has-background {
+  padding: 1.25em 2.375em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.wp-block-separator {
+  border: none;
+  border-bottom: 2px solid currentColor;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.4;
+}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+  width: 100px;
+}
+.wp-block-separator.has-background:not(.is-style-dots) {
+  border-bottom: none;
+  height: 1px;
+}
+.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+  height: 2px;
+}
+
+.wp-block-table thead {
+  border-bottom: 3px solid;
+}
+.wp-block-table tfoot {
+  border-top: 3px solid;
+}
+.wp-block-table td,
+.wp-block-table th {
+  padding: 0.5em;
+  border: 1px solid;
+  word-break: normal;
+}
+.wp-block-table figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-table figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-video figcaption {
+  color: #555;
+  font-size: 13px;
+  text-align: center;
+}
+.is-dark-theme .wp-block-video figcaption {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wp-block-template-part.has-background {
+  padding: 1.25em 2.375em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#end-resizable-editor-section {
+  display: none;
+}
+</style>
+<link rel='stylesheet' id='alpha-gdpr-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/u-design-core/framework/addons/gdpr/gdpr.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-core-framework-style-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/u-design-core/assets/css/framework.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='fontawesome-free-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-content/themes/u-design/assets/vendor/fontawesome-free/css/all.min.css?ver=5.14.0' media='all' />
+<link rel='stylesheet' id='alpha-icons-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-content/themes/u-design/assets/vendor/alpha-icons/css/icons.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='theme-icons-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-content/themes/u-design/assets/vendor/udesign-icons/css/icons.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='animate-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-content/themes/u-design/assets/vendor/animate/animate.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-content/themes/u-design/assets/vendor/jquery.magnific-popup/magnific-popup.min.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.css?ver=5.12.0' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/elementor/css/custom-frontend.css?ver=1641537941' media='all' />
+<link rel='stylesheet' id='elementor-post-3-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/elementor/css/post-3.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-theme-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-content/themes/u-design/assets/css/theme.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-dynamic-vars-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/udesign_styles/dynamic_css_vars.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-theme-single-post-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-content/themes/u-design/assets/css/pages/single-post.min.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='alpha-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C500%2C600%2C700&#038;ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-elementor-style-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/u-design-core/framework/plugins/elementor/assets/elementor.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-elementor-extend-style-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/u-design-core/inc/plugins/elementor/assets/elementor-extend.min.css?ver=5.8.3' media='all' />
+<link rel='stylesheet' id='alpha-style-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-content/themes/u-design/style.css?ver=4.0.0' media='all' />
+<style id='alpha-style-inline-css'>
+/* Global CSS */
+em.search-query {
+    background: yellow;
+}
+p {
+    margin-bottom: 8px;
+}
+ul.alert,
+p.alert {
+    display: block;
+}
+.sticky-sidebar {
+    padding: 3rem 3rem 3rem 2.8rem;
+    background-color: #f8f8f8;
+}
+.alert-info {
+    border: 1px solid #d7e8f8;
+    background: #d7e8f8;
+}
+.alert-warning {
+    background-color: #FFF4E7;
+}
+.alert-danger {
+    color: #fff;
+    background-color: #f96868;
+}
+ol {
+    padding: 0;
+    list-style: none;
+}
+ol li {
+    position: relative;
+    counter-increment: li;
+    padding-left: 43px;
+    margin-bottom: 2rem;
+}
+ol li:before {
+    content: counter(li);
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    color: #323334;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+.code-grey {
+    padding: 0 10px;
+    color: #777;
+    background-color: #f4f4f4;
+}
+.sidebar .sticky-sidebar .cat-item,
+.sidebar .posts-nav li {
+    padding: 1.4rem 0 1.6rem;
+}
+.sidebar .cat-item:not(:first-child),
+.sidebar .posts-nav li:not(:first-child) {
+    border-top: 1px solid #e1e1e1;
+}
+.sidebar .cat-item a,
+.sidebar .posts-nav a {
+    color: var(--alpha-dark-color, #323334);
+    letter-spacing: 0;
+}
+.sidebar .posts-nav .active >a {
+    color: var(--alpha-primary-color,#fd7800);
+}
+/* Block Elements */
+.wp-block-code {
+    background: #333;
+    border-color: #333;
+}
+.wp-block-code code {
+    color: #fff;
+}
+.screen-capture {
+    margin-bottom: 3rem;
+}
+.screen-capture img,
+.wp-block-image img,
+.wp-block-video video {
+    border: 5px solid #dbdee1;
+    border-radius: 3px !important;
+}
+.wp-block-image figcaption {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+/* Documentation Links */
+ul.documentation {
+    margin-top: 13px;
+    margin-bottom: 15px;
+    padding-left: 0;
+    list-style: none;
+}
+.posts-nav li>a,
+.widget_categories li>a {
+    display: inline-block;
+    border-left: 0 solid transparent;
+    transition: padding-left .3s, border-left-color .3s, color .3s;
+}
+
+.documentation a:before {
+    content: '\e969';
+    display: inline-block;
+    vertical-align: middle;
+    color: inherit;
+    font-family: 'alpha';
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 7px;
+    margin-left: -26px;
+    line-height: 0;
+}
+.documentation a {
+    display: inline-block;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 26px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #777;
+    letter-spacing: 0;
+    line-height: 1.5;
+}
+.documentation a:hover {
+    color: var(--alpha-primary-color);
+}
+.documentation + p a {
+		color: var(--alpha-dark-color);
+		text-transform: capitalize;
+}
+.documentation + p a:hover {
+		color: var(--alpha-primary-color);
+}
+.documentation + p a:after {
+    content: '\e92c';
+    display: inline-block;
+    vertical-align: middle;
+    color: inherit;
+    font-family: 'alpha';
+    font-size: 16px;
+    margin-left: 7px;
+		margin-top: -2px;
+    line-height: 0;
+}
+
+/* Post Archive */
+.post-archive>.cols-lg-1 .post-title {
+    font-size: 2rem;
+    margin-bottom: 7px;
+}
+.post-archive .post-cats,
+.post-archive .post-meta,
+.post-archive .post-cats-date,
+.post-archive .post-media,
+.post-archive .post .btn {
+    display: none;
+}
+.post-archive .posts .post-wrap,
+.post-archive .post-title,
+.post-archive .post-content,
+.post-archive .post {
+    margin-bottom: 0;
+}
+.post-archive .post {
+        box-shadow: none;
+}
+.post-archive .post-details {
+    padding: 1.5rem 0;
+    text-align: left;
+}
+.post-archive .post-wrap:not(:last-child) .post-details:before {
+    --alpha-gap: inherit;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(-1*var(--alpha-gap));
+    height: 1px;
+    background-color: #e1e1e1;
+}
+.widget-posts-nav .widget-title,
+.widget_categories .widget-title {
+    padding-top: 6px !important;
+    padding-bottom: 12px;
+    font-size: 20px;
+}
+
+/* Post Single */
+.post-single .post-title {
+    text-align: left;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+}
+.single-post .post-single-wrap {
+    margin-top: 1.3rem;
+}
+
+.single .container .main-content-wrap {
+    margin-top: 0;
+}
+
+.single #posts-nav-widget-2 {
+    padding-top: 0;
+}
+
+/* Featured list */
+.featured-list {
+    font-size: 16px;
+    list-style: none;
+    padding: 0
+}
+.featured-list.list-sm {
+    font-size: 14px;
+}
+.featured-list li:before {
+    content: '\e908';
+    font-family: 'udesign';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1rem;
+    color: var(--alpha-primary-color);
+    font-weight: 500
+}
+.post-content .featured-list a {
+    box-shadow: none
+}
+</style>
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-includes/js/jquery/jquery.js?ver=3.6.0' id='jquery-core-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-includes/js/jquery/jquery-migrate.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://d-themes.com/wordpress/udesign/documentation/wp-json/" /><link rel="alternate" type="application/json" href="https://d-themes.com/wordpress/udesign/documentation/wp-json/wp/v2/posts/3925" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://d-themes.com/wordpress/udesign/documentation/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://d-themes.com/wordpress/udesign/documentation/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.3" />
+<link rel="canonical" href="https://d-themes.com/wordpress/udesign/documentation/2022/01/04/how-to-use-a-udesign-studio-block-to-build-your-own-website/" />
+<link rel='shortlink' href='https://d-themes.com/wordpress/udesign/documentation/?p=3925' />
+<link rel="alternate" type="application/json+oembed" href="https://d-themes.com/wordpress/udesign/documentation/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fd-themes.com%2Fwordpress%2Fudesign%2Fdocumentation%2F2022%2F01%2F04%2Fhow-to-use-a-udesign-studio-block-to-build-your-own-website%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://d-themes.com/wordpress/udesign/documentation/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fd-themes.com%2Fwordpress%2Fudesign%2Fdocumentation%2F2022%2F01%2F04%2Fhow-to-use-a-udesign-studio-block-to-build-your-own-website%2F&#038;format=xml" />
+		<meta name="application-name" content="UDesign - MULTI-PURPOSE PREMIUM WordPress THEME">
+		<meta name="author" content="Andon">
+		<meta name="description" content="A slick, powerful and clean theme UDesign provides an intuitive set of options to help you setup your WordPress site quickly and effectively. Flexibility is key and it has been optimized for SEO and speed. It is also responsive & mobile ready should you choose that option. The UDesign theme features include: unlimited colors, widgetized home page, over 600 fonts to choose from, WooCommerce Integration, it is also translation and multilingual ready, step by step documentation, exclusive UDesign support forum and a helpful community. Always up-to-date security and many new features are constantly added as the theme evolves.">
+		<style id="kirki-inline-styles"></style>	</head>
+	<body class="post-template-default single single-post postid-3925 single-format-standard wp-custom-logo wp-embed-responsive alpha-single-post-layout alpha-rounded-skin elementor-default elementor-kit-3 udesign-demo">
+		
+		
+		
+		<div class="page-wrapper">
+
+			<header class="header custom-header header-6" id="header"><div class="alpha-block elementor elementor-6" data-block-id="6"><style id="elementor-post-6">.elementor-6 .elementor-element.elementor-element-6e77c22 > .elementor-container > .elementor-column > .elementor-widget-wrap{align-content:center;align-items:center;}.elementor-6 .elementor-element.elementor-element-6e77c22:not(.elementor-motion-effects-element-type-background), .elementor-6 .elementor-element.elementor-element-6e77c22 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#222222;background-image:url("https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2021/10/headerintro.jpg");}.elementor-6 .elementor-element.elementor-element-6e77c22{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:0px 0px 0px 0px;}.elementor-6 .elementor-element.elementor-element-6e77c22 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-6 .elementor-element.elementor-element-6a1bd5f > .elementor-element-populated{padding:0px 0px 0px 0px;}.elementor-6 .elementor-element.elementor-element-b768eaa{border-style:solid;border-width:0px 0px 0px 0px;transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-6 .elementor-element.elementor-element-b768eaa > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-6 .elementor-element.elementor-element-b768eaa.fixed{background-color:#282B30;}.elementor-bc-flex-widget .elementor-6 .elementor-element.elementor-element-b65d0dd.elementor-column .elementor-widget-wrap{align-items:center;}.elementor-6 .elementor-element.elementor-element-b65d0dd.elementor-column.elementor-element[data-element_type="column"] > .elementor-widget-wrap.elementor-element-populated{align-content:center;align-items:center;}.elementor-6 .elementor-element.elementor-element-b65d0dd > .elementor-element-populated{padding:0px 15px 0px 15px;}.elementor-element-9dcad58{text-align:left;}.elementor-element-9dcad58 .logo img{max-width:135px;}.elementor-6 .elementor-element.elementor-element-9dcad58 > .elementor-widget-container{margin:12px 36px 7px 0px;}.elementor-element-7074783 .menu > li > a{font-weight:600;letter-spacing:0px;color:#FFFFFF;padding:39px 30px 38px 29px;}.elementor-element-7074783 .menu > li:hover > a{color:var( --e-global-color-862bc44 );background-color:#36373C;}.elementor-element-7074783 .menu > .current-menu-item > a{color:var( --e-global-color-862bc44 );background-color:#36373C;}.elementor-element-7074783 .menu > li.current-menu-ancestor > a{color:var( --e-global-color-862bc44 );}.elementor-element-7074783 .menu > .current-menu-ancestor > a{background-color:#36373C;}.elementor-element-7074783 .menu > li{margin:0px 0px 0px 0px;}.elementor-element-7074783 .menu > li:last-child{margin:0;}.elementor-6 .elementor-element.elementor-element-7074783 > .elementor-widget-container{margin:0px 0px 0px 0px;}.elementor-element-85fff71 .elementor-widget-container{text-align:left;}.elementor-element-85fff71 .btn span{white-space:nowrap;}.elementor-element-85fff71 .btn{font-weight:500;padding:20px 40px 20px 40px;}.elementor-6 .elementor-element.elementor-element-85fff71 > .elementor-widget-container{margin:0px 0px 1px 0px;}.elementor-element-3e210ed .mobile-menu-toggle{color:#FFFFFF;}.elementor-6 .elementor-element.elementor-element-e295c19{border-style:solid;border-width:1px 0px 0px 0px;border-color:#3E4146;transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-6 .elementor-element.elementor-element-e295c19 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-6 .elementor-element.elementor-element-bdd7c79 > .elementor-element-populated{margin:25px 0px 0px 0px;--e-column-margin-right:0px;--e-column-margin-left:0px;padding:15px 0px 2px 0px;}.elementor-6 .elementor-element.elementor-element-23473ca{text-align:center;}.elementor-6 .elementor-element.elementor-element-23473ca .elementor-heading-title{color:#FFFFFF;font-size:30px;font-weight:400;letter-spacing:0px;}.elementor-6 .elementor-element.elementor-element-23473ca > .elementor-widget-container{margin:53px 0px 0px 0px;}.elementor-element-cffb620 .search-wrapper form{height:54px;border-radius:4px 4px 4px 4px;}.elementor-element-cffb620 .search-wrapper form.input-wrapper{border-width:2px;border-style:solid;border-color:#3E4146;}.elementor-element-cffb620 .search-wrapper .btn-search{border-radius:0 4px 4px 0;padding:0px 18px 2px 17px;color:#FFFFFF;}.elementor-element-cffb620 .search-wrapper input.form-control{border-radius:4px 4px 4px 4px;font-size:14px;padding:1.1rem 1.3rem 1.1rem 1.8rem;}.elementor-element-cffb620 .search-wrapper form input.form-control, .elementor-element-cffb620 .search-wrapper .btn-search{border-color:#3E4146;}.elementor-element-cffb620 .search-wrapper input.form-control, .elementor-element-cffb620 .search-wrapper input.form-control::placeholder{color:var( --e-global-color-2969238 );}.elementor-element-cffb620 .search-wrapper .btn-search i{font-size:21px;}.elementor-6 .elementor-element.elementor-element-cffb620 > .elementor-widget-container{margin:8px 0px 0px 0px;padding:0rem 2rem 0rem 2rem;border-style:solid;border-width:0px 0px 0px 0px;}.elementor-6 .elementor-element.elementor-element-cffb620{width:640px;max-width:640px;}@media(max-width:991px){.elementor-6 .elementor-element.elementor-element-b65d0dd > .elementor-element-populated{padding:15px 15px 15px 15px;}}@media(min-width:768px){.elementor-6 .elementor-element.elementor-element-6a1bd5f{width:100%;}}</style>		<div data-elementor-type="wp-post" data-elementor-id="6" class="elementor elementor-6" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<section class=" elementor-section elementor-top-section elementor-element elementor-element-6e77c22 elementor-section-content-middle elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="6e77c22" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6a1bd5f " data-id="6a1bd5f" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class=" sticky-content fix-top elementor-section elementor-inner-section elementor-element elementor-element-b768eaa elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b768eaa" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-b65d0dd " data-id="b65d0dd" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-9dcad58 mr-auto elementor-widget elementor-widget-udesign_header_site_logo" data-id="9dcad58" data-element_type="widget" data-widget_type="udesign_header_site_logo.default">
+				<div class="elementor-widget-container">
+			
+<a href="https://d-themes.com/wordpress/udesign/documentation/" class="logo" title="Documentation - UDesign WordPress Demo Site">
+	<img width="270" height="72" src="https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2021/11/logo.png" class="site-logo skip-data-lazy attachment-full size-full" alt="Documentation" srcset="https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2021/11/logo.png 270w, https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2021/11/logo-150x40.png 150w" sizes="(max-width: 270px) 100vw, 270px" /></a>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-7074783 cs-menu mx-auto mr-6 elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-udesign_widget_menu" data-id="7074783" data-element_type="widget" data-widget_type="udesign_widget_menu.default">
+				<div class="elementor-widget-container">
+			<nav class=" main-menu"><ul id="menu-main-menu" class="menu  horizontal-menu" style=""><li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-18" ><a href="https://d-themes.com/wordpress/udesign/documentation/"><span>Documentation</span></a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19" ><a href="http://dreamthemedesign.com/u-design-support/"><span>Support</span></a></li>
+<li id="menu-item-3447" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3447" ><a href="https://d-themes.com/wordpress/udesign/documentation/change-log/"><span>Change Log</span></a></li>
+<li id="menu-item-2647" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2647" ><a href="http://themeforest.net/user/AndonDesign#contact"><span>Contact</span></a></li>
+<li id="menu-item-3448" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3448" ><a href="https://1.envato.market/Zdmkqz"><span>Buy UDesign Now!</span></a></li>
+</ul></nav>		</div>
+				</div>
+				<div class="elementor-element elementor-element-85fff71 d-none d-sm-block elementor-widget elementor-widget-udesign_widget_button" data-id="85fff71" data-element_type="widget" data-widget_type="udesign_widget_button.default">
+				<div class="elementor-widget-container">
+			<a class="btn btn-gradient btn-md btn-rounded btn-gra-orange vertical-middle" href="https://themeforest.net/item/udesign-responsive-wordpress-theme/253220" ><span >Buy UDesign Now!</span></a>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3e210ed order-sm-first mr-sm-4 elementor-widget elementor-widget-udesign_header_mmenu_toggle" data-id="3e210ed" data-element_type="widget" data-widget_type="udesign_header_mmenu_toggle.default">
+				<div class="elementor-widget-container">
+			<a href="#" class="mobile-menu-toggle d-lg-none" aria-label="Mobile Menu"><i class="a-icon-hamburger"></i></a>
+		</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</section>
+				<section class=" elementor-section elementor-inner-section elementor-element elementor-element-e295c19 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e295c19" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-bdd7c79 " data-id="bdd7c79" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-23473ca w-100 mb-6 elementor-widget elementor-widget-heading" data-id="23473ca" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">How can we help you?</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-cffb620 ml-auto mr-auto mb-10 pb-10 elementor-widget__width-initial elementor-widget elementor-widget-udesign_widget_search" data-id="cffb620" data-element_type="widget" data-widget_type="udesign_widget_search.default">
+				<div class="elementor-widget-container">
+			
+	<div class="search-wrapper  light-style">
+					
+							<form action="https://d-themes.com/wordpress/udesign/documentation/" method="get" class="input-wrapper">
+			<input type="hidden" name="post_type" value=""/>
+
+			<input type="search" aria-label="Search" class="form-control" name="s" placeholder="Type your search here..." required="" autocomplete="off">
+
+									<div class="live-search-list"></div>
+			
+			<button class="btn btn-search" aria-label="Search Button" type="submit">
+				<i class="a-icon-search"></i>
+			</button>
+
+					
+		</form>
+						</div>
+
+							</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</section>
+					</div>
+			
+		</div>
+																	</div>
+							</section>
+						</div>
+					</div>
+		<style id="block_6_css">.custom-header{background-color:#222222}@media (min-width:576px){.cs-menu li:last-child,.mobile-menu li:last-child{display:none}}</style></div></header>
+			
+			<main id="main" class="main">
+
+<div class="page-content">
+	<div class="container"><div class="main-content-wrap row gutter-lg">
+<aside class="sidebar sidebar-fixed sidebar-side left-sidebar" id="post-sidebar">
+
+	<div class="sidebar-overlay"></div>
+	<a class="sidebar-close" href="#"><i class="close-icon"></i></a>
+
+	
+		<a href="#" class="sidebar-toggle"><i class="fas fa-chevron-right"></i></a>
+		<div class="sidebar-content">
+			
+			<div class="sticky-sidebar">
+				<nav id="posts-nav-widget-2" class="widget widget-posts-nav"><h3 class="widget-title"><a href="https://d-themes.com/wordpress/udesign/documentation/category/udesign-studio/" rel="category tag">11. UDesign Studio</a></h3><ul class="posts-nav"><li><a href="https://d-themes.com/wordpress/udesign/documentation/2022/01/04/what-is-udesign-studio/">What is UDesign Studio?</a></li><li><a href="https://d-themes.com/wordpress/udesign/documentation/2022/01/04/udesign-studio-on-page-builders/">UDesign Studio on page builders</a></li><li><a href="https://d-themes.com/wordpress/udesign/documentation/2022/01/04/how-many-useful-blocks-are-uploaded-on-udesign-studio/">How many useful blocks are uploaded on UDesign Studio?</a></li><li class="active"><a href="https://d-themes.com/wordpress/udesign/documentation/2022/01/04/how-to-use-a-udesign-studio-block-to-build-your-own-website/">How to use a UDesign Studio block to build your own website?</a></li></ul></nav>			</div>
+
+			
+		</div>
+
+	</aside>
+<div class="main-content">
+	<div class="post-single-wrap">
+
+		
+		<article class="post-3925 post type-post status-publish format-standard hentry category-udesign-studio post-single">
+			<h2 class="post-title page-title">
+	How to use a UDesign Studio block to build your own website?</h2>
+<div class="post-content">
+	
+<h4 class="mt-7 mb-1">Importing a block</h4>
+
+
+
+<p>You can import a block easily on UDesign Studio.</p>
+
+
+
+<figure class="wp-block-image size-full"><img width="930" height="473" src="https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-8.jpg" alt="" class="wp-image-3935" srcset="https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-8.jpg 930w, https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-8-300x153.jpg 300w, https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-8-768x391.jpg 768w, https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-8-150x76.jpg 150w" sizes="(max-width: 930px) 100vw, 930px" /><figcaption>Select a block in studio</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-full"><img width="930" height="473" src="https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-9.jpg" alt="" class="wp-image-3936" srcset="https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-9.jpg 930w, https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-9-300x153.jpg 300w, https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-9-768x391.jpg 768w, https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-9-150x76.jpg 150w" sizes="(max-width: 930px) 100vw, 930px" /><figcaption>Block imported in Elementor</figcaption></figure>
+
+
+
+<h4 class="mt-9 mb-1">Favourite block</h4>
+
+
+
+<p>You can add a block to your favourite blocks list.</p>
+
+
+
+<figure class="wp-block-image size-full"><img width="930" height="474" src="https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-10.jpg" alt="" class="wp-image-3937" srcset="https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-10.jpg 930w, https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-10-300x153.jpg 300w, https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-10-768x391.jpg 768w, https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-10-150x76.jpg 150w" sizes="(max-width: 930px) 100vw, 930px" /></figure>
+
+
+
+<p>Then, the favourite blocks are shown in <strong>favourites</strong> category.</p>
+
+
+
+<figure class="wp-block-image size-full mb-10"><img width="930" height="471" src="https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-11.jpg" alt="" class="wp-image-3938" srcset="https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-11.jpg 930w, https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-11-300x152.jpg 300w, https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-11-768x389.jpg 768w, https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-11-150x76.jpg 150w" sizes="(max-width: 930px) 100vw, 930px" /></figure>
+
+
+
+<h4 class="mt-9 mb-1">Filter blocks by demo</h4>
+
+
+
+<p>You can filter blocks by demos.</p>
+
+
+
+<figure class="wp-block-image size-full"><img width="930" height="474" src="https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-12.jpg" alt="" class="wp-image-3940" srcset="https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-12.jpg 930w, https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-12-300x153.jpg 300w, https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-12-768x391.jpg 768w, https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2022/01/studio-12-150x76.jpg 150w" sizes="(max-width: 930px) 100vw, 930px" /></figure>
+	</div>
+			<div class="post-links">
+							</div>
+		</article>
+
+					<hr class="mt-0 mb-6">
+			
+		<nav class="navigation post-navigation" aria-label="Posts">
+			<h2 class="screen-reader-text">Post navigation</h2>
+			<div class="nav-links"><div class="nav-previous"><a href="https://d-themes.com/wordpress/udesign/documentation/2022/01/04/how-many-useful-blocks-are-uploaded-on-udesign-studio/" rel="prev"><i class="a-icon-long-arrow-left"></i><span class="label">Previous Post</span><span class="pager-link-title">How many useful blocks are uploaded on UDesign Studio?</span></a></div><div class="nav-next"><a href="https://d-themes.com/wordpress/udesign/documentation/2022/01/04/optimize-resources/" rel="next"><i class="a-icon-long-arrow-right"></i><span class="label">Next Post</span><span class="pager-link-title">Optimize Resources</span></a></div></div><a class="post-nav-blog a-icon-grid" href="https://d-themes.com/wordpress/udesign/documentation" title="All Posts"></a></nav>			<hr class="mt-6 mb-0">
+				</div>
+	</div></div></div></div>
+
+			</main>
+
+			
+							<footer class="footer custom-footer footer-2191" id="footer">
+						<div class="alpha-block elementor elementor-2191" data-block-id="2191"><style id="elementor-post-2191">.elementor-2191 .elementor-element.elementor-element-7c7b7c2:not(.elementor-motion-effects-element-type-background), .elementor-2191 .elementor-element.elementor-element-7c7b7c2 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#282B30;}.elementor-2191 .elementor-element.elementor-element-7c7b7c2{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;color:#666666;}.elementor-2191 .elementor-element.elementor-element-7c7b7c2 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-bc-flex-widget .elementor-2191 .elementor-element.elementor-element-25aae3d.elementor-column .elementor-widget-wrap{align-items:center;}.elementor-2191 .elementor-element.elementor-element-25aae3d.elementor-column.elementor-element[data-element_type="column"] > .elementor-widget-wrap.elementor-element-populated{align-content:center;align-items:center;}.elementor-2191 .elementor-element.elementor-element-25aae3d > .elementor-element-populated{padding:4.8rem 1.5rem 5.1rem 1.5rem;}.elementor-element-fb6e097{text-align:left;}.elementor-element-fb6e097 .logo img{max-width:135px;}.elementor-2191 .elementor-element.elementor-element-fb6e097{width:auto;max-width:auto;}.elementor-2191 .elementor-element.elementor-element-4e2f22a > .elementor-widget-container{margin:2px 0px 0px 0px;}.elementor-2191 .elementor-element.elementor-element-4e2f22a{width:auto;max-width:auto;}@media(max-width:991px){.elementor-2191 .elementor-element.elementor-element-fb6e097 > .elementor-widget-container{margin:0px 0px 0px 0px;}}@media(max-width:767px){.elementor-2191 .elementor-element.elementor-element-fb6e097{width:auto;max-width:auto;}}</style>		<div data-elementor-type="wp-post" data-elementor-id="2191" class="elementor elementor-2191" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<section class=" elementor-section elementor-top-section elementor-element elementor-element-7c7b7c2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7c7b7c2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-container elementor-column-gap-default" >
+										
+		<div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-25aae3d " data-id="25aae3d" data-element_type="column">
+			
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-fb6e097 ml-auto mr-auto ml-md-0 elementor-widget__width-auto elementor-widget-mobile__width-auto elementor-widget elementor-widget-udesign_header_site_logo" data-id="fb6e097" data-element_type="widget" data-widget_type="udesign_header_site_logo.default">
+				<div class="elementor-widget-container">
+			
+<a href="https://d-themes.com/wordpress/udesign/documentation/" class="logo" title="Documentation - UDesign WordPress Demo Site">
+	<img width="270" height="72" src="https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2021/11/logo.png" class="site-logo skip-data-lazy attachment-full size-full" alt="Documentation" srcset="https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2021/11/logo.png 270w, https://d-themes.com/wordpress/udesign/documentation/wp-content/uploads/sites/17/2021/11/logo-150x40.png 150w" sizes="(max-width: 270px) 100vw, 270px" /></a>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-4e2f22a elementor-widget__width-auto elementor-widget elementor-widget-shortcode" data-id="4e2f22a" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode"><p class="mb-0 text-center copyright">
+© 2022 UDesign Theme. All Rights Reserved</p></div>
+				</div>
+				</div>
+					</div>
+			
+		</div>
+																	</div>
+							</section>
+						</div>
+					</div>
+		</div>					</footer>
+					
+		</div>
+
+					<div class="cookies-popup">
+				<div class="cookies-popup-inner d-flex align-items-center">
+					<div class="cookies-info">
+						By browsing this website, you agree to our <a href="#">privacy policy</a>.					</div>
+					<a href="#" rel="nofollow noopener" class="btn btn-sm accept-cookie-btn">I Agree</a>
+					<a href="#" class="btn close-cookie-btn decline-cookie-btn btn-close" aria-label="Close Cookie Consent"><i class="a-icon-times-solid"></i></a>
+				</div>
+			</div>
+			
+					<a id="scroll-top" class="scroll-top" href="#top" title="Top" role="button">
+				<i class="a-icon-long-arrow-up"></i>
+				<svg  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					viewBox="0 0 70 70" enable-background="new 0 0 70 70" xml:space="preserve">
+					<circle id="progress-indicator" fill="transparent" stroke="#000000" stroke-miterlimit="10" cx="35" cy="35" r="34"/>
+				</svg>
+			</a>
+		
+					<div class="mobile-menu-wrapper">
+				<div class="mobile-menu-overlay"></div>
+				<div class="mobile-menu-container" style="height: 100vh;">
+					<!-- Need to ajax load mobile menus -->
+				</div>
+				<a class="mobile-menu-close" href="#"><i class="close-icon"></i></a>
+			</div>
+		
+		
+		<style id="elementor-post-3">.elementor-kit-3{--e-global-color-862bc44:#fd7800;--e-global-color-694c619:#9ab35e;--e-global-color-2969238:#888;--e-global-color-93e231a:#9AB35D;--e-global-typography-primary-font-family:"Poppins";--e-global-typography-primary-font-weight:default;--e-global-typography-secondary-font-family:"default";--e-global-typography-secondary-font-weight:default;--e-global-typography-text-font-family:"default";--e-global-typography-text-font-weight:default;--e-global-typography-accent-font-family:"default";--e-global-typography-accent-font-weight:default;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1290px;}.elementor-widget:not(:last-child){margin-bottom:0px;}{}h1.entry-title{display:var(--page-title-display);}@media(max-width:991px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}}@media(max-width:767px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:767px;}}</style><link rel='stylesheet' id='font-awesome-5-all-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.css?ver=3.4.0' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.css?ver=3.4.0' media='all' />
+<link rel='stylesheet' id='e-animations-css'  href='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.4.0' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=5.8.3' media='all' />
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/u-design-documentation-demo-plugin/u-design-documentation-demo-plugin.js?ver=1.0' id='alpha-documentation-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/u-design-core/framework/addons/live-search/jquery.autocomplete.min.js?ver=5.8.3' id='jquery-autocomplete-js'></script>
+<script id='alpha-framework-js-extra'>
+var alpha_vars = {"theme":"udesign","framework_icon_prefix":"a","alpha_gap":"15px","home_url":"https:\/\/d-themes.com\/wordpress\/udesign\/documentation\/","ajax_url":"https:\/\/d-themes.com\/wordpress\/udesign\/documentation\/wp-admin\/admin-ajax.php","nonce":"31d2430d17","lazyload":"","container":"1290","assets_url":"https:\/\/d-themes.com\/wordpress\/udesign\/documentation\/wp-content\/themes\/u-design\/assets","texts":{"loading":"Loading...","loadmore_error":"Loading failed","popup_error":"The content could not be loaded.","ribbon":"Ribbon"},"resource_async_js":"1","resource_split_tasks":"1","resource_after_load":"1","alpha_cache_key":"alpha_cache_7aef583fed34a7a488712c4604fb3a95","lazyload_menu":"","countdown":{"labels":["Years","Months","Weeks","Days","Hours","Minutes","Seconds"],"labels_short":["Years","Months","Weeks","Days","Hrs","Mins","Secs"],"label1":["Year","Month","Week","Day","Hour","Minute","Second"],"label1_short":["Year","Month","Week","Day","Hour","Min","Sec"]},"placeholder_img":"https:\/\/d-themes.com\/wordpress\/udesign\/documentation\/wp-content\/themes\/u-design\/assets\/images\/placeholders\/post-placeholder.jpg","placeholder_alt":"UDesign Placeholder","placeholder_width":"730","placeholder_height":"570","search_result":"There are no results.","cookie_version":"1"};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-content/themes/u-design/framework/assets/js/framework.js?ver=4.0.0' id='alpha-framework-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/documentation/wp-content/themes/u-design/framework/assets/js/framework-async.js?ver=4.0.0' id='alpha-framework-async-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/documentation/wp-content/themes/u-design/assets/js/theme.js?ver=4.0.0' id='alpha-theme-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/u-design-core/framework/addons/gdpr/gdpr.js?ver=4.0.0' id='alpha-gdpr-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script async="async" src='https://d-themes.com/wordpress/udesign/documentation/wp-content/themes/u-design/assets/vendor/jquery.magnific-popup/jquery.magnific-popup.js?ver=1.1.0' id='jquery-magnific-popup-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-includes/js/comment-reply.js?ver=5.8.3' id='comment-reply-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-includes/js/wp-embed.js?ver=5.8.3' id='wp-embed-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-content/themes/u-design/framework/assets/js/sticky.js?ver=4.0.0' id='alpha-sticky-lib-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/u-design-core/inc/addons/post-like/post-like.js?ver=4.0.0' id='alpha-post-like-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.js?ver=3.4.0' id='font-awesome-4-shim-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/elementor/assets/js/webpack.runtime.js?ver=3.4.0' id='elementor-webpack-runtime-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/elementor/assets/js/frontend-modules.js?ver=3.4.0' id='elementor-frontend-modules-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-includes/js/jquery/ui/core.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/elementor/assets/lib/swiper/swiper.js?ver=5.3.6' id='swiper-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/elementor/assets/lib/share-link/share-link.js?ver=3.4.0' id='share-link-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/elementor/assets/lib/dialog/dialog.js?ver=4.8.1' id='elementor-dialog-js'></script>
+<script id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":true},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":992,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":991,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.4.0","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"landing-pages":true,"elements-color-picker":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/d-themes.com\/wordpress\/udesign\/documentation\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"viewport_tablet":991,"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":3925,"title":"How%20to%20use%20a%20UDesign%20Studio%20block%20to%20build%20your%20own%20website%3F%20%E2%80%93%20Documentation","excerpt":"","featuredImage":false}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":true},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":992,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":991,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.4.0","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"landing-pages":true,"elements-color-picker":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/d-themes.com\/wordpress\/udesign\/documentation\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"viewport_tablet":991,"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":3925,"title":"How%20to%20use%20a%20UDesign%20Studio%20block%20to%20build%20your%20own%20website%3F%20%E2%80%93%20Documentation","excerpt":"","featuredImage":false}};
+</script>
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/elementor/assets/js/frontend.js?ver=3.4.0' id='elementor-frontend-js'></script>
+<script src='https://d-themes.com/wordpress/udesign/documentation/wp-content/plugins/elementor/assets/js/preloaded-modules.js?ver=3.4.0' id='preloaded-modules-js'></script>
+	</body>
+</html>

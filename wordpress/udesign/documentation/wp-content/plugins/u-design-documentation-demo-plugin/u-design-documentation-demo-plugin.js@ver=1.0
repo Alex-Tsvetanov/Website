@@ -1,0 +1,9 @@
+( function ( $ ) {
+	$( window ).on( 'alpha_complete', function () {
+		theme.$body.find( '.post-single-wrap .post .wp-block-image' ).each( function ( e ) {
+			var $this = $( this ),
+				$img = $this.find( 'img' );
+			$img.wrap( "<a href='" + $img.attr( 'src' ) + "'></a>" );
+		} );
+	} );
+} )( jQuery );
