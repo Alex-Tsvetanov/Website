@@ -1,0 +1,3 @@
+git add .
+git commit -m 'Gather more of the template'
+git push
